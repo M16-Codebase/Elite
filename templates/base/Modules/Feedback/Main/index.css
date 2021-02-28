@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.log-table-cont {
+  margin-top: 0; }
+
+.log-table.file-log TH:first-child,
+.log-table.file-log TD:first-child {
+  text-align: left; }
+.log-table.file-log .date-sort:after {
+  position: relative;
+  margin-left: 4px;
+  font-size: 10px;
+  content: '▲';
+  top: -1px; }
+.log-table.file-log .date-sort.m-down:after {
+  content: '▼'; }
+.log-table.file-log .td-subscr {
+  text-align: center; }
+.log-table.file-log .subscr-icon {
+  vertical-align: top;
+  display: inline-block;
+  background: url("/templates/Admin/img/subscr-check.png") 0 0 no-repeat;
+  height: 18px;
+  width: 18px;
+  margin-top: 5px; }
+.log-table.file-log .log-items > LI + LI {
+  margin-top: 10px; }
+
+.m-gray {
+  color: #aab5bd; }
+
+.long-string {
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto; }
+
+/*# sourceMappingURL=index.css.map */

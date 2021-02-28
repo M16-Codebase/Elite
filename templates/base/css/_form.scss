@@ -1,0 +1,16 @@
+.user-form {
+	position: relative;
+	&.sending {
+		opacity: .5;
+		&:after {
+			position: absolute;
+			display: block;
+			height: 100%;
+			width: 100%;
+			content: '';
+			z-index: 2;
+			left: 0;
+			top: 0;
+		}
+	}
+}

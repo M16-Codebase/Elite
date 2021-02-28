@@ -1,0 +1,237 @@
+.page-aside {
+	padding-bottom: 25px;
+	&.m-mainpage {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+/* пункты меню */
+.aside-menu {
+	text-shadow: 0 1px rgba(255, 255, 255, .6);
+	background: $color-gray-bg;
+	padding: 26px 16px;
+	color: #29384c;
+	A {color: $color-main;}
+	A:hover {color: $color-main-hover;}
+	.aside-menu-wrap.m-closed & {display: none;}
+	& > LI {position: relative;}
+	& > LI + LI:before,
+	.aside-submenu LI:before {
+		border-top: 1px solid #dbdbdb;
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 0;
+		left: 0;
+		top: 0;
+	}
+	.am-item-title {
+		padding: 6px 0 6px 18px;
+		margin-right: -3px;
+		position: relative;
+		font-family: openSansBold;
+        font-weight: normal;
+		display: block;
+		&:before {
+			background: url("#{$img}aside-list-dots.png") 0 0 no-repeat;
+			position: absolute;
+			display: block;
+			content: '';
+			height: 9px;
+			width: 8px;
+			top: 10px;
+			left: 0;
+		}
+	}
+	.m-open .am-item-title:before {background-position: -8px 0;}
+	
+	/* подменю */
+	.aside-submenu {
+		display: none;
+		LI {
+			position: relative;			
+			& > .am-submenu-title {
+				padding: 6px 0 6px 20px;
+				position: relative;
+				display: block;
+			}			
+			&.m-current > .am-submenu-title {
+				color: $color-link;
+				cursor: default;
+			}
+		}
+	}
+	.m-open .aside-submenu {display: block;}
+	.aside-subbuttons {
+		padding-left: 14px;
+		A {
+			font: 12px/15px $font-italic;
+			position: relative;
+			padding: 6px;
+		}
+		A.m-current {
+			color: $color-link;
+			cursor: default;
+		}
+		A + A:before {
+			background: #717882;
+			position: absolute;
+			height: 15px;
+			width: 1px;
+			content: '';
+			left: -2px;
+			top: 6px;
+		}
+	}
+	A + .aside-subbuttons {margin-top: -6px;}
+}
+
+.aside-closed {
+	text-shadow: 0 1px #f6f6f6;
+	background: $color-gray-bg;
+	text-align: center;
+	cursor: pointer;
+	padding: 28px 0;
+	display: none;
+	.aside-menu-wrap.m-closed & {display: block;}
+}
+.aside-menu-button {
+	background: url("#{$img}aside-buttons.png") 0 0 no-repeat;
+	cursor: pointer;
+	height: 18px;
+	.aside-menu-wrap.m-closed & {background-position: 0 -18px;}
+}
+
+/* фильтр */
+.aside-filter {
+	background: $color-gray-bg;
+	margin-top: 30px;
+	padding: 20px;
+	&.m-empty {display: none;}
+	FORM {position: relative;}
+	.field + .field {
+		border-top: 1px solid #dbdbdb;
+		padding-top: 13px;
+		margin-top: 16px;
+	}
+	.f-title {
+		font: 14px "openSansBold";
+		color:#29384c;
+		margin-bottom: 5px;
+	}
+	.f-input {
+		&.cbx {
+			LABEL {display: block;}
+		}
+		&.between {
+			text-align: center;
+			line-height: 26px;
+			INPUT {
+				padding: 3px;
+				width: 45%;
+			}
+		}
+		.date-row {
+			& + .date-row {margin-top: 6px;}
+			.unit {
+				line-height: 26px;
+				width: 20px;
+			}
+			.time-select, .date-input {
+				padding: 3px;
+				width: 42%;
+			}
+		}
+	}
+	.slider-inputs {
+		text-align: center;
+		line-height: 26px;
+		INPUT {width: 44%;}
+	}
+	.buttons {margin-top: 24px;}
+	.float-button {
+		@include shadow(0 0 6px rgba(0, 0, 0, .4));
+		padding: 12px;
+		padding-left: 20px;
+		background: $color-gray-bg;
+		position: absolute;
+		text-align: center;
+		display: none;
+		width: 125px;
+		left: 205px;
+		z-index: 4;
+		top: 0;
+		&:before {
+			background: $color-gray-bg;
+			position: absolute;
+			display: block;
+			padding: 6px 0;
+			content: '';
+			height: 100%;
+			width: 6px;
+			left: -6px;
+			top: -6px;
+		}
+	}
+	.clear-form {
+		text-align: center;
+		margin-top: 6px;
+		display: block;
+		padding: 10px;
+	}
+}
+
+.get-ids-cont {
+	text-align: center;
+	margin-top: 15px;
+}
+.get-ids {
+	@include inline-block;
+	font: italic 12px/24px Arial;
+	position: relative;
+	&:before {
+		background: url("#{$img}get-ids.png") 0 0 no-repeat;
+		@include inline-block;
+		vertical-align: top;
+		margin-right: 4px;
+		height: 24px;
+		width: 23px;
+		content: '';
+	}
+}
+
+
+@media (max-width: $width-mobile) {
+	.aside-col {
+		position: fixed;
+		left: -245px;
+	}
+	.aside-col.page-aside {
+		@include transition(left .3s ease);
+		overflow: auto;
+		height: 100%;
+		z-index: 4;
+		top: 0;
+		.aside-menu-button,
+		.aside-closed {display: none !important;}
+		.aside-menu {display: block !important;}
+	}
+	BODY.m-aside-open {
+		.page-header {z-index: 2;}
+		.page-aside {
+			background: $color-gray-bg;
+			left: 0;
+		}
+		.aside-lock {
+			background: rgba(255, 255, 255, .5);;
+			position: fixed;
+			display: block;
+			height: 100%;
+			width: 100%;
+			z-index: 3;
+			left: 0;
+			top: 0;
+		}
+	} 
+}

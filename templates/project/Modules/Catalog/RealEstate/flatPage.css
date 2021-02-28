@@ -1,0 +1,284 @@
+.main-menu {
+  padding: 17px 8px; }
+
+.top-bg {
+  padding-top: 47px; }
+  .top-bg .main {
+    letter-spacing: .32em;
+    opacity: .55; }
+  .top-bg .site-top {
+    padding: 14px 0 19px;
+    width: auto; }
+    .top-bg .site-top .title {
+      letter-spacing: .001em;
+      margin-bottom: 28px;
+      line-height: 1.5em;
+      color: #cfb27b;
+      font-size: 36px;
+      font-size: 3vw; }
+      .top-bg .site-top .title SPAN {
+        font-size: 40px;
+        font-size: 3.33333vw;
+        line-height: 1em;
+        color: #fff; }
+      .top-bg .site-top .title I {
+        color: #fff; }
+    .top-bg .site-top .btn {
+      padding-right: 18px;
+      padding-left: 18px; }
+
+.page-center.m-main {
+  padding: 0 35px 22px;
+  overflow: hidden;
+  background: #fff; }
+
+.item-wrap {
+  margin-top: 20px;
+  overflow: hidden; }
+
+.flat-wrap {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 76.99115%;
+  background: #efefef;
+  overflow: hidden;
+  padding: 19px;
+  float: left; }
+  .flat-wrap .open-photo {
+    cursor: pointer; }
+  .flat-wrap .img-wrap {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 50px 50px 50px;
+    background: #fff;
+    float: left;
+    width: 64%; }
+    .flat-wrap .img-wrap .swiper-slide {
+      max-width: 100%; }
+      .flat-wrap .img-wrap .swiper-slide .cover {
+        width: 100%;
+        padding-bottom: 72%; }
+      .flat-wrap .img-wrap .swiper-slide IMG {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 28px 16px 10px 10px;
+        max-width: 100%;
+        width: 100%; }
+    .flat-wrap .img-wrap .nav {
+      border-top: 1px solid #e2e2e2;
+      position: relative;
+      margin-top: 64px;
+      height: 70px; }
+      .flat-wrap .img-wrap .nav .pagin {
+        font: 16px/70px bebas;
+        word-spacing: 10px;
+        float: left; }
+      .flat-wrap .img-wrap .nav .swiper-button-prev, .flat-wrap .img-wrap .nav .swiper-button-next {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 27px 28px 43px 35px;
+        background: none;
+        position: static;
+        cursor: pointer;
+        margin-top: 0;
+        float: right;
+        opacity: 1; }
+        .flat-wrap .img-wrap .nav .swiper-button-prev .svg polygon, .flat-wrap .img-wrap .nav .swiper-button-next .svg polygon {
+          fill: #000; }
+      .flat-wrap .img-wrap .nav .swiper-button-disabled {
+        opacity: .3; }
+      .flat-wrap .img-wrap .nav .swiper-button-prev {
+        left: 2%; }
+        .flat-wrap .img-wrap .nav .swiper-button-prev .svg {
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg); }
+    .flat-wrap .img-wrap .swiper-pagination {
+      display: none; }
+  .flat-wrap .params {
+    width: 36%;
+    float: right;
+    padding-bottom: 102px;
+    padding-left: 22px;
+    color: #000; }
+    .flat-wrap .params .main:first-child {
+      margin: 0; }
+    .flat-wrap .params .main {
+      letter-spacing: .3em;
+      color: #757575;
+      margin-top: 24px;
+      margin-bottom: 9px; }
+    .flat-wrap .params .title {
+      line-height: .8em; }
+      .flat-wrap .params .title SPAN {
+        color: #000; }
+    .flat-wrap .params .area {
+      margin-top: 25px; }
+    .flat-wrap .params .descr {
+      color: #000;
+      margin-bottom: 21px; }
+      .flat-wrap .params .descr SPAN {
+        position: relative;
+        bottom: -.15em;
+        font-size: 30px;
+        font-size: 2.5vw;
+        line-height: 0;
+        margin-bottom: -10px; }
+    .flat-wrap .params .small-descr {
+      margin-top: 28px; }
+    .flat-wrap .params .small-descr + .small-descr {
+      color: #000;
+      border-top: 1px solid #dbdbdb;
+      margin: 4px 18% 0;
+      padding-top: 9px; }
+    .flat-wrap .params .btn {
+      margin: 8% 6% 0;
+      display: block;
+      padding: 19px 8px;
+      color: #fff; }
+      .flat-wrap .params .btn.m-sand {
+        color: #000;
+        padding: 16px 16px; }
+    .flat-wrap .params .price {
+      margin: 9% 6% 10%;
+      border: 2px solid #c5c5c5;
+      padding: 9px 21px 15px;
+      display: block; }
+      .flat-wrap .params .price .full_price {
+        font: 31px/1em bebas;
+        font-size: 2.58333vw;
+        letter-spacing: .09em;
+        border-bottom: 1px solid #dbdbdb;
+        padding: 5px 0px 5px; }
+      .flat-wrap .params .price .price_per_m {
+        font: 15px/1em school_book_italic;
+        font-size: 1.25vw;
+        padding-top: 2px; }
+  .flat-wrap .favorite {
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer; }
+    .flat-wrap .favorite .svg {
+      position: absolute;
+      top: 49px;
+      right: 0;
+      bottom: 0;
+      left: -46px;
+      margin: auto; }
+      .flat-wrap .favorite .svg path {
+        fill: #b0b0b0; }
+
+.floor-wrap {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 22.83186%;
+  padding-left: 10px;
+  float: left; }
+  .floor-wrap .floor-block {
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 9px; }
+    .floor-wrap .floor-block .main {
+      color: #757575;
+      opacity: .55; }
+    .floor-wrap .floor-block .title {
+      line-height: .8em; }
+      .floor-wrap .floor-block .title SPAN {
+        font-size: 31px;
+        font-size: 2.58333vw;
+        letter-spacing: -0.01em; }
+    .floor-wrap .floor-block .img-cont {
+      margin-top: 6px; }
+      .floor-wrap .floor-block .img-cont IMG {
+        max-width: 100%; }
+    .floor-wrap .floor-block .poly-cont {
+      margin: 0 auto; }
+  .floor-wrap .floor-block + .floor-block {
+    margin-top: 25px; }
+
+.item-benefits {
+  padding: 54px 34px 60px;
+  background: #fff;
+  display: table;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .item-benefits .ben-title {
+    color: #b59974;
+    letter-spacing: 0.23em;
+    font: 30px/1em bebas;
+    font-size: 2.5vw;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; }
+  .item-benefits .ben-list {
+    margin-top: 2px;
+    text-align: center;
+    padding: 0 40px;
+    display: table-cell;
+    vertical-align: middle; }
+    .item-benefits .ben-list .ben-list-inner {
+      overflow: hidden; }
+    .item-benefits .ben-list .ben-item {
+      font: 18px/1em bebas;
+      font-size: 1.5vw;
+      letter-spacing: .04em;
+      position: relative;
+      padding-right: 4%;
+      color: #272127;
+      display: inline-block;
+      vertical-align: middle; }
+      .item-benefits .ben-list .ben-item:after {
+        position: absolute;
+        display: block;
+        content: '/';
+        right: 2%;
+        top: 0; }
+      .item-benefits .ben-list .ben-item:last-child {
+        padding-right: 0; }
+        .item-benefits .ben-list .ben-item:last-child:after {
+          display: none; }
+
+.options {
+  clear: both; }
+  .options .m-space .big-opt {
+    word-spacing: .18em; }
+  .options .m-space .opt-descr {
+    word-spacing: 2.5em; }
+  .options .m-space .slash {
+    position: static;
+    margin-top: 17px;
+    height: 66px;
+    border-left: 2px solid #fff;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg); }
+  .options .m-commis .big-opt {
+    /*text-align:left;*/ }
+    .options .m-commis .big-opt .opt-descr {
+      display: inline-block;
+      text-align: left; }
+  .options .m-commis .opt-descr {
+    /*text-align:left;*/ }
+    .options .m-commis .opt-descr SPAN {
+      color: #fff; }
+
+.qr-block-wrap {
+  padding-bottom: 30px; }
+
+/*# sourceMappingURL=flatPage.css.map */

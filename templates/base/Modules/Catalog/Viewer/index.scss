@@ -1,0 +1,66 @@
+@import '../../../Admin/css/vars';
+
+H1 {margin-bottom: 6px;}
+.main-content-gray{
+	padding-bottom: 25px;
+	H2, .h2 {
+		padding: 9px 0 15px;
+		margin-bottom: 0;
+	}
+}
+.actions-panel .action-props-toggle > A {width: 72px;}
+.item-view-block {
+	.main-content-gray + &,
+	.anchores + & {padding-top: 20px;}
+	H2.slide-header {
+		padding: 10px 0 22px 20px;
+		position: relative;
+		margin-bottom: 0;
+		cursor: pointer;
+		&:before {
+			position: absolute;
+			font-size: 14px;
+			content: '▼';
+			top: 10px;
+			left: 0;
+		}
+	}
+	&.m-open H2.slide-header:before {content: '▲';}
+	.table-cont {margin-bottom: 30px;}
+	.comment {margin-bottom: 0;}
+	TABLE {margin: 0 0 10px;}
+}
+.view-gallery-cont {margin-top: 34px;}
+.anchores {
+	border-bottom: 2px solid #006a4d;
+	border-top: 1px solid #e5e6e6;
+	LI {line-height: 32px;}
+	LI + LI {margin-left: 10px;}
+	LI A {
+		font-size: 14px;
+		cursor: pointer;
+		color: #006a4d;
+	}
+	LI A:before {
+		background: url('/templates/Admin/img/anchor.png') 0 0 no-repeat;
+		display: inline-block;
+		margin-right: 6px;
+		content: '';
+		height: 9px;
+		width: 9px;
+	}
+	LI .no-actual:before {
+		background: url('/templates/Admin/img/history.png') -26px 0 no-repeat;
+		display: inline-block;
+		margin-right: 6px;
+		margin-bottom: 9px;
+		content: '';
+		height: 13px;
+		width: 13px;
+		vertical-align: bottom;
+	}
+}
+.discount-date {
+	margin-top: 10px;
+	color: #7F7F7F;
+}

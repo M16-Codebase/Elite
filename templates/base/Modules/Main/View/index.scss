@@ -1,0 +1,102 @@
+@import url("/css/info-block.css");
+
+.presentation {
+	padding-bottom: 6px;
+	margin-top: -20px;
+	overflow: hidden;
+}
+.promo-titles {
+	color: #005b9f;
+	font: 12px/14px Arial;
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+}
+.promo-titles-carousel {
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}
+
+.presentation .a-left, .presentation .a-right {
+	background: url("/img/design/arrow.png") 0 0 no-repeat;
+	cursor: pointer;
+	height: 12px;
+	margin: 5px 0;
+	width: 9px;
+}
+.presentation .a-right {background-position: -9px 0;}
+.presentation .a-left {
+	background-position: 0 0;
+	margin-right: 20px;
+}
+.promo-title {
+	cursor: pointer;
+	margin-right: 23px;
+	width: 170px;
+	height: 38px;
+	padding: 20px 0;
+	vertical-align: middle;
+}
+.promo-titles .m-current {
+	position: relative;
+	cursor: default;
+} 
+.promo-titles .m-current A {color: #101010;} 
+.promo-titles .m-current:after {
+	background: url("/img/icons/promo-arrow.png") 0 no-repeat;
+	content: "";
+	display: block;
+	height: 60px;
+	left: 35%;
+	position: absolute;
+	bottom: -35px;
+	width: 52px;
+}
+.presentation .blue-arrows .arrow-cont {
+	position: absolute;
+	background: #fff;
+	cursor: pointer;
+	padding-top: 11px;
+	height: 23px;
+	width: 30px;
+	z-index: 3;
+	top: 40%;
+}
+.presentation .blue-arrows .arrow-cont.m-inactive {display: none;}
+.presentation .blue-arrows .car-prev {
+	-webkit-border-radius: 0 17px 17px 0;
+	-moz-border-radius: 0 17px 17px 0;
+	border-radius: 0 17px 17px 0;
+	padding-left: 12px;
+	width: 18px;
+	left: 0;
+}
+.presentation .blue-arrows .car-next {
+	-webkit-border-radius: 17px 0 0 17px;
+	-moz-border-radius: 17px 0 0 17px;
+	border-radius: 17px 0 0 17px;
+	padding-left: 10px;
+	width: 20px;
+	right: 0;
+}
+.presentation .promo-images {
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+	margin: 0 auto;
+	height: 439px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+.presentation .promo-images LI {float: left;}
+.presentation .promo-image {
+	overflow: hidden;
+	display: block;
+}
+.promo-images .promo-image IMG {
+	position: relative;
+	min-width: 100%;
+	display: block;
+}

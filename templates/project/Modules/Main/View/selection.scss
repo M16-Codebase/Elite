@@ -1,0 +1,277 @@
+@import '../../../css/vars';
+
+.top-bg{
+	.bg-img{
+		background: #fff;
+	}
+	.site-top *, .site-top SPAN {
+		color:#000;
+		text-transform: uppercase;
+	}
+	.site-top{
+		width:80vw;
+		padding: 30px 0 47px;
+		.title{
+			line-height: .75em;
+		}
+	} 
+}
+
+.request-wrap{
+	width:100%;
+	margin:auto;
+	padding-bottom:62px;
+	.small-descr {
+		margin-top:32px
+	}
+	.w2{
+		width:49.5%;
+		.request-form{
+			padding-right:90px;
+		}
+		&:nth-of-type(odd) .request-form{
+			padding-left:90px;
+			padding-right:38px;
+			float:right;
+		}
+	}
+	.request-form{
+		padding-right:90px;
+		padding-bottom: 0;
+		max-width:351px;
+		.f-group.m-checkboxes{
+			margin-top:-12px;
+			.field.checkbox{
+				width:auto;
+				display: inline-block;
+				margin-bottom: 10px;
+			}
+			.slash{
+				height:33px;
+				margin: 0 25px;
+			}
+			LABEL {
+				SPAN {
+					display:inline-block;
+				}
+				DIV {
+					vertical-align: top;
+				}
+			}
+		}
+		.f-input TEXTAREA {
+			height: 89px;
+		}
+		.field.checkbox:last-child {
+			margin-bottom:0;
+		}
+		
+	}
+	.buttons {
+		padding-top: 33px;
+		text-align: center;
+		clear: both;
+		.btn{
+			border-color:#fff;
+			padding: 14px 16px 15px;
+		}
+	}
+}
+.request-wrap .request-form .f-input.slider-wrap{
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+    display: table-cell;
+	INPUT {
+		font: 31px/33px bebas;
+		letter-spacing: 2px;
+		background: none;
+		border: none;
+		width: 46px;
+		margin-right: 60px;
+		color: $color-dark-magenta;
+		text-align:center;
+		&.input-max {
+			text-align: right;
+			margin-right:0;
+			margin-left: 60px;
+		}
+	}
+	.slider {
+		background: $color-light-magenta;
+		position: absolute;
+		margin: auto;
+		border: none;
+		height: 2px;
+		width: 37%;
+		bottom: 0;
+		right: 0;
+		left: -7px;
+		top: 0;
+	}
+	.ui-slider-range {
+		background: $color-dark-magenta;
+		border: none;
+		width:50%;
+	}
+	.ui-slider-handle {
+		@include border-box;
+		background: $color-dark-sand;
+		border: 3px solid $color-dark-magenta;
+		margin: -6px 0 0 -.3em;
+		border-radius: 0;
+		cursor: pointer;
+		outline: none;
+		height: 24px;
+		width: 8px;
+	}
+}
+.request-wrap .request-form .f-title.m-rt-padding{
+	padding-right:46px;
+}
+.request-wrap .request-form .field.m-bed-ch{
+	border:none;
+	padding:0;
+	.slash{
+		margin-right:10px;
+	}
+	.f-title{
+		padding-right:42px
+	}
+	&.m-eng {
+		.f-title{
+			padding-right: 25px;
+		}
+		.slash{
+			margin-right: 0;
+		}
+	}
+}
+.request-wrap .btn.m-bedroom {
+	margin-left: 0;
+	padding: 3px 16px 12px 15px;
+	border-color: $color-dark-magenta;
+	line-height: 1em;
+	&.m-five {padding-right:10px;}
+	SPAN {
+		color:$color-dark-magenta;
+		margin: 0;
+		&:after {display: none;}
+	}
+	&.m-current {
+		SPAN {color:$color-dark-sand;}
+		background:$color-dark-magenta;
+		border-color:$color-dark-magenta;
+	}
+}
+.m-bedroom.btn + .m-bedroom.btn {
+	margin-left:0;
+}
+.request-wrap .request-form .field.f-dropdown {
+	width:100%;
+	position: relative;
+	border:none;
+	padding:0;
+	.dropdown-toggle {
+		display:inline-block;
+		padding: 3px 18px 12px 14px;
+		line-height:1em;
+		position: relative;
+		padding: 9px 26px 8px 12px;
+		border: 2px solid $color-dark-magenta;
+		margin-left: 0.08333%;
+		height:auto;
+		text-align:left;
+		width:100%;
+		font:31px/1em "bebas";
+		letter-spacing: .123em;
+		color:$color-dark-magenta;
+		cursor:pointer;
+		@include border-box;
+		DIV {
+			position: absolute;
+			width:24px;
+			height:19px;
+			top:15px;
+			right:10px;
+			.svg{
+				width:24px;
+				height:	19px;
+				display:block;
+				path {
+					fill:$color-dark-magenta;
+				}
+			}
+		}
+	}
+	.dropdown-menu {
+		position: absolute;
+		background:$color-light-magenta;
+		max-height: 165px;
+		width:100%;
+		text-align:left;
+		padding:11px 10px 10px 14px;
+		@include border-box;
+		overflow: visible;
+		z-index:9;
+		display:none;
+		LI {
+			color:#c0c0c0;
+			font: 18px/1em bebas;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			background:$color-light-magenta;
+			text-align:left;
+			SPAN{
+				margin-left: 2px;
+			}
+		}
+		LI + LI {
+			margin-top: 8px;
+		}
+		LABEL{
+			display:block;
+			width:100%;
+			text-align:left;
+			cursor: pointer;
+			DIV {
+				display:inline-block;
+				width: 16px;
+				height: 16px;
+				margin: 3px 3px 0px 3px;
+				outline: 2px solid #fff;
+				border: 3px solid $color-light-magenta;
+				background: $color-light-magenta;
+				@include border-box;
+			}
+		}
+		INPUT[type=checkbox]{
+			position: absolute;
+			left:-99999px;
+		}
+		INPUT[type=checkbox]:checked + LABEL DIV{
+			background: #fff;
+		}
+		INPUT[type=checkbox]:checked + LABEL SPAN{
+			color:#fff;
+		}
+		.mCSB_scrollTools .mCSB_draggerRail{
+			width: 3px;
+			border-radius: 0;
+		}
+		.mCSB_dragger_bar{
+			width: 3px;
+			border-radius: 0;
+			background: #fff;
+		}
+	}
+}
+.request-wrap .user-form .sended-block {
+	text-align: center;
+	margin-top: 56px;
+	padding:0;
+	.small-descr {
+		width:285px;
+		margin:auto;
+	}
+}

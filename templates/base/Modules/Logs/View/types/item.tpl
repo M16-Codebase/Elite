@@ -1,0 +1,1 @@
+{include file="Modules/Logs/View/types/item_variant.tpl"}

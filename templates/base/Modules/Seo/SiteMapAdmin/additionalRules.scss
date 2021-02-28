@@ -1,0 +1,29 @@
+@import "../../../Admin/css/vars";
+
+.sitemap-list {
+	.allow-menu {
+		.dropdown-toggle:after {
+			@include transform(#{'scaleY(.6)'});
+			display: inline-block;
+			line-height: 12px;
+			margin-left: 3px;
+			font-size: 10px;
+			content: '▼'; 
+		}
+		.dropdown-menu {
+			position: absolute;
+			display: none;
+			left: -6px;
+			LI {
+				background: #fff;
+				padding: 2px 6px;
+			}
+		}
+	}
+	.wblock.m-disallow .allow-type {color: #9f9f9f;}
+}
+
+.no-results {
+	margin:140px 0 0 0;
+	text-align:center;
+}	

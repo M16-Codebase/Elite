@@ -1,0 +1,115 @@
+@import 'vars';
+
+.message {
+	min-width: 690px;
+	height: 54px;
+	color: #fff;
+	.message-float {
+		position: fixed;
+		height: 54px;
+		width: 100%;
+		z-index: 3;
+		top: 56px;
+	}
+	.message-inner {
+		padding-right: 20px;
+		padding-left: 245px;
+		margin: 0 auto;
+		height: 54px;
+		& > * {
+			height: 54px;
+			margin: 0;
+		}
+	}
+	.message-main {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		padding: 18px 0;
+		.num {font-family: openSansBold;}
+	}
+	.action {
+		text-align: center;
+		padding-top: 18px;
+		cursor: pointer;
+		&.a-hidden {display: none;}
+		&.m-inactive {cursor: default;}
+		&.m-border {border-left: 1px solid #ffa992;}
+		I {
+			vertical-align: middle;
+			font-size: 20px;
+		}
+	}
+	.action-descr {
+		&.m-inactive {visibility: hidden;}
+	}
+	.message-descr-cont {
+		background: #ffdede;
+		color: #000;
+	}
+	.message-descr {
+		padding: 22px 20px 22px 245px;
+		max-height: 400px;
+		overflow: auto;
+	}
+	&.m-open-descr {
+		.message-float,
+		.message-inner,
+		.message-main {height: auto;}
+		.message-main {
+			white-space: normal;
+			overflow: visible;
+		}
+	}
+	&.message-errors {
+		position: relative;
+		z-index: 3;
+		top: -22px;
+		.message-float {background: #ff5959;}
+	}
+	&.message-confirm {
+		background: #ff845e;
+		position: fixed;
+		width: 100%;
+		z-index: 5;
+		bottom: 0;
+		left: 0;
+		.action.m-border {border-color: #ffa992;}
+		.action-confirm {
+			padding-right: 30px;
+			text-align: right;
+			.confirm-icon {margin-right: 4px;}
+			SPAN {font-family: openSansBold;}
+		} 
+		.action-cancel {
+			font-family: openSansBold;
+			padding-left: 30px;
+			text-align: left;
+			color: #000;
+		}
+	}
+	&.message-ok {
+		background: #43bf43;
+		position: fixed;
+		position: fixed;
+		width: 100%;
+		z-index: 5;
+		bottom: 0;
+		left: 0;
+		.action.m-border {border-color: #8BEF8B;}
+	}
+}
+
+.m-message-error {
+	@include shadow(0 -2px 0 0 #ff5959, 0 2px 0 0 #ff5959 !important);
+}
+.m-message-confirm {
+	@include shadow(0 -2px 0 0 #ffa992, 0 2px 0 0 #ffa992 !important);
+}
+
+@media (max-width: $width-mobile) {
+	.message {
+		.message-inner,
+		.message-descr {padding-left: 20px;}
+	}
+}

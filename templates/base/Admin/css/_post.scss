@@ -1,0 +1,116 @@
+@import "../../css/post";
+@import "../../../project/css/post";
+.redactor-dropdown {
+	width: 300px;
+	A {white-space: nowrap;}
+}
+
+TEXTAREA.redactor {
+	padding: 20px;
+}
+
+.post-block.redactor-editor {
+	padding-bottom: 50px;
+	.content-image {
+		.redactor-invisible-space {display: none;}
+		.fancybox IMG {outline: 1px dashed #777;}
+		.image-controls {
+			text-align: center;
+			position: absolute;
+			display: none;
+			width: 100%;
+			z-index: 1;
+			left: 6px;
+			top: 6px;
+			.image-controls-inner {
+				@include inline-block;
+				padding-bottom: 20px;
+				margin-bottom: -20px;
+				text-align: left;
+			}
+			.image-controls-inner > * {
+				border: 1px solid #e4e6ec;
+				position: relative;
+				border-left: none;
+				background: #fff;
+				cursor: pointer;
+				display: block;
+				height: 40px;
+				width: 42px;
+				float: left;
+				margin: 0;
+				&:first-child {border-left: 1px solid #e4e6ec;}
+				&.a-hidden {display: none;}
+				I {
+					background: url("/templates/Admin/img/img-actions.png") 0 0 no-repeat;
+					display: block;
+					margin: 0 auto;
+					height: 40px;
+					width: 42px;
+				}
+				&:hover {background: #eaf1f5;}
+			}
+			.change-position {
+				border-right: none;
+				&.m-left I {background-position: 0 0;}
+				&.m-right I {background-position: -42px 0;}
+				&.m-center I {background-position: -84px 0;}
+				&.m-active {
+					background: #5da4ca;
+					&.m-left I {background-position: 0 -40px;}
+					&.m-right I {background-position: -42px -40px;}
+					&.m-center I {background-position: -84px -40px;}
+				}
+			}
+			.change-position + .change-position:before {
+				background: #e4e6ec;
+				position: absolute;
+				display: block;
+				height: 23px;
+				content: '';
+				width: 1px;
+				top: 10px;
+				left: 0;
+			}
+			.change-position.m-active + .change-position:before,
+			.change-position:hover + .change-position:before,
+			.change-position.m-active:before,
+			.change-position:hover:before {display: none;}
+			.toggle-descr.a-hidden + .toggle-fancybox, 
+			.toggle-descr {border-left: 1px solid #e4e6ec;}
+			.toggle-descr {
+				width: 78px;
+				I {
+					background-position: -168px 0;
+					width: 78px;
+				}
+				&.m-active I {background-position: -168px -40px;}
+			}
+			.toggle-fancybox {
+				overflow: hidden;
+				width: 78px;
+				I {
+					background-position: -246px 0;
+					width: 78px;
+				}
+				&.m-active I {background-position: -246px -40px;}
+			}
+			.delete I {
+				background-position: -126px 0;
+			}
+		}
+		&:hover .image-controls {display: block;}
+		&.a-left {
+			.image-controls {text-align: left;}
+			.image-controls-inner {margin-right: -300px;}
+		}
+		&.a-right {
+			.image-controls {
+				text-align: right;
+				right: 6px;
+				left: auto;
+			}
+			.image-controls-inner {margin-left: -300px;}
+		}
+	}
+}

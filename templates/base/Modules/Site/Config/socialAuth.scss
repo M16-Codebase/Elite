@@ -1,0 +1,48 @@
+@import "../../../Admin/css/vars";
+
+.white-blocks.socials {
+	.i-soc-icon {
+		background: url("#{$img}social.png") 0 0 no-repeat;
+		margin-right: 6px;
+		height: 35px;
+		width: 35px;
+		&.i-facebook {background-position: 0 0;}
+		&.i-vk {background-position: -40px 0;}
+		&.i-google {background-position: -80px 0;}
+		&.i-odnoklassniki {background-position: -120px 0;}
+		&.i-twitter {background-position: -160px 0;}
+	}
+	.soc-name,
+	.soc-visible .show, 
+	.soc-visible .hide {line-height: 35px;}
+	.soc-visible {
+		cursor: pointer;
+		.i-visible {
+			background: url("#{$img}action-buttons.png") -563px -4px no-repeat;
+			margin-right: 6px;
+			margin-top: 5px;
+			height: 27px;
+			width: 28px;
+		}
+		.show {
+			display: inline-block;
+			color: #1656ac;
+		}
+		.hide {
+			display: none;
+			color: #42667b;
+		}
+		&.m-hide {
+			.i-visible {background-position: -603px -4px;}
+			.show {display: none;}
+			.hide {display: inline-block;}
+		}
+		.dropdown-menu {
+			background: #fff;
+			width: 300px;
+			z-index: 4;
+			left: 0;
+			LI {padding: 2px 10px;}
+		}
+	}
+}

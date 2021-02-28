@@ -1,0 +1,98 @@
+/*
+.edit-menus-form {
+	border-top: 2px solid #4598c7;
+	padding: 24px 22px 32px;
+	margin: 0 -22px -32px;
+	background: #f7f7f7;
+}*/
+.menu-item {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+  background: #fff; }
+  .menu-item .q-header {
+    position: relative;
+    padding: 22px 45px;
+    cursor: pointer; }
+    .menu-item .q-header .drag-drop {
+      background: url("/templates/Admin/img/drag-drop.png") 0 0 no-repeat;
+      position: absolute;
+      cursor: pointer;
+      height: 27px;
+      width: 9px;
+      left: 20px;
+      top: 17px; }
+  .menu-item .q-body {
+    padding: 4px 100px 22px 45px;
+    position: relative; }
+  .menu-item.m-open .q-header {
+    font-weight: bold; }
+  .menu-item .delete-q {
+    text-align: center;
+    position: absolute;
+    width: 60px;
+    right: 20px;
+    top: 0; }
+    .menu-item .delete-q I {
+      background: url("/templates/Admin/img/action-buttons.png") -105px 0 no-repeat;
+      margin: 0 auto 2px;
+      display: block;
+      height: 35px;
+      width: 35px; }
+      .menu-item .delete-q I:hover {
+        background-position: -105px -35px; }
+    .menu-item .delete-q SPAN {
+      font: 12px openSansItalic;
+      padding: 0 2px;
+      display: block;
+      color: #ff6204; }
+  .menu-item .q-table {
+    width: 100%; }
+    .menu-item .q-table TD:first-child {
+      vertical-align: top;
+      font-style: italic;
+      line-height: 26px;
+      width: 110px;
+      color: #777; }
+    .menu-item .q-table TR + TR TD {
+      padding-top: 18px; }
+    .menu-item .q-table INPUT.m-small {
+      width: 94%; }
+    .menu-item .q-table .delete-a {
+      background: url("/templates/Admin/img/table-buttons.png") -17px 0 no-repeat;
+      margin-top: 5px;
+      cursor: pointer;
+      display: none;
+      float: right;
+      height: 16px;
+      width: 17px; }
+      .menu-item .q-table .delete-a:hover {
+        background-position: -17px -16px; }
+    .menu-item .q-table .add-btn {
+      background: url("/templates/Admin/img/table-buttons.png") 0 0 no-repeat;
+      margin-top: 5px;
+      cursor: pointer;
+      display: none;
+      float: right;
+      height: 16px;
+      width: 17px; }
+      .menu-item .q-table .add-btn:hover {
+        background-position: 0 -16px; }
+    .menu-item .q-table INPUT.add-a {
+      border: 1px #abadb3 dashed;
+      width: 220px; }
+    .menu-item .q-table .m-focus INPUT.add-a {
+      border: 1px solid #e2e3ea;
+      border-top-color: #abadb3;
+      width: 94%; }
+    .menu-item .q-table .m-focus .add-btn {
+      display: block; }
+    .menu-item .q-table .answer-item .delete-a {
+      display: block; }
+    .menu-item .q-table .answer-item .add-btn {
+      display: none; }
+
+.menu-item + .menu-item {
+  margin-top: 12px; }
+
+/*# sourceMappingURL=menuItems.css.map */

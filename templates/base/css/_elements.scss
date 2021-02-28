@@ -1,0 +1,116 @@
+// Глобальные модификаторы
+.a-hidden {display: none}
+.a-block {display: block;}
+.a-inline-cont > *,
+.a-inline-block {@include inline-block;}
+.a-left {float: left;} 
+.a-right {float: right}
+.a-clearbox {@include clearbox;}
+.a-justify {@include justify;}
+.a-nowrap {white-space: nowrap;}
+.a-pre {white-space: pre-line;}
+.a-center {text-align: center;}
+
+// Ссылки
+A, .a-link {
+	text-decoration: none;
+	color: $link-color;
+	cursor: pointer;
+	&:hover {color: $link-color-hover;}
+}
+.link-wrap {cursor: pointer;}
+
+// Стили текста
+.main {}
+.descr {}
+
+// Заголовки
+H1, .h1 {}
+H2, .h2 {}
+H3, .h3 {}
+
+// Инпуты
+INPUT, TEXTAREA {}
+.cbx-wrap, .radio-wrap {
+	@include inline-block;
+	position: relative;
+	cursor: pointer;
+	INPUT {
+		position: fixed;
+		left: -9999px;
+	}
+}
+
+// Селекты
+.chosen.fullwidth {
+	width: 100%;
+	& + .chzn-container {
+		display: block;
+		.chzn-single {
+			width: auto !important;
+			display: block;
+		}
+	}
+}
+.chzn-container.chzn-container-single {
+	.chzn-single {
+		padding-left: 10px;
+		background: #fff;
+		border: none;
+		height: 32px;
+		color: #000;
+		DIV {
+			background: url("/img/icons/select-arrow.png") 0 50% no-repeat;
+			width: 22px;
+		}
+	}
+	.chzn-drop {
+		min-width: 100%!important;
+		background: #fff;
+		border: none;
+		padding: 0;
+		.chzn-search {
+			position: absolute;
+			left: -9999px;
+		}
+		.chzn-results {
+			background: #fff;
+			padding: 0;
+			margin: 0;
+			LI {
+				padding: 5px 10px;
+				color: #000;
+				&.highlighted {
+					background: #777;
+					color: #ececec;
+				}
+				&.group-result {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+// Иконки
+.icon {
+	@include icon(0, 0, 20px, 20px);
+}
+
+// Кнопки
+.btn {
+	@include inline-block;
+	@include border-box;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+	&.a-block {
+		display: block;
+		width: 100%;
+	}
+	.icon {
+		@include transform(translate(0, -50%));
+		position: relative;
+		top: 50%;
+	}
+}

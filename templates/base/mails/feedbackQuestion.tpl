@@ -1,0 +1,1 @@
+{$question|var_dump}

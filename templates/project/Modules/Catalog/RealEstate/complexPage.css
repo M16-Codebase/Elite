@@ -1,0 +1,96 @@
+.site-top .title {
+  margin: 0 0 16px; }
+
+.bedrooms-wrap {
+  background: #4a6a91;
+  text-align: center;
+  padding: 36px 0px; }
+  .bedrooms-wrap .main {
+    letter-spacing: .31em;
+    margin-bottom: 22px;
+    opacity: .55;
+    color: #fff; }
+
+.swipe-wrap .swiper-slide .cover-block {
+  padding: 10px;
+  background: #fff; }
+.swipe-wrap .swiper-slide .cover {
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 10px;
+  width: 40%;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .swipe-wrap .swiper-slide .cover A {
+    padding-bottom: 105%;
+    display: block; }
+.swipe-wrap .swiper-slide .params {
+  width: 54%;
+  padding-bottom: 12.8%; }
+  .swipe-wrap .swiper-slide .params .bottom {
+    width: 54%;
+    padding-left: 0; }
+.swipe-wrap .swiper-slide:nth-of-type(even) .cover {
+  float: right; }
+
+.swipe-wrap.m-see-more .cover {
+  padding-bottom: 80%;
+  width: 97%;
+  background: none; }
+.swipe-wrap.m-see-more .params .area {
+  line-height: .6em;
+  margin: 0; }
+  .swipe-wrap.m-see-more .params .area SPAN {
+    display: block;
+    -webkit-transform: translateY(32%);
+    -moz-transform: translateY(32%);
+    -ms-transform: translateY(32%);
+    -o-transform: translateY(32%);
+    transform: translateY(32%); }
+.swipe-wrap.m-see-more .params .btn {
+  margin-top: 23px; }
+
+.btn {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0); }
+
+.open-map:not(.visible-map):hover .open-map-cover {
+  opacity: 1; }
+
+.open-map.visible-map .open-map-cover {
+  opacity: 1 !important; }
+
+.open-map-cover {
+  position: absolute;
+  background: #8298b3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+  -moz-transform: matrix(1, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+  -o-transform: matrix(1, 0, 0, 1, 0, 0);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  opacity: 0; }
+
+.page-main > div {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0); }
+
+/*# sourceMappingURL=complexPage.css.map */

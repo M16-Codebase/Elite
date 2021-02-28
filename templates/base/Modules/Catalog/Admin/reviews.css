@@ -1,0 +1,75 @@
+.reviews-filter {
+	margin-bottom: 30px;
+	margin-top: 24px;
+	overflow: hidden;
+}
+.reviews-filter .field {margin-right: 45px;}
+.reviews-filter .title {
+	margin-bottom: 4px;
+	color: #67727e;
+}
+.reviews-filter .field SELECT {width: 260px;}
+.reviews-filter .search-button {padding-top: 10px;} 
+.reviews-filter .search-button .button {margin-right: 15px;}
+
+.rev-table TD .date {
+	font: italic 12px/15px Arial;
+	color: #67727e;
+}
+
+.popup_edit-review .to-site {margin-bottom: 20px;}
+.popup_edit-review .review-item {
+	border: 1px solid #dbdce6;
+	padding: 20px;
+	color: #000;
+}
+.popup_edit-review .rewiews-list + .rewiews-list .review-item,
+.popup_edit-review .review-item + .review-item {
+	background: url("/img/design/review-item-bg.png") 50% 0 no-repeat;
+	padding-top: 40px;
+}
+.popup_edit-review .review-info {width: 200px;}
+.popup_edit-review .review-info .author {
+	font: bold 18px/18px openSans;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	color: #000;
+}
+.popup_edit-review .review-info .date {
+	font-style: italic;
+	margin-top: 8px;
+	color: #a4a4a4;
+}
+.popup_edit-review .review-info .mark {
+	background: #eeeff4 url("/img/design/review-mark-bg.png") 0 0 no-repeat;
+	margin-top: 8px;
+	height: 26px;
+	width: 116px;
+}
+.popup_edit-review .review-info .mark .num {
+	font: bold 12px/26px Arial;
+	text-align: center;
+	margin-right: 7px;
+	background: #000;
+	display: block;
+	color: #fff;
+	float: left;
+	width: 23px;
+}
+.popup_edit-review .review-info .mark .rating-stars {margin-top: 7px;}
+.popup_edit-review .review-info .mark-text {
+	font-style: italic;
+	margin-top: 8px;
+	color: #67727e;
+}
+.popup_edit-review .review-content {width: 550px;}
+.popup_edit-review .review-section + .review-section {margin-top: 20px;}
+.popup_edit-review .review-section-title {
+	font: 16px/18px openSans;
+	margin-bottom: .7em;
+}
+.popup_edit-review .review-section P {
+	line-height: 18px;
+	color: #67727e;
+}
+.popup_edit-review .buttons {margin-top: 30px;}

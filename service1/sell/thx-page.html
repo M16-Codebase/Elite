@@ -1,0 +1,225 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+
+
+    <base href="http://sell-your-apartment.m16-estate.ru/" />
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+<!-- disable safari phone number detection-->
+<meta name="format-detection" content="telephone=no"/>
+<title>Агентство элитной недвижимости М16 - спасибо за заявку</title>
+<meta name="description" content="Текст для тега <meta name=description>">
+    
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/style.css?v=1591640002" rel="stylesheet"/>
+<style>
+    @media screen and (min-width: 768px) {
+        .working-with-us-slide ul li {
+            margin-top: 32px;
+        }
+        
+        .working-with-us-slide ul li:first-child {
+            margin-top: 0;
+        }
+    }
+</style>
+<script src="assets/js/libs/jquery.min.js"></script>
+<script src="assets/js/libs/jquery.scrollTo.min.js"></script>
+<script src="assets/js/libs/jquery.fancybox.min.js"></script>
+<script src="assets/js/libs/slick.min.js"></script>
+<script src="assets/js/libs/jquery.maskedinput.min.js"></script>
+<script src="assets/js/libs/ion.rangeSlider.min.js"></script>
+<script src="assets/js/app.js?v=1591640002"></script>
+
+<script>
+$(document).on('submit', '.ajax_form', function() {
+    var form = $(this);
+
+    // Результатом работы будет выставление глобальной переменной
+    //afValidated = false; // Или true, если валидация пройдена
+    
+    // Check phone mask
+    afValidated = true;
+    
+    var phone_value = form.find('.phone-mask').val();
+    if (phone_value == '+7 (___) ___-__-__') {
+      afValidated = false;
+    }
+});
+</script>
+
+<script>
+    $(document).on('af_complete', function(event, response) {
+        var form = response.form;
+        var msgTitle, msgText;
+        
+        if (response.success) {
+            msgTitle = form.find("input[name='success_title']").val();
+            msgText = form.find("input[name='success_message']").val();
+            
+            app.showMessage({
+              title: msgTitle,
+              message: msgText
+            });
+        }
+    });
+</script>
+<link rel="stylesheet" href="/assets/components/ajaxform/css/default.css" type="text/css" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NSD85P7');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSD85P7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+        
+      <div class="header__logo">
+          <a class="header__logo-img" href="http://sell-your-apartment.m16-estate.ru/">
+              <img src="assets/images/logo.png" alt="Продажа элитной недвижимости в&nbsp;Санкт-Петербурге">
+          </a>
+        <div class="header__logo-text">Продажа элитной недвижимости в&nbsp;Санкт-Петербурге</div>
+      </div>
+      
+      <div class="header__nav">
+          
+        <div class="nav">
+          <ul style='opacity: 0;'>
+            <li><a href="../#advantages">Преимущества</a></li>
+            <li><a href="../#services">Услуги</a></li>
+            <li><a href="../#about">О нас</a></li>
+            <li><a href="../#working-with-us">Что вы получите</a></li>
+            <li><a href="../#clients">Отзывы</a></li>
+            <li><a href="../#contacts">Контакты</a></li>
+          </ul>
+        </div>
+        
+        <div class="header__contacts">
+            <div class="header-phone"><a href="tel:88126101616">8 (812) 610-1616</a></div>
+            <div class="callback-link-wrapper"><a class="callback-link js-modal" href="javascript:void(0);" data-id="modal-callback"><span class="ct-icon-phone callback-link__icon"></span><span class="callback-link__text">Заказать звонок</span></a></div>
+          </div>
+      </div>
+      
+      <div class="header-mobile-buttons">
+          <a class="header-mobile-callback" href="tel:88126101616"></a>
+          <a class="header-mobile-sandwich hamburger hamburger--squeeze js-menu" href="javascript:void(0);">
+              <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+              </span>
+          </a>
+      </div>
+      
+    </div>
+  </div>
+</header>
+<div class="section cta" style="    min-height: calc(100vh - 145px);     padding-top: 30vh;">
+  <div class="section-inner">
+    <div class="container">
+      <div class="section-title">
+        <h2>Спасибо!<br>Ваша заявка отправлена</h2>
+        <div class="subtitle">Мы свяжемся с Вами в ближайшее время.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__copyright">&copy; 2020. Все права защищены.</div>
+      <div class="footer__dev"></div>
+    </div>
+  </div>
+</footer>
+    
+    <div class="modals-wrap" style="display:none;">
+  <div class="modal" id="modal-callback">
+    <div class="modal__wrapper">
+      <div class="modal__heading">Заказать обратный звонок</div>
+      <div class="modal__content">
+        <div class="modal__text">Отправьте заявку, и наш менеджер свяжется с Вами в течение ближайших 15 минут рабочего времени.</div>
+        
+        <form method="post" class="form ajax_form">
+  <div class="form-fields">
+    <div class="form-group">
+      <input class="form-control" type="text" name="name" placeholder="Имя"/>
+    </div>
+    <div class="form-group">
+      <input class="form-control phone-mask" type="text" name="phone" placeholder="Телефон"/>
+      <span class="error_phone error-msg"></span>
+    </div>
+  </div>
+  <div class="form-submit">
+    <input class="form-submit__btn btn" type="submit" value="Жду звонка">
+  </div>
+  <div class="agreement">Нажимая на кнопку, я принимаю <a href="assets/images/Политика конфиденциальности.pdf" target="_blank">соглашение</a> на обработку персональных данных</div>
+  <input type="hidden" name="success_title" value="Спасибо за звонок!">
+  <input type="hidden" name="success_message" value="Мы перезвоним вам в ближайшее время, пожалуйста ожидайте.">
+
+  <input type="hidden" name="af_action" value="596560930244670ce18a967b6a6edc6f" />
+</form>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal modal--message" id="modal-message">
+    <div class="modal__wrapper">
+      <div class="modal__heading">Спасибо за звонок!</div>
+      <div class="modal__content">
+        <div class="modal__text">Мы перезвоним вам в ближайшее время, пожалуйста ожидайте.</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal modal--message" id="modal-how-to-find">
+    <div class="modal__wrapper">
+      <div class="modal__heading">Как доехать к нам</div>
+      <div class="modal__content">
+        <div class="modal__text"><p>3 минуты ходьбы от станции метро Чкаловская до Большой Зелениной, дом 18. Вход находится рядом с магазином цветов.<img src="3d83da2daf.jpg" alt="" width="855" height="726" /></p></div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<script type="text/javascript" src="/assets/components/ajaxform/js/default.js"></script>
+<script type="text/javascript">AjaxForm.initialize({"assetsUrl":"\/assets\/components\/ajaxform\/","actionUrl":"\/assets\/components\/ajaxform\/action.php","closeMessage":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","formSelector":"form.ajax_form","pageId":1});</script>
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '675487852858861');
+  fbq('track', 'PageView');
+</script>
+<script>
+  fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=675487852858861&ev=PageView&noscript=1"
+/></noscript>
+</body>
+</html>

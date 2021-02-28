@@ -1,0 +1,72 @@
+.orders-filter {
+  margin-bottom: 30px;
+  margin-top: 24px;
+  overflow: hidden; }
+  .orders-filter .field {
+    margin-right: 20px; }
+  .orders-filter .title {
+    margin-bottom: 10px;
+    color: #67727e; }
+  .orders-filter .search-button {
+    padding-top: 29px; }
+    .orders-filter .search-button .submit {
+      background: #f2f2f2 url("/templates/Admin/img/search-order.png") 50% no-repeat;
+      border: 1px solid #dbdce6;
+      cursor: pointer;
+      height: 22px;
+      padding: 12px;
+      width: 30px; }
+
+.order .order-header .action-button I {
+  margin-top: -3px; }
+.order .order-header .state {
+  background: #9c95ec;
+  padding: 0 4px; }
+  .order .order-header .state.order-status {
+    color: #fff; }
+.order .order-inner {
+  position: relative; }
+  .order .order-inner .order-aside {
+    background: #fbfbfb;
+    position: absolute;
+    padding-top: 18px;
+    width: 8.3%;
+    bottom: 0;
+    right: 0;
+    top: 0; }
+    .order .order-inner .order-aside .action-button DIV {
+      margin-top: 10px; }
+    .order .order-inner .order-aside .action-icon {
+      margin-top: -8px; }
+  .order .order-inner .white-inner-cont {
+    min-height: 100px; }
+  .order .order-inner .white-block-row + .white-block-row {
+    border-top: 1px solid #e8e8e8; }
+  .order .order-inner .count-price {
+    line-height: 32px;
+    text-align: right;
+    margin-top: -7px; }
+    .order .order-inner .count-price INPUT {
+      border-color: transparent;
+      background: transparent;
+      color: #059fdb;
+      cursor: pointer;
+      width: 42%;
+      margin: 0;
+      top: -1px; }
+      .order .order-inner .count-price INPUT:hover {
+        color: #45cdfc; }
+      .order .order-inner .count-price INPUT:focus {
+        border: 1px solid #e2e3ea;
+        border-top-color: #abadb3;
+        background: #fff;
+        color: #000; }
+    .order .order-inner .count-price .count-input {
+      text-align: right; }
+    .order .order-inner .count-price .input-col {
+      vertical-align: top;
+      display: inline-block;
+      text-align: left;
+      width: 54%; }
+
+/*# sourceMappingURL=index.css.map */

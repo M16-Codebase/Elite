@@ -1,0 +1,1 @@
+<div class="inner">{include file="/Modules/Site/View/getCurrentTask.tpl"}</div>

@@ -1,0 +1,259 @@
+.main-col {
+  z-index: 2; }
+
+.main-content-inner {
+  padding: 30px 0 0; }
+
+#calendar {
+  position: relative;
+  width: 900px; }
+
+#evt-calendar .fc-header TD {
+  border-bottom: 2px solid #006a4d;
+  border-top: 1px solid #e5e6e6;
+  height: 38px; }
+#evt-calendar .fc-header .fc-button {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  text-align: center;
+  line-height: 38px;
+  background: #fff;
+  border: none;
+  height: 38px;
+  margin: 0; }
+#evt-calendar .fc-header .fc-button-prev,
+#evt-calendar .fc-header .fc-button-next {
+  border-right: 1px solid #e5e6e6;
+  color: transparent;
+  padding: 0 11px;
+  width: 38px; }
+  #evt-calendar .fc-header .fc-button-prev:hover,
+  #evt-calendar .fc-header .fc-button-next:hover {
+    background-color: #006a4d; }
+  #evt-calendar .fc-header .fc-button-prev:before,
+  #evt-calendar .fc-header .fc-button-next:before {
+    background: url("/templates/Admin/img/action-buttons.png") 0 0 no-repeat;
+    display: block;
+    height: 38px;
+    width: 38px;
+    content: ''; }
+#evt-calendar .fc-header .fc-button-prev:before {
+  background-position: 0 0; }
+#evt-calendar .fc-header .fc-button-prev:hover:before {
+  background-position: 0 -38px; }
+#evt-calendar .fc-header .fc-button-next:before {
+  background-position: -38px 0; }
+#evt-calendar .fc-header .fc-button-next:hover:before {
+  background-position: -38px -38px; }
+#evt-calendar .fc-header .fc-button-today {
+  font-style: italic;
+  font-size: 12px;
+  color: #006a4d; }
+  #evt-calendar .fc-header .fc-button-today.fc-state-disabled {
+    color: #b4b4b4; }
+  #evt-calendar .fc-header .fc-button-today:before {
+    background: url("/templates/Admin/img/cal-today.png") 0 0 no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 6px;
+    margin-top: 15px;
+    height: 9px;
+    width: 9px;
+    content: ''; }
+  #evt-calendar .fc-header .fc-button-today.fc-state-disabled:before {
+    background-position: -9px 0; }
+#evt-calendar .fc-header .fc-header-title H2 {
+  line-height: 38px;
+  margin: 0; }
+#evt-calendar .fc-header .fc-button-month,
+#evt-calendar .fc-header .fc-button-agendaWeek,
+#evt-calendar .fc-header .fc-button-agendaDay {
+  background: #ecebeb;
+  font-weight: bold;
+  padding: 0 16px;
+  color: #42667b; }
+  #evt-calendar .fc-header .fc-button-month.fc-state-active,
+  #evt-calendar .fc-header .fc-button-agendaWeek.fc-state-active,
+  #evt-calendar .fc-header .fc-button-agendaDay.fc-state-active {
+    text-shadow: 0 1px #004944;
+    background: #006a4d;
+    cursor: default;
+    color: #fff; }
+#evt-calendar .fc-widget-header {
+  background: #f6f6f9;
+  padding: 4px 0; }
+#evt-calendar .fc-state-highlight {
+  background: #f2ffe7; }
+#evt-calendar .fc-event {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font: 12px/13px openSans;
+  padding: 5px;
+  border: none; }
+#evt-calendar .fc-event-time {
+  font: bold 12px/13px openSans; }
+#evt-calendar .fc-event-time,
+#evt-calendar .fc-event-title {
+  display: inline; }
+
+#evt-popup {
+  -webkit-box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .5);
+  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .5);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font: 14px/18px openSans,Arial;
+  padding: 30px 30px 88px;
+  position: absolute;
+  background: #fff;
+  border: none;
+  width: 500px;
+  z-index: 10;
+  left: 145px;
+  top: 240px; }
+  #evt-popup.a-hidden {
+    display: none; }
+  #evt-popup H4 {
+    font: bold 20px/22px openSans;
+    margin: 0 20px 20px 0;
+    color: #000; }
+    #evt-popup H4 SPAN {
+      padding: 0 8px; }
+  #evt-popup P + P {
+    border-top: 1px solid #dbdce6;
+    padding-top: 6px;
+    margin-top: 6px; }
+  #evt-popup .close-evt-popup {
+    background: url("/templates/Admin/img/popup-close.png") 0 0 no-repeat;
+    position: absolute;
+    color: transparent;
+    display: block;
+    height: 13px;
+    width: 12px;
+    right: 30px;
+    top: 35px; }
+    #evt-popup .close-evt-popup:hover {
+      background-position: -12px 0; }
+  #evt-popup .edit-evt-btn {
+    background: url("/templates/Admin/img/cal-edit.png") 0 0 no-repeat;
+    position: absolute;
+    color: transparent;
+    display: block;
+    height: 39px;
+    width: 43px;
+    left: 30px;
+    bottom: 24px; }
+    #evt-popup .edit-evt-btn:hover {
+      background-position: -43px 0; }
+  #evt-popup .time {
+    margin-bottom: 16px;
+    padding-left: 8px; }
+    #evt-popup .time I {
+      vertical-align: top;
+      display: inline-block;
+      background: url("/templates/Admin/img/icons.png") -11px 0 no-repeat;
+      height: 13px;
+      width: 13px;
+      margin-right: 4px;
+      margin-top: 2px; }
+  #evt-popup .cal-table {
+    width: 100%; }
+    #evt-popup .cal-table TD {
+      padding: 6px 8px; }
+    #evt-popup .cal-table TD:first-child {
+      font-weight: bold;
+      width: 110px; }
+    #evt-popup .cal-table TR + TR TD {
+      border-top: 1px solid #e5e6e6; }
+  #evt-popup .inv-list .dept {
+    font-family: openSansItalic, Arial;
+    color: #42667B; }
+  #evt-popup .inv-list .needsAction, #evt-popup .inv-list .tentative, #evt-popup .inv-list .declined {
+    color: #585858; }
+  #evt-popup .inv-list .declined {
+    text-decoration: line-through; }
+  #evt-popup .inv-list .accepted {
+    font-weight: bold; }
+  #evt-popup .description {
+    font: 12px/17px openSans;
+    padding-left: 8px;
+    margin-top: 16px; }
+  #evt-popup.edit-event {
+    padding-bottom: 30px;
+    background: #ecebeb;
+    width: 761px;
+    left: 12px; }
+    #evt-popup.edit-event FORM.sending {
+      opacity: 0.6; }
+    #evt-popup.edit-event .fields-col {
+      width: 480px; }
+    #evt-popup.edit-event .mails-col {
+      width: 254px; }
+    #evt-popup.edit-event .field {
+      -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+      -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+      padding: 12px 20px;
+      background: #fff; }
+      #evt-popup.edit-event .field .f-title {
+        margin-bottom: 10px;
+        font-weight: bold; }
+      #evt-popup.edit-event .field .f-input SELECT {
+        padding: 0; }
+      #evt-popup.edit-event .field .f-input .unit {
+        font: 12px openSansItalic, Arial, Arial;
+        color: #42667b; }
+    #evt-popup.edit-event .field + .field {
+      margin-top: 10px; }
+    #evt-popup.edit-event .buttons {
+      margin: 20px 20px 0; }
+    #evt-popup.edit-event .remove-evt-btn {
+      font: 12px/38px openSansItalic, Arial;
+      margin-top: -3px;
+      color: #ff8a00; }
+      #evt-popup.edit-event .remove-evt-btn I {
+        vertical-align: top;
+        display: inline-block;
+        background: url("/templates/Admin/img/action-buttons.png") -115px 0 no-repeat;
+        height: 38px;
+        width: 38px; }
+    #evt-popup.edit-event .mails-title {
+      margin-bottom: 8px;
+      font-weight: bold; }
+    #evt-popup.edit-event .mails-list LABEL {
+      display: block; }
+    #evt-popup.edit-event .mails-list .all {
+      border-bottom: 1px solid #dbdce6;
+      padding-bottom: 8px;
+      margin-bottom: 8px; }
+    #evt-popup.edit-event .mails-list LI {
+      padding-left: 20px;
+      position: relative;
+      margin: 3px 0; }
+      #evt-popup.edit-event .mails-list LI INPUT {
+        position: absolute;
+        top: 3px;
+        left: 0; }
+    #evt-popup.edit-event .mails-list .dept {
+      font-family: openSansItalic, Arial;
+      color: #42667b; }
+
+.evt-popup-overlay {
+  background: rgba(0, 0, 0, .2);
+  position: fixed;
+  dispaly: block;
+  height: 100%;
+  width: 100%;
+  z-index: 8;
+  left: 0;
+  top: 0; }
+  #evt-popup.a-hidden + .evt-popup-overlay {
+    display: none; }
+
+/*# sourceMappingURL=index.css.map */

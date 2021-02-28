@@ -1,0 +1,20 @@
+.breadcrumbs {
+	padding-bottom: 6px;
+	position: relative;
+	z-index: 5;
+	.bc-item {
+		@include inline-block;
+		&.bc-children-contains {position: relative;}
+		SPAN {	
+			color: $color-link;
+			cursor: default;
+		}
+	}
+	.bc-item + .bc-item {
+		&:before {
+			color: #4a596e;
+			content: '—';
+		}
+	}
+	& + .main-content-inner {padding-top: 8px;}
+}

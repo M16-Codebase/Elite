@@ -1,0 +1,24 @@
+[submodule "vendor/swiftmailer/swiftmailer"]
+	path = vendor/swiftmailer/swiftmailer
+	url = git://github.com/swiftmailer/swiftmailer.git
+[submodule "vendor/symfony/symfony"]
+	path = vendor/symfony/symfony
+	url = git://github.com/symfony/symfony.git
+[submodule "vendor/zapimir/sypexgeo"]
+	path = vendor/zapimir/sypexgeo
+	url = git://github.com/Koc/Sypexgeo.git
+[submodule "vendor/weotch/phpthumb"]
+	path = vendor/weotch/phpthumb
+	url = git://github.com/weotch/PHPThumb.git
+[submodule "vendor/phpoffice/phpexcel"]
+	path = vendor/phpoffice/phpexcel
+	url = git://github.com/PHPOffice/PHPExcel.git
+[submodule "vendor/mobiledetect/mobiledetectlib"]
+	path = vendor/mobiledetect/mobiledetectlib
+	url = git://github.com/serbanghita/Mobile-Detect.git
+[submodule "vendor/dompdf/dompdf"]
+	path = vendor/dompdf/dompdf
+	url = git://github.com/dompdf/dompdf.git
+[submodule "includes/MysqlSimple"]
+	path = includes/MysqlSimple
+	url = git@s5.webactives.ru:MysqlSimple.git

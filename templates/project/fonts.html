@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fonts test</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="/js/lib/jquery.js"></script>
+		<link rel="stylesheet" type="text/css" href="fonts.css" />
+		<script>
+			$(function() {
+				$('.controls BUTTON').click(function() {
+					$('.test').css($(this).data('key'), $(this).data('val'));
+				});
+				$('.def').click();
+			});
+		</script>
+		<style>
+			BODY {padding: 30px 80px;}
+			.row {margin-top: 10px;}
+			.result {margin-top: 40px;}
+			TEXTAREA {
+				margin-top: 25px;
+				width: 100%;
+			}
+			.vw {
+				margin-bottom: 20px;
+				font-size: 5vw;
+			}
+			.vw SPAN {font-size: 2em;}
+		</style>
+	</head>
+	<body>
+		<div class="vw">VW font size <span>test</span></div>
+		<div class="controls">
+			<div class="row">
+				<button data-key="font-family" data-val="anglecia_pro_titregular" class="def">Anglecia proTitle regular</button>
+				<button data-key="font-family" data-val="anglecia_pro_tititalic">Anglecia proTitle italic</button>
+			</div>
+			<div class="row">
+				<button data-key="font-family" data-val="bebas_neuethin">Bebas thin</button>
+				<button data-key="font-family" data-val="bebas_neuelight">Bebas light</button>
+				<button data-key="font-family" data-val="bebas_neuebook">Bebas book</button>
+				<button data-key="font-family" data-val="bebas_neue_regularregular">Bebas regular</button>
+			</div>
+			<div class="row">
+				<button data-key="font-family" data-val="gotham_proregular">Gotham regular</button>
+				<button data-key="font-family" data-val="gotham_proitalic">Gotham italic</button>
+				<button data-key="font-family" data-val="gotham_problack">Gotham black</button>
+				<button data-key="font-family" data-val="gotham_prolight">Gotham light</button>
+			</div>
+			<div class="row">
+				<button data-key="font-family" data-val="noto_serifregular">Noto Serif regular</button>
+				<button data-key="font-family" data-val="noto_serifitalic">Noto Serif italic</button>
+			</div>
+			<div class="row">
+				<button data-key="font-size" data-val="10px">10 px</button>
+				<button data-key="font-size" data-val="12px">12</button>
+				<button data-key="font-size" data-val="14px">14</button>
+				<button data-key="font-size" data-val="18px">18</button>
+				<button data-key="font-size" data-val="24px">24</button>
+				<button data-key="font-size" data-val="30px" class="def">30</button>
+				<button data-key="font-size" data-val="36px">36</button>
+				<button data-key="font-size" data-val="48px">48</button>
+				<button data-key="font-size" data-val="60px">60</button>
+				<button data-key="font-size" data-val="72px">72</button>
+				<button data-key="font-size" data-val="90px">90</button>
+			</div>
+		</div>
+		<div class="result">
+			<div class="test">0123456789</div>
+			<div class="test">a​b​c​d​e​f​g​h​i​j​k​l​m​n​o​p​q​r​s​t​u​v​w​x​y​z</div>
+			<div class="test">A​B​C​D​E​F​G​H​I​J​K​L​M​N​O​P​Q​R​S​T​U​V​W​X​Y​Z</div>
+			<div class="test">а​б​в​г​д​е​ё​ж​з​и​й​к​л​м​н​о​п​р​с​т​у​ф​х​ц​ч​ш​щ​ь​ы​ъ​э​ю​я</div>
+			<div class="test">А​Б​В​Г​Д​Е​Ё​Ж​З​И​Й​К​Л​М​Н​О​П​Р​С​Т​У​Ф​Х​Ц​Ч​Ш​Щ​Ь​Ы​Ъ​Э​Ю​Я</div>
+			<textarea rows="10" class="test"></textarea>
+		</div>
+	</body>
+</html>

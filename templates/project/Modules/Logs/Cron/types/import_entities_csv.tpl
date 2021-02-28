@@ -1,0 +1,1 @@
+{include file='Modules/Logs/Cron/types/ImportFtpEntitiesCsv.tpl'}

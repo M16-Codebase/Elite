@@ -1,0 +1,1 @@
+{include file='/Modules/Catalog/RealEstate/request.tpl'}

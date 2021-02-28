@@ -1,0 +1,70 @@
+.cabinet-page .content-white-block .h3.current-type {padding-left: 0;}
+.cabinet-page .aside-catalog-types .vm-toggle {padding: 3px 0;}
+.cabinet-page .vm-item .icon {margin-right: 11px;}
+.cabinet-page .white-block-inner.vert-menu {
+	padding-bottom: 14px;
+	padding-top: 27px;
+}
+.cabinet-page .aside-catalog-types .vm-item.m-current .vm-toggle {padding-right: 20px;}
+.cabinet-page .vert-menu .count {
+	font-size: 10px;
+	float: right;
+	line-height: 26px;
+	vertical-align: middle;
+}
+.browser-ie7 .cabinet-page .vert-menu .count {
+	float: none;
+	margin-left: 20px;
+}
+.cabinet-page .vert-menu .m-current .count {color: #fff;}
+.btn-white-yellow-big:focus {outline: none;}
+
+.main-col .col2 {width: 49.2%;}
+.profile-security {
+	background: #ececec url("/img/icons/warranty.png") 15px 50% no-repeat;
+	padding: 20px 20px 20px 54px;
+	font: italic 12px/16px Arial;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-bottom: 18px;
+	color: #959595;
+}
+.profile-block {
+	border: 1px solid #e0e0e0;
+	padding: 34px 38px 30px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	color: #000;
+}
+.profile-block + .profile-block {margin-top: 15px;}
+.profile-block .pr-title {margin-bottom: 20px;}
+.profile-block A.edit-link {font: italic 12px Arial;}
+.profile-block P + P {margin-top: 3px;}
+.profile-block .pr-main {
+	margin-bottom: 12px;
+	font-weight: bold;
+}
+.profile-block .pr-addresses LI {
+	padding-left: 20px;
+	position: relative;
+}
+.profile-block .pr-addresses LI + LI {margin-top: 12px;}
+.profile-block .pr-addresses LI .icon {
+	background: url("/img/design/place.png") 0 0px no-repeat;
+	position: absolute;
+	width: 11px;
+	left: 2px;
+	top: 2px;
+}
+.profile-block .pr-addresses LI P {margin-bottom: 2px;}
+.profile-block .pr-buttons {
+	border-top: 1px solid #ebebeb;
+	padding-top: 18px;
+	margin-top: 20px;
+}
+.popup-window .btn.btn-white-yellow-big {padding: 0 62px;}
+.browser-ie7 .popup-window .btn.btn-white-yellow-big {width: 221px;}
+.subscr-label {display: block;}
+.subscr-label + .subscr-label {margin-top: 6px;}

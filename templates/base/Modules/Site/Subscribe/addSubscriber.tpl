@@ -1,0 +1,1 @@
+{include file="Modules/Site/Subscribe/subscribersList.tpl"}

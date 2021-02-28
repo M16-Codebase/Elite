@@ -1,0 +1,93 @@
+@import url("index.css");
+
+.cabinet-page .white-block-inner H1 {margin-bottom: 0;}
+.cabinet-page .breadcrumb {padding-bottom: 13px;}
+.cabinet-page .main-col .grey-block-inner {padding: 16px 15px;}
+.approved .review-status {
+	border-color: #36c378;
+	color: #36c378;
+}
+.decline .review-status {
+	border-color: #3b7491;
+	color: #3b7491;
+}
+.new .review-status {
+	border-color: #efb500;
+	color: #efb500;
+}
+.review-status {
+	border: 2px solid #3b7491;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font: bold 13px/13px Arial;
+	padding: 5px 7px 6px 8px;
+	position: absolute;
+	top: 13px;
+	right: 13px;
+	z-index: 3;
+}
+.item-tab-listitem {
+	background: #FFF;
+	border: 1px solid #DCDCDC;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 30px 23px 30px 20px;
+	position: relative;
+}
+.cabinet-page .review-item + .review-item {margin-top: 13px;}
+.review-item .opinion + .opinion {
+	border-top: 1px solid #eceeed;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+.review-item .opinion .op-title {
+	font: bold 14px/17px Arial;
+	margin-bottom: 6px;
+	color: #000;
+}
+.cabinet-page .review-item .name {
+	color: #005b9f;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+.cabinet-page .review-item .cover {
+	position: relative;
+	width: 150px;
+}
+.review-item .stars {margin: 15px 0 17px;}
+.rejected .opinion {color: #a3a3a3;}
+.rejected .opinion .op-title {color: #6c6c6c;}
+.cabinet-page .review-item .cover .hatch {
+	background: url("/img/design/cart-cover-hatch.png") 0 0 repeat;
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	left: 0;
+	top: 0;
+}
+.decline .stars {
+	background: url("/img/icons/stars-rejected.png") 0 no-repeat;
+	background-position: 0 0;
+}
+.decline .stars.s1 {background-position: 0 -25px;}
+.decline .stars.s2 {background-position: 0 -50px;}
+.decline .stars.s3 {background-position: 0 -75px;}
+.decline .stars.s4 {background-position: 0 -100px;}
+.decline .stars.s5 {background-position: 0 -125px;}
+
+/* SHADOW */
+.cabinet-page .grey-block-inner {
+	-webkit-box-shadow: inset 0px 1px 1px rgba(100, 100, 100, 0.2);
+	-moz-box-shadow: inset 0px 1px 1px rgba(100, 100, 100, 0.2);
+	box-shadow: inset 0px 1px 1px rgba(100, 100, 100, 0.2);
+}
+.cabinet-page .grey-block-inner {
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}

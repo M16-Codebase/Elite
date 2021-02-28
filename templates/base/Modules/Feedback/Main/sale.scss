@@ -1,0 +1,57 @@
+@import '../../../css/vars';
+
+.page-title {background: none;}
+.order-block {
+	background: #ebebeb;
+	margin-top: 20px;
+	padding: 22px;
+	.order-block-title {
+		color: #656565;
+		font: 18px/23px OpenSans;
+	}
+	.feedback-form {margin-top: 13px;}
+	.fields-block {
+		background: #fff;
+		padding: 32px 33px 44px;
+		.buttons {
+			margin-top: 35px;
+			text-align: center;
+			.a-btn-green {padding: 9px 0;}
+		}
+		&.feedback-block {
+			INPUT[type="text"], INPUT[type="password"], TEXTAREA {
+				margin-top: 9px;
+				width: 471px;
+			}
+			.f-select {margin-top: 9px;}
+		}
+		 TEXTAREA {padding: 9px 7px 13px;}
+		.f-row .field {
+			width: 154px;
+			& + .field {
+				margin-right: 0;
+				width: 320px;
+				 INPUT {width: 304px;}
+			}
+			INPUT {width: 134px;}
+		}
+		.file-choice {
+			margin: 16px 0 2px;
+			.file-choice-icon, .file-choice-cont {
+				@include inline-block;
+				vertical-align: top;
+			}
+			.file-choice-cont {margin-top: 2px;}
+			.f-files {margin-top: 11px;}
+			.file-choice-icon {
+				margin-right: 10px;
+				 I {
+					@include icon(-57px, 0, 57px, 57px, 'icons/file-icon.png');
+				}
+			}
+		}
+		
+	}
+	
+	.col2 {width: 490px;}
+}

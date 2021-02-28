@@ -1,0 +1,31 @@
+.using-page {
+  background: #f7f7f7;
+  padding: 24px 24px 50px;
+  margin: 0 -24px; }
+
+.using-types-list {
+  position: relative; }
+
+.category-title {
+  margin: 0 0 15px; }
+
+.category-block {
+  margin: 0 0 28px; }
+
+.using-type-item {
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  background: #fff; }
+  .using-type-item + .using-type-item {
+    margin-top: 10px; }
+  .using-type-item:hover {
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); }
+  .using-type-item .item-title {
+    line-height: 44px;
+    padding: 0 0 0 15px;
+    color: #1353aa; }
+
+/*# sourceMappingURL=priceList.css.map */

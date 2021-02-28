@@ -1,0 +1,48 @@
+.white-blocks.socials .i-soc-icon {
+  background: url("/templates/Admin/img/social.png") 0 0 no-repeat;
+  margin-right: 6px;
+  height: 35px;
+  width: 35px; }
+  .white-blocks.socials .i-soc-icon.i-facebook {
+    background-position: 0 0; }
+  .white-blocks.socials .i-soc-icon.i-vk {
+    background-position: -40px 0; }
+  .white-blocks.socials .i-soc-icon.i-google {
+    background-position: -80px 0; }
+  .white-blocks.socials .i-soc-icon.i-odnoklassniki {
+    background-position: -120px 0; }
+  .white-blocks.socials .i-soc-icon.i-twitter {
+    background-position: -160px 0; }
+.white-blocks.socials .soc-name,
+.white-blocks.socials .soc-visible .show,
+.white-blocks.socials .soc-visible .hide {
+  line-height: 35px; }
+.white-blocks.socials .soc-visible {
+  cursor: pointer; }
+  .white-blocks.socials .soc-visible .i-visible {
+    background: url("/templates/Admin/img/action-buttons.png") -563px -4px no-repeat;
+    margin-right: 6px;
+    margin-top: 5px;
+    height: 27px;
+    width: 28px; }
+  .white-blocks.socials .soc-visible .show {
+    display: inline-block;
+    color: #1656ac; }
+  .white-blocks.socials .soc-visible .hide {
+    display: none;
+    color: #42667b; }
+  .white-blocks.socials .soc-visible.m-hide .i-visible {
+    background-position: -603px -4px; }
+  .white-blocks.socials .soc-visible.m-hide .show {
+    display: none; }
+  .white-blocks.socials .soc-visible.m-hide .hide {
+    display: inline-block; }
+  .white-blocks.socials .soc-visible .dropdown-menu {
+    background: #fff;
+    width: 300px;
+    z-index: 4;
+    left: 0; }
+    .white-blocks.socials .soc-visible .dropdown-menu LI {
+      padding: 2px 10px; }
+
+/*# sourceMappingURL=socialAuth.css.map */

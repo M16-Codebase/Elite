@@ -1,0 +1,259 @@
+@import "./css/fonts";
+@import "./css/vars";
+@import "./css/reset";
+@import "./css/elements";
+@import "./css/header_footer";
+@import "./css/breadcrumbs";
+@import "./css/aside";
+@import "./css/actions_panel";
+@import "./css/white_blocks";
+@import "./css/tabs";
+@import "./css/editor";
+@import "./css/post";
+@import "./css/paging";
+@import "./css/tip";
+@import "./css/message";
+
+HTML {overflow: visible !important;}
+BODY {
+	overflow-x: visible !important;
+	overflow-y: scroll !important;
+	background: #fff;
+	font: $font-def;
+	color: #000;
+}
+STRONG, B {
+	font-family: $font-bold;
+	font-weight: normal;
+}
+EM, I {
+	font-family: $font-italic;
+	font-style: normal;
+}
+
+.page-center {
+	max-width: 1400px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.page-main {
+	position: relative;
+	z-index: 2;
+}
+
+.aside-col {
+	position: absolute;
+	width: 225px;
+	z-index: 3;
+}
+.main-col {
+	@include border-box;
+	padding-left: 245px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.edit-content-forms {display: none;}
+.main-content.m-fixed {position: fixed;}
+.main-content-inner {
+	position: relative;
+	overflow: hidden;
+	.view-content {
+		@include transition(opacity .6s ease);
+		overflow: auto;
+		opacity: 1;
+	}
+	&.m-edit .view-content {opacity: 0;}
+	.edit-content {
+		@include shadow(0 0 30px rgba(0, 0, 0, .2));
+		@include transition(left .6s ease, opacity .6s ease);
+		position: absolute;
+		background: #fff;
+		height: 100%;
+		width: 100%;
+		left: 110%;
+		z-index: 2;
+		opacity: 0;
+		top: 0;
+		&.m-current {
+			@include transition(left .6s ease);
+			opacity: 1;
+			z-index: 3;
+		}
+		&.m-edit-open {left: 0;}
+		FORM {overflow: auto;}
+		.content-scroll-cont {
+			&, FORM {overflow: hidden;}
+		}
+	}
+}
+.breadcrumbs + .main-content-inner .edit-content {padding-top: 8px;}
+.content-top {
+	position: relative;
+	H1 {
+		padding-bottom: 18px;
+		margin: 0;
+	}
+}
+.content-options {
+	@include clearbox;
+	border-top: 1px solid $color-gray-line;
+}
+.content-scroll-cont {
+	background: $color-gray-bg;
+	overflow: auto;
+}
+.content-scroll {
+	border-top: 1px solid $color-gray-line;
+	background: $color-gray-bg;
+	position: relative;
+	padding: 22px 16px;
+	overflow: hidden;
+	&:before, &:after {
+		@include transition(opacity, .3s linear);
+		pointer-events: none;
+		position: absolute;
+		height: 30px;
+		width: 100%;
+		content: '';
+		z-index: 2;
+		opacity: 1;
+		left: 0;
+	}
+	&:before {
+		@include gradient(rgba($color-gray-bg, 1), rgba($color-gray-bg, 0), 15%, 100%);
+		top: 0;
+	}
+	&:after {
+		@include gradient(rgba($color-gray-bg, 0), rgba($color-gray-bg, 1), 0, 70%);
+		bottom: 0;
+	}
+	&.m-no-top-grad:before,
+	&.m-no-bottom-grad:after {opacity: 0;}
+	.viewport {
+		overflow: visible !important;
+		margin-right: 20px;
+		position: relative;
+		z-index: 1;
+	}
+	.mCustomScrollBox, .mCSB_container {overflow: visible;}
+	.mCSB_inside > .mCSB_container {margin: 0;}
+	.mCSB_scrollTools_vertical {
+		right: -26px;
+		opacity: 1;
+		.mCSB_draggerRail {
+			background: #fff;
+			width: 3px;
+		}
+		.mCSB_dragger_bar {
+			@include radius(0);
+			background: $color-scrollbar;
+			width: 3px;
+		}
+		.mCSB_dragger_onDrag .mCSB_dragger_bar {background: $color-scrollbar;}
+		.mCSB_dragger:hover .mCSB_dragger_bar {background: $color-scrollbar-hover;}
+	}
+	.aside-panel ~ .viewport {
+		margin-right: 108px;
+		.mCSB_scrollTools_vertical {right: -30px;}
+	}
+}
+
+.row, .white-block-row {
+	@include justify;
+	display: block;
+	& > * {@include border-box;}
+	& > * + * {margin-left: -6px;}
+	& > .w05 {width: 4.15%;}
+	& > .w1 {width: 8.3%;}
+	& > .w15 {width: 12.45%;}
+	& > .w2 {width: 16.6%;}
+	& > .w25 {width: 20.75%;}
+	& > .w3 {width: 24.9%;}
+	& > .w35 {width: 29.05%;}
+	& > .w4 {width: 33.2%;}
+	& > .w45 {width: 37.35%;}
+	& > .w5 {width: 41.5%;}
+	& > .w55 {width: 45.65%;}
+	& > .w6 {width: 49.8%;}
+	& > .w65 {width: 53.95%;}
+	& > .w7 {width: 58.1%;}
+	& > .w75 {width: 62.25%;}
+	& > .w8 {width: 66.4%;}
+	& > .w85 {width: 70.55%;}
+	& > .w9 {width: 74.7%;}
+	& > .w95 {width: 78.85%;}
+	& > .w10 {width: 83%;}
+	& > .w105 {width: 87.15%;}
+	& > .w11 {width: 91.3%;}
+	& > .w115 {width: 95.45%;}
+	& > .w12 {width: 100%;}
+}
+
+.generate-time {
+	position: fixed;
+	opacity: .3;
+	bottom: 5px;
+	left: 20px;
+}
+.fancybox-lock {
+	overflow: visible !important;
+	margin: 0 !important;
+	BODY {
+		overflow-x: visible !important;
+		overflow-y: scroll !important;
+	}
+	.fancybox-overlay {overflow: visible !important;}
+} 
+*:first-child + .ui-sortable-placeholder,
+.ui-sortable-placeholder:first-child {
+	border-top: none !important;
+	padding-top: 0 !important;
+	margin-top: 0 !important;
+}
+.mobile-detect {
+	position: fixed;
+	left: -666px;
+	opacity: 0;
+	height: 0;
+	width: 0;
+}
+
+
+@media (max-width: $width-mobile) {
+	BODY {
+		overflow: visible !important;
+		&.m-aside-open {overflow: hidden !important;}
+	}
+	.page-center {
+		min-width: 660px;
+		padding: 0;
+	}
+	.aside-col {
+		position: fixed;
+		height: 100%;
+		left: -245px;
+		top: 0;
+	}
+	.main-col {padding-left: 0;}
+	.mobile-detect {width: 1px;}
+	.main-content.main-col {
+		width: 100% !important;
+		&.m-fixed {position: relative;}
+	}
+	.view-content, .edit-content {overflow-y: auto !important;}
+	.view-content {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;;
+	}
+	.breadcrumbs {padding: 0 15px 6px;}
+	.content-top H1 {padding: 0 15px 18px;}
+	.content-scroll .viewport {
+		margin-right: 0 !important;
+		height: auto !important;
+	}
+}

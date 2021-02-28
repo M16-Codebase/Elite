@@ -1,0 +1,1 @@
+{include file="Modules/Seo/SuperAdmin/addRedirect.tpl"}

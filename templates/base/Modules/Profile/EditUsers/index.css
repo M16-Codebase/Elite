@@ -1,0 +1,37 @@
+.user-fields .white-blocks .wblock + .wblock {
+  margin-top: 10px; }
+.user-fields .white-blocks .icon-prop-delete {
+  font-size: 31px; }
+.user-fields .white-blocks .row-image {
+  width: 51px;
+  height: 51px; }
+
+.img-preview .delete-photo.a-hidden {
+  display: none; }
+
+.add-address .origin {
+  display: none; }
+.add-address .add-value INPUT {
+  border: 1px dashed #ABADB3;
+  background: none; }
+  .add-address .add-value INPUT:hover {
+    border-color: #018CE5; }
+  .add-address .add-value INPUT:focus {
+    border: 1px solid #e2e3ea;
+    border-top-color: #abadb3;
+    background: #fff; }
+.add-address .action-button .icon-prop-delete {
+  color: #aab5bd;
+  font-size: 31px; }
+
+.user-status {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: auto; }
+  .user-status.m-active {
+    background: #03b08d; }
+  .user-status.m-banned {
+    background: #ff845e; }
+
+/*# sourceMappingURL=index.css.map */

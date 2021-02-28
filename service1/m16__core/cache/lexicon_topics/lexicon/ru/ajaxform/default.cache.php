@@ -1,0 +1,17 @@
+<?php  return array (
+  'ajaxform' => 'AjaxForm',
+  'af_message_close_all' => 'закрыть все',
+  'af_submit' => 'Отправить',
+  'af_reset' => 'Очистить',
+  'af_label_name' => 'Имя',
+  'af_label_email' => 'E-mail',
+  'af_label_message' => 'Сообщение',
+  'af_err_action_ns' => 'Не указан ключ формы (action).',
+  'af_err_action_nf' => 'Не могу найти указанный ключ формы (action).',
+  'af_err_chunk_ns' => 'Не указан чанк для обработки формы.',
+  'af_err_chunk_nf' => 'Не могу найти указанный чанк "[[+name]]" с формой.',
+  'af_err_snippet_ns' => 'Не указан сниппет для обработки формы.',
+  'af_err_snippet_nf' => 'Не могу найти указанный сниппет "[[+name]]" для обработки формы.',
+  'af_err_has_errors' => 'Форма содержит ошибки',
+  'af_success_submit' => 'Форма успешно отправлена',
+);

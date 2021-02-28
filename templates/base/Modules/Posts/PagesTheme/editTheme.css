@@ -1,0 +1,11 @@
+@import url("/templates/Modules/Catalog/Admin/editProp.css");
+
+.theme-edit TR TD:last-child {
+	width: 550px;
+}
+.theme-edit .input {
+	width: 500px;
+}
+.theme-edit select {
+	width: 512px;
+}

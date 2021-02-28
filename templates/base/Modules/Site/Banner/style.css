@@ -1,0 +1,12 @@
+.popup-window .td-title {vertical-align: top;}
+.popup-window .urlList > DIV + DIV {margin-top: 5px;}
+.popup-window .page-input {
+	margin-right: 6px;
+	width: 280px;
+}
+.popup-window .page-input + .delete {
+	position: relative;
+	top: 3px;
+}
+
+.ribbed .td-title .descr {font: italic 12px/18px Arial;}

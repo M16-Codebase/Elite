@@ -1,0 +1,10 @@
+.seo-header {
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.seo-header > LI.full-width {margin-bottom: 10px;}
+.seo-header > LI INPUT[type="text"] {
+	margin-right: 10px;
+	width: 320px;
+}
+.seo-header > LI INPUT.short {width: 180px;}

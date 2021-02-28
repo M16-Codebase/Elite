@@ -1,0 +1,9 @@
+.rebuild-form {
+  margin-top: 32px; }
+
+.cron-task-popup {
+  text-align: center; }
+  .cron-task-popup.ui-dialog.ui-widget .ui-dialog-titlebar .ui-dialog-title {
+    float: none; }
+
+/*# sourceMappingURL=rebuild.css.map */

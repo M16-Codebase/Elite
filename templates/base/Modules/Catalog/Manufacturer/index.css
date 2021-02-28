@@ -1,0 +1,19 @@
+.reloadCover IMG {
+	max-height: 50px;
+	max-width: 80px;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+}
+
+.manuf-search INPUT {width: 200px;}
+.manuf-search BUTTON {
+	line-height: 26px;
+	margin-left: 4px;
+	height: 26px;
+	width: 100px;
+}
+.manuf-search .reset {
+	font: italic 12px/26px openSans;
+	margin-left: 12px;
+}

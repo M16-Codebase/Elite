@@ -1,0 +1,12 @@
+.logs-table-cont {
+	position: relative;
+}
+.logs-table-header {margin-bottom: 4px;}
+.logs-table-header TH:first-child {width: 1px;}
+.logs-table-scrolled {
+	max-height: 500px;
+	overflow: auto;
+}
+.logs-table-scrolled TABLE {margin-top: -40px;}
+.logs-table-scrolled TH {visibility: hidden;}
+.logs-table-scrolled .first TD {border-top: none;}

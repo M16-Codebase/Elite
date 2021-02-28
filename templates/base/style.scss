@@ -1,0 +1,11 @@
+@import 'css/fonts';
+@import 'css/vars';
+@import 'css/reset';
+@import 'css/elements';
+@import 'css/form';
+
+BODY {
+	background: #fff;
+	color: #000;
+	font: $font-def;
+}

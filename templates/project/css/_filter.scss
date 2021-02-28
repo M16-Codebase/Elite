@@ -1,0 +1,252 @@
+.filter {
+	background: $color-dark-magenta;
+	padding: 32px 0 0;
+	text-align: center;
+	.field {
+		display: inline-block;
+		vertical-align: top;
+		min-width: 275px;
+		margin: 0 5px 0;
+		.main {
+			letter-spacing: .315em;
+			text-align: center;
+			margin-bottom: 9px;
+			line-height: 1em;
+			color: rgba(255, 255, 255, .55);
+			A{
+				font:15px/1em school_book_italic;
+				color:$color-sand;
+				text-transform: none;
+				letter-spacing: 0;
+				&:hover{
+					color:#fff;
+				}
+			}
+		}
+		.btn.m-bedroom {
+			margin-left: percent(1,1200);
+			padding: 3px 18px 12px 14px;
+			border-color: $color-light-magenta;
+			line-height: 1em;
+			&.m-five {padding-right:10px;}
+			SPAN {
+				margin: 0;
+				&:after {display: none;}
+			}
+			&.m-current {
+				color:$color-dark-sand;
+				border-color:$color-dark-sand;
+			}
+		}
+	  	.tab-title{
+		  cursor: pointer;
+		  color:#fff;
+		  &.m-current{
+			color:$color-sand;
+		  }
+		}
+		.slash{
+		  border-color:#bcbcbc;
+		  margin-top:-2px;
+		}
+		.slider-wrap{
+			padding: 6px 26px 6px 26px;
+			border: 2px solid $color-light-magenta;
+			display: inline-block;
+			margin-left: 0.08333%;
+			position: relative;
+			height:52px;
+			@include border-box;
+			INPUT {
+				font: 31px/33px bebas;
+				letter-spacing: 2px;
+				background: none;
+				border: none;
+				width: 46px;
+				margin-right: 60px;
+				color: #fff;
+				&.input-max {
+					text-align: right;
+					margin-right:0;
+					margin-left: 60px;
+				}
+			}
+		  &.m-b-input{
+			padding-left:20px;
+			padding-right: 20px;
+			INPUT{
+			  width:55px;
+			}
+		  }
+		}
+		.slider {
+			background: $color-light-magenta;
+			position: absolute;
+			margin: auto;
+			border: none;
+			height: 2px;
+			width: 37%;
+			bottom: 0;
+			right: 0;
+			left: -7px;
+			top: 0;
+		}
+		.ui-slider-range {
+			background: #fff;
+			border: none;
+		}
+		.ui-slider-handle {
+			@include border-box;
+			background: $color-dark-magenta;
+			border: 3px solid #fff;
+			margin: -6px 0 0 -.3em;
+			border-radius: 0;
+			cursor: pointer;
+			outline: none;
+			height: 24px;
+			width: 8px;
+		}
+		&.f-dropdown {
+			width: 273px;
+			position: relative;
+			.dropdown-toggle {
+				display:inline-block;
+				padding: 3px 18px 12px 14px;
+				line-height:1em;
+				position: relative;
+				padding: 9px 26px 8px 12px;
+				border: 2px solid $color-light-magenta;
+				margin-left: 0.08333%;
+				height:auto;
+				text-align:left;
+				width:100%;
+				font:31px/1em "bebas";
+				letter-spacing: .123em;
+				color:#fff;
+				cursor:pointer;
+				@include border-box;
+				DIV {
+					position: absolute;
+					width:24px;
+					height:19px;
+					top:15px;
+					right:10px;
+					.svg{
+						width:24px;
+						height:	19px;
+						display:block;
+						path {
+							fill:#fff;
+						}
+					}
+				}
+			}
+			.dropdown-menu {
+				position: absolute;
+				background:$color-light-magenta;
+				max-height: 165px;
+				width:100%;
+				text-align:left;
+				padding:11px 10px 10px 14px;
+				@include border-box;
+				overflow: visible;
+				z-index:9;
+				display:none;
+				@media (min-width: 1920px) {
+					max-height: 300px;
+				}
+				LI {
+					color:#c0c0c0;
+					font: 18px/1em bebas;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					background:$color-light-magenta;
+					text-align:left;
+					SPAN{
+						margin:3px 0 0 2px;
+						max-width: 187px;
+						display:inline-block;
+					}
+				}
+				LI + LI {
+					margin-top: 8px;
+				}
+				LABEL{
+					display:block;
+					width:100%;
+					text-align:left;
+					cursor: pointer;
+					DIV {
+						vertical-align: top;
+						display:inline-block;
+						width: 16px;
+						height: 16px;
+						margin: 3px 3px 0px 3px;
+						outline: 2px solid #fff;
+						border: 3px solid $color-light-magenta;
+						background: $color-light-magenta;
+						@include border-box;
+					}
+				}
+				INPUT[type=checkbox]{
+					position: absolute;
+					left:-99999px;
+				}
+				INPUT[type=checkbox]:checked + LABEL DIV{
+					background: #fff;
+				}
+				INPUT[type=checkbox]:checked + LABEL SPAN{
+					color:#fff;
+				}
+				.mCSB_scrollTools .mCSB_draggerRail{
+					width: 3px;
+					border-radius: 0;
+				}
+				.mCSB_dragger_bar{
+					width: 3px;
+					border-radius: 0;
+					background: #fff;
+				}
+			}
+		}
+	}
+	.field.order {
+		@include border-box;
+		background: $color-dark-magenta;
+		text-transform: uppercase;
+		padding: 10px 0 10px 0;
+		font: 18px/40px bebas;
+		margin: 32px auto 0;
+		text-align: left; 
+		display: block;
+		width: 100%;
+		border-top: 1px solid #352f35;
+		.page-center {
+			text-align: left;
+			DIV {
+				font-family: bebas_book;
+				letter-spacing: .31em;
+				display: inline-block;
+				opacity: .55;
+				color: #fff;
+			}
+		}
+		LABEL {
+			padding: 19px 3px 19px 8px;
+			margin: 0 percent(5,1200);
+			letter-spacing: 0.12em;
+			cursor: pointer;
+			color: #fff;
+			&.m-current {color: $color-sand;}
+		}
+		.slash {
+			border-color: #bcbcbc;
+			line-height: 40px;
+			height: 42px;
+		}
+	}
+}
+INPUT.m-hidden-input{
+	position: absolute;
+	left: -999999px;
+}

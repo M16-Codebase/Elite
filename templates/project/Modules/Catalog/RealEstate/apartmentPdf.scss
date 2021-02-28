@@ -1,0 +1,32 @@
+@import '../../../css/pdf';
+
+.pdf-item {
+	.row-top {
+		.col1 {width: 76%;}
+		.col2 {width: 24%;}
+		.price-wrap {
+			.border {
+				vertical-align: middle;
+				font-family: bebas_book;
+				text-align: center;
+				line-height: 30px;
+				font-size: 45px;
+				width: 42px;
+			}
+			.m-last {
+				text-align: center;
+				width: 82px;
+			}
+		}
+	}
+	.row-bottom {
+		.col1 {width: 43%;}
+		.col2 {width: 12%;}
+		.col3 {width: 45%;}
+		.opt-table {
+			padding: 0 30px 0 20px;
+			.opt-col {width: 30%;}
+			.opt-col.m-right {width: 70%;}
+		}
+	}
+}

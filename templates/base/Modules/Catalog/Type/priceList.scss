@@ -1,0 +1,34 @@
+@import "../../../Admin/css/vars";
+
+.using-page {
+	background: #f7f7f7;
+	padding: 24px 24px 50px;
+	margin: 0 -24px;
+}
+
+.using-types-list {
+	position: relative;
+}
+
+.category-title {
+	margin: 0 0 15px;
+}
+
+.category-block {
+	margin: 0 0 28px;
+}
+
+.using-type-item {
+	@include shadow(0 2px 3px rgba(0, 0, 0, .1));
+	background: #fff;
+	& + & {margin-top: 10px;}
+	&:hover {
+		@include shadow(0 2px 5px rgba(0, 0, 0, .4));
+	}
+	.item-title {
+		line-height: 44px;
+		padding: 0 0 0 15px;
+		color:#1353aa;
+	}
+}
+

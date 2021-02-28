@@ -1,0 +1,99 @@
+.main-menu {
+	width:100%;
+	text-align: center;
+	padding: 11px 8px;
+	background:#fff;
+	@include border-box;
+	@media (min-width: $width-desktop) {
+		.swiper-wrapper {
+			display: block; 
+		}
+	}
+	& * {
+		width:auto;
+	} 
+	&.m-fixed{
+		position: fixed;
+		top:0;
+		z-index: 4;
+	}
+	DIV.swiper-slide {
+		display:inline-block;
+		padding: 0 1%;
+		@include border-box;
+		&:hover{
+			A:not(.btn){
+				position: relative;
+				display: inline-block;
+				text-transform: uppercase;
+				background:$color-light-black;
+				color:#fff;
+				&:before, &:after {
+					position: absolute;
+					content: '';
+					height: 0;
+					width: 0;
+				}
+				&:before {
+					border-right: 12px solid $color-light-black;
+					border-top: 40px solid transparent;
+					border-bottom: 0 solid transparent;
+					left: -12px;
+					bottom: 0;
+				}
+				&:after {
+					border-left: 12px solid $color-light-black;
+					border-bottom: 40px solid transparent;
+					border-top: 0 solid transparent;
+					right: -12px;
+					top: 0;
+				}
+			}
+		}
+		.m-black-filled-skew{
+			position: relative;
+			display: inline-block;
+			text-transform: uppercase;
+			background:$color-light-black;
+			color:#fff;
+			&:before, &:after {
+				position: absolute;
+				content: '';
+				height: 0;
+				width: 0;
+			}
+			&:before {
+				border-right: 12px solid $color-light-black;
+				border-top: 40px solid transparent;
+				border-bottom: 0 solid transparent;
+				left: -12px;
+				bottom: 0;
+			}
+			&:after {
+				border-left: 12px solid $color-light-black;
+				border-bottom: 40px solid transparent;
+				border-top: 0 solid transparent;
+				right: -12px;
+				top: 0;
+			}
+		}
+	}
+	A {
+		font:16px/40px "bebas";
+		text-transform: uppercase;
+		letter-spacing: 0.37em;
+		color:#000;
+		padding:0 3px 0 8px;
+		&:not(.btn){
+			@include transition(none);
+		}
+		&.m-black{
+			padding:11px 11px 10px;
+		}
+	}
+	.slash {
+		height: 42px;
+		line-height: 40px;
+		border-color: #bcbcbc;
+	}
+}

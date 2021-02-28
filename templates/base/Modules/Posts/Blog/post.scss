@@ -1,0 +1,152 @@
+@import '../../../css/vars';
+@import 'index';
+
+.blog-page {
+	.breadcrumb LI.m-current A {cursor: pointer;}
+	.blog-block {background: #fff;}
+	.blog-search {width: 902px;}
+	.object-aside-cont {margin: 38px 0 0 19px;}
+	.main-col {margin-bottom: 0;}
+	.aside-menu .aside-top {
+		margin-bottom: 0px;
+		padding-bottom: 7px;
+		.author .author-cover {padding-top: 18px;}
+	}
+	.aside-link {margin: 12px 0 40px;}
+	.post-descr-cont {
+		margin-top: 24px;
+		.comments-num {
+			margin-left: 46px;
+			margin-top: 19px;
+		}
+		.news-date {margin-top: -1px;}
+	}
+	.comments-cont {
+		padding: 57px 63px 31px 72px;
+		.comments-cont-title {
+			border-bottom: 3px solid #70be45;
+			color: #000;
+			font: 18px/27px futuraDemi;
+			padding-bottom: 3px;
+			text-transform: uppercase;
+		}
+		.comment-add {
+			@include inline-block;
+			margin-top: 20px;
+			font: 16px/26px futuraDemi;
+			I {
+				@include icon(-25px, 0, 25px, 25px, 'icons/comments-icon.png');
+				margin-right: 10px;
+				margin-top: 1px;			
+			}
+		}
+		.comment-top {
+			height: 26px;
+			padding-top: 5px;
+			I {
+				@include icon(0, 0, 25px, 25px, 'icons/comments-icon.png');
+				margin-right: 10px;
+				margin-top: -3px;					
+			}
+			.author {
+				font: bold 13px/13px OpenSans;
+				margin-top: 7px;
+			}
+			.news-date {margin-top: 6px;}
+		}
+		.comments-list {
+			margin-top: 31px;
+			padding: 0;
+			LI {
+				border-top: 1px solid #cfd0cc;
+				padding: 14px 0 6px;
+				&:first-child {
+					border: none;
+					padding-top: 0;
+				}
+			}
+		}
+		.comment-text {
+			font: 13px/22px OpenSansItalic;
+			margin-top: 5px;
+
+		}
+	}
+	.post {padding: 56px 90px 81px 76px;}
+	.post .news-annotation {
+		margin-bottom: 34px;
+		margin-top: 40px;
+	}
+	
+	/* tags */
+	.tags {
+		background: #fff;
+		margin-top: 0;
+		margin-top: 40px;
+		.tags-list {
+			padding: 0;
+			margin: 0;
+		}
+		LI {
+			line-height: 1;
+			margin-bottom: 0;
+		}
+	}
+	
+	.remove-comment {
+		float: right;
+		margin-right: 10px;
+		margin-top: 2px;
+		I {
+			@include icon(-26px, 0, 13px, 25px, 'icons/delete.png');
+			&:hover {background-position: -39px 0;}
+		}
+	}
+}
+.comments-num {
+	@include inline-block;
+	A {font-weight: normal;}
+}
+
+
+
+/* блок поделиться */
+
+.share-block {
+	margin: 38px 0 48px;
+	.col1 {width: 18%;}
+	.col3 {width: 80%;}
+}
+.author + .share-cont {margin-top: 31px;}
+.share-cont {
+	.share-cont-title {
+		color: #000;
+		font: 13px/13px OpenSans;
+		letter-spacing: 2px;
+		margin-bottom: 11px;
+		text-transform: uppercase;
+	}
+	.share-title {
+		border-top: 1px solid #e2e6e3;
+		cursor: pointer;
+		font: 13px/38px OpenSans;
+		height: 38px;
+		margin-left: 3px;
+		padding-left: 12px;
+		padding-right: 3px;
+		width: 166px;
+		&:first-child {border-top: none;}
+	}
+	.b-share-wrap .b-share {
+		margin-left: 0px !important;
+		margin-top: -4px !important;
+	}
+	.share-link {float: right;}
+	.facebook {color: #5286b6;}
+	.vkontakte {color: #3370a9;}
+	.twitter {color: #58b3ff;}
+	.share-link {
+		@include inline-block;
+	}
+}
+

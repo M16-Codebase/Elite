@@ -1,0 +1,9 @@
+.type-regions-table.regionList {margin-top: 0;}
+.type-regions-table TH {border-bottom: none;}
+.type-regions-table TBODY TR:first-child TD {border-top: 2px solid #2C6DC6;}
+.type-regions-table TD.descr {
+	font: italic 12px/14px openSans;
+	color: #000;
+}
+.type-regions-table .current-region TD .descr {text-shadow: 0 1px 1px #D1E4FF;}
+.type-regions-table .dropdown-menu {right: -8px;}

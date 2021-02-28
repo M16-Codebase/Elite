@@ -1,0 +1,62 @@
+@import 'css/vars';
+.top-bg.m-black{
+	overflow:visible;
+	background: $color-light-black;
+	.site-top{
+		padding-top:33px;
+		width:94%;
+		margin: 0 3%;
+		border-bottom: 1px solid rgba(111, 111, 111, .4);
+		.title{
+			font-size:78px;
+			font-size: vw(78);
+			line-height: .7em;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		.btn{
+			padding:14px 20px 15px;
+			margin-top:56px;
+		}
+		.ball-wrap{
+			overflow:hidden;
+			padding-top:61px;
+			.ball{
+				width:26%;
+				padding-bottom:29%;
+				background: url(/img/404.jpg) center no-repeat, #111;
+				background-size:100%;
+				float:left;
+				margin-top:-6%;
+			}
+			.w2{
+				position: relative;
+				text-align: right;
+				border-bottom: 2px solid #cfb27b;
+				font: 188px/1em gotham_black;
+				font-size:vw(188);
+				width: 37%;
+				float:left;
+				padding-bottom:12px;
+				margin: 0 -2% 0 2%;
+				&:before {
+					content:'';
+					position: absolute;
+					right:-45px;
+					bottom:-2px;
+					width:45px;
+					border-bottom: 2px solid #cfb27b;
+				}
+			}
+			.w2:last-child {
+				text-align: left;
+				margin-left:-2%;
+				&:before {
+					right:auto;
+					left:-45px;
+				}
+				/*margin-left: 10%;*/
+			}
+		}
+	}
+}

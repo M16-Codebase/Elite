@@ -1,0 +1,2 @@
+Загружено: {if isset($task.data.files)}{$task.data.files|plural_form:'файл','файла','файлов'}<br />{/if}
+{if isset($task.data.images)}{$task.data.images|plural_form:'изображение','изображения','изображений'}{/if}

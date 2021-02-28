@@ -1,0 +1,66 @@
+.num-area.tagit {
+  border: 1px solid #E2E3EA;
+  border-top-color: #ABADB3;
+  font: 12px/25px openSans;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 5px 8px 0;
+  min-height: 100px;
+  background: #fff;
+  width: auto;
+  color: #000; }
+
+.num-area.tagit .tagit-new, .syns-area.tagit .tagit-new {
+  padding: 0; }
+
+.num-area.tagit .tagit-choice, .syns-area.tagit .tagit-choice {
+  background: #d2e5ff;
+  background: -webkit-linear-gradient(top, #e9f2ff 0%, #c2dcff 100%);
+  background: -moz-linear-gradient(top, #e9f2ff 0%, #c2dcff 100%);
+  background: -ms-linear-gradient(top, #e9f2ff 0%, #c2dcff 100%);
+  background: -o-linear-gradient(top, #e9f2ff 0%, #c2dcff 100%);
+  background: linear-gradient(to bottom, #e9f2ff 0%, #c2dcff 100%);
+  -webkit-transition: all .2s linear;
+  -moz-transition: background .2s linear;
+  -o-transition: background .2s linear;
+  transition: background .2s linear;
+  text-shadow: 0 1px #e1eeff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 0 22px 0 8px;
+  font-style: italic;
+  cursor: default;
+  color: #0171b9; }
+
+.num-area.tagit .tagit-choice.m-error, .syns-area.tagit .tagit-choice.m-error {
+  background: #FFC2C2;
+  background: -webkit-linear-gradient(top, #ffe9e9 0%, #ffc2c2 100%);
+  background: -moz-linear-gradient(top, #ffe9e9 0%, #ffc2c2 100%);
+  background: -ms-linear-gradient(top, #ffe9e9 0%, #ffc2c2 100%);
+  background: -o-linear-gradient(top, #ffe9e9 0%, #ffc2c2 100%);
+  background: linear-gradient(to bottom, #ffe9e9 0%, #ffc2c2 100%);
+  border-color: #FFC8C8;
+  text-shadow: none;
+  color: #B40B0B; }
+
+.num-area.tagit .tagit-choice .tagit-close, .syns-area.tagit .tagit-choice .tagit-close {
+  background: url("/templates/Admin/img/file-num-remove.png") 50% no-repeat;
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  top: 5px; }
+
+.num-area.tagit .tagit-choice.m-error .tagit-close, .syns-area.tagit .tagit-choice.m-error .tagit-close {
+  opacity: .6; }
+
+.stopwords-form .syns-area {
+  font: 12px/25px openSans;
+  height: 500px;
+  margin: 0;
+  width: 100%; }
+.stopwords-form .stopwords-submit {
+  margin: 20px 0 0; }
+
+/*# sourceMappingURL=stopwords.css.map */

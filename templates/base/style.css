@@ -1,0 +1,206 @@
+BODY,
+UL, OL,
+BUTTON,
+P, INPUT,
+BLOCKQUOTE,
+DL, DT, DD,
+TABLE, TD, TH,
+FIGURE, FIGCAPTION,
+H1, H2, H3, H4, H5, H6 {
+  padding: 0;
+  margin: 0; }
+
+P + P {
+  margin-top: 1em; }
+
+UL, OL {
+  list-style-type: none; }
+
+TABLE {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+A IMG {
+  border: none; }
+
+TEXTAREA:focus,
+INPUT, INPUT:focus,
+A:focus {
+  outline-offset: 0;
+  outline: none; }
+
+BUTTON {
+  background: none;
+  outline: none;
+  border: none; }
+
+TEXTAREA {
+  resize: none; }
+
+* {
+  -webkit-tap-highlight-color: transparent; }
+
+.a-hidden {
+  display: none; }
+
+.a-block {
+  display: block; }
+
+.a-inline-cont > *,
+.a-inline-block {
+  vertical-align: top;
+  display: inline-block; }
+
+.a-left {
+  float: left; }
+
+.a-right {
+  float: right; }
+
+.a-clearbox {
+  position: relative; }
+  .a-clearbox:before, .a-clearbox:after {
+    display: table;
+    clear: both;
+    content: '';
+    width: 100%;
+    height: 0; }
+
+.a-justify, .a-justify > .a-justify {
+  text-align-last: justify;
+  text-justify: newspaper;
+  text-align: justify;
+  line-height: 0;
+  font-size: 1px;
+  zoom: 1; }
+  .a-justify:after, .a-justify > .a-justify:after {
+    display: inline-block;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    width: 100%;
+    height: 0; }
+  .a-justify > *, .a-justify > .a-justify > * {
+    vertical-align: top;
+    display: inline-block;
+    text-align-last: auto;
+    text-align: left;
+    font: 14px/18px Arial; }
+  .browser-ie8 .a-justify, .browser-ie8 .a-justify > .a-justify {
+    text-align-last: center; }
+
+.a-nowrap {
+  white-space: nowrap; }
+
+.a-pre {
+  white-space: pre-line; }
+
+.a-center {
+  text-align: center; }
+
+A, .a-link {
+  text-decoration: none;
+  color: #1a0dab;
+  cursor: pointer; }
+  A:hover, .a-link:hover {
+    color: #2c6fff; }
+
+.link-wrap {
+  cursor: pointer; }
+
+.cbx-wrap, .radio-wrap {
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  cursor: pointer; }
+  .cbx-wrap INPUT, .radio-wrap INPUT {
+    position: fixed;
+    left: -9999px; }
+
+.chosen.fullwidth {
+  width: 100%; }
+  .chosen.fullwidth + .chzn-container {
+    display: block; }
+    .chosen.fullwidth + .chzn-container .chzn-single {
+      width: auto !important;
+      display: block; }
+
+.chzn-container.chzn-container-single .chzn-single {
+  padding-left: 10px;
+  background: #fff;
+  border: none;
+  height: 32px;
+  color: #000; }
+  .chzn-container.chzn-container-single .chzn-single DIV {
+    background: url("/img/icons/select-arrow.png") 0 50% no-repeat;
+    width: 22px; }
+.chzn-container.chzn-container-single .chzn-drop {
+  min-width: 100% !important;
+  background: #fff;
+  border: none;
+  padding: 0; }
+  .chzn-container.chzn-container-single .chzn-drop .chzn-search {
+    position: absolute;
+    left: -9999px; }
+  .chzn-container.chzn-container-single .chzn-drop .chzn-results {
+    background: #fff;
+    padding: 0;
+    margin: 0; }
+    .chzn-container.chzn-container-single .chzn-drop .chzn-results LI {
+      padding: 5px 10px;
+      color: #000; }
+      .chzn-container.chzn-container-single .chzn-drop .chzn-results LI.highlighted {
+        background: #777;
+        color: #ececec; }
+      .chzn-container.chzn-container-single .chzn-drop .chzn-results LI.group-result {
+        font-weight: bold; }
+
+.icon {
+  vertical-align: top;
+  display: inline-block;
+  background: url("/img/icons/icons.png") 0 0 no-repeat;
+  height: 20px;
+  width: 20px; }
+
+.btn {
+  vertical-align: top;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  cursor: pointer; }
+  .btn.a-block {
+    display: block;
+    width: 100%; }
+  .btn .icon {
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    position: relative;
+    top: 50%; }
+
+.user-form {
+  position: relative; }
+  .user-form.sending {
+    opacity: .5; }
+    .user-form.sending:after {
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      content: '';
+      z-index: 2;
+      left: 0;
+      top: 0; }
+
+BODY {
+  background: #fff;
+  color: #000;
+  font: 14px/18px Arial; }
+
+
+/*# sourceMappingURL=style.css.map */

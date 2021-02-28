@@ -1,0 +1,36 @@
+
+.view_from, .view_to {
+	-ms-word-break: break-all;
+     /* Non standard for webkit */
+     word-break: break-word;
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+
+.redirects-forms {
+	clear:left;
+	margin: 20px 0 0 0;
+}
+
+.from-input, .to-input {
+	margin:0 10px;
+}
+
+.to-input {
+	
+}
+
+.from-input {
+	
+}
+
+.manage-filter, .manage-files {
+	display:inline-block;
+}
+
+.no-results {
+	margin:140px 0 0 0;
+	text-align:center;
+} 
+

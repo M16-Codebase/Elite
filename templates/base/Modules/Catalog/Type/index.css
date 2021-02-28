@@ -1,0 +1,290 @@
+@charset "UTF-8";
+.types-list.bush-catalog .type-title .descr {
+  color: #aab5bd; }
+.types-list.bush-catalog .type-buttons .bush-btn {
+  margin: -18px -15px -18px 4px;
+  padding: 15px 10px;
+  cursor: pointer;
+  color: #4a596e; }
+  .types-list.bush-catalog .type-buttons .bush-btn I {
+    font-size: 24px; }
+.types-list.bush-catalog .type-buttons .dropdown-menu {
+  z-index: 3; }
+
+.properties-form {
+  /*		&.flag {background-position: -100px 0px;}
+  		&.required {background-position: 0 0px;}
+  		&.unique {background-position: -20px 0px;}
+  		&.marker {background-position: -40px 0px;}
+  		&.multiple {background-position: -60px 0px;}
+  		&.search {background-position: -80px 0px;}
+  		&.flag.m-inactive {background-position: -100px -18px;}
+  		&.required.m-inactive {background-position: 0 -18px;}
+  		&.unique.m-inactive {background-position: -20px -18px;}
+  		&.marker.m-inactive {background-position: -40px -18px;}
+  		&.multiple.m-inactive {background-position: -60px -18px;}
+  		&.search.m-inactive {background-position: -80px -18px;}*/ }
+  .properties-form .property-icon {
+    font-size: 17px;
+    margin: 0 9px 0 0; }
+    .properties-form .property-icon.flag {
+      color: #ff6204; }
+    .properties-form .property-icon.required {
+      color: #ff6204; }
+    .properties-form .property-icon.unique {
+      color: #48b8ac; }
+    .properties-form .property-icon.marker {
+      color: #970c04; }
+    .properties-form .property-icon.multiple {
+      color: #008bdb; }
+    .properties-form .property-icon.search {
+      color: #0495d7; }
+  .properties-form .unchangeable {
+    color: #585858; }
+  .properties-form .unchangeable .property-icon {
+    /*		&.flag {background-position: -100px -36px;}
+    		&.required {background-position: 0 -36px;}
+    		&.unique {background-position: -20px -36px;}
+    		&.marker {background-position: -40px -36px;}
+    		&.multiple {background-position: -60px -36px;}
+    		&.search {background-position: -80px -36px;}
+    		&.flag.m-inactive {background-position: -100px -54px;}
+    		&.required.m-inactive {background-position: 0 -54px;}
+    		&.unique.m-inactive {background-position: -20px -54px;}
+    		&.marker.m-inactive {background-position: -40px -54px;}
+    		&.multiple.m-inactive {background-position: -60px -54px;}
+    		&.search.m-inactive {background-position: -80px -54px;}*/ }
+  .properties-form .title-parent {
+    background: url("/templates/Admin/img/title-parent.png") 0 0 no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    height: 10px;
+    width: 15px;
+    opacity: 0; }
+
+.property_available {
+  opacity: 0; }
+
+.white-block-row:hover .title-parent,
+.white-block-row:hover .property_available {
+  opacity: 1; }
+
+#cover {
+  /*.cover-image {*/
+  /*		position: relative;
+  		IMG {
+  			display: block;
+  			margin: 0 auto;
+  		}
+  		.no-cover {
+  			text-align: center;
+  			display: block;
+  		}*/
+  /*		.delete-cover {
+  			background: #fff url('/templates/Admin/img/clear.png') 50% no-repeat;
+  			border: 1px solid #DCE4E6;
+  			position: absolute;
+  			cursor: pointer;
+  			height: 11px;
+  			width: 11px;
+  			right: 0;
+  			top: 0;
+  		}*/
+  /*}*/ }
+  #cover .upload_file_cover {
+    display: block; }
+  #cover .row-image.m-cover {
+    height: auto;
+    width: auto; }
+  #cover .icon-prop-delete {
+    font-size: 31px; }
+
+#banner .banner .banner-img IMG {
+  height: 40px; }
+#banner .banner .action-button I {
+  margin-top: 0; }
+
+.edit_properties_form .lang-col {
+  padding-right: 15px; }
+.edit_properties_form .lang-col + .w05 + .lang-col,
+.edit_properties_form .lang-col + .lang-col {
+  padding-left: 15px;
+  padding-right: 0; }
+.edit_properties_form .en-col INPUT, .edit_properties_form .en-col SELECT,
+.edit_properties_form .en-col {
+  color: #466a7e; }
+.edit_properties_form .range-vals,
+.edit_properties_form .en-var {
+  line-height: 26px; }
+.edit_properties_form .prop-item.m-cbx .en-var {
+  line-height: normal; }
+
+.property-form SELECT {
+  width: 300px; }
+.property-form SELECT[multiple] {
+  width: 338px; }
+.property-form INPUT.m-small {
+  width: 200px; }
+.property-form .mask-val {
+  border-bottom: 1px dotted #0495D7;
+  text-decoration: none; }
+  .property-form .mask-val:hover {
+    border-color: #00d2fe; }
+.property-form .input-description {
+  color: #84959F; }
+.property-form .new-enum-value {
+  border: 1px dashed #abadb3;
+  background: none;
+  width: 240px; }
+  .property-form .new-enum-value.input-key {
+    width: 225px; }
+  .property-form .new-enum-value:hover {
+    border-color: #018CE5; }
+  .property-form .new-enum-value:focus {
+    border: 1px solid #e2e3ea;
+    border-top-color: #abadb3;
+    background: #fff; }
+.property-form .row.add-form I {
+  opacity: .3; }
+.property-form .enum-sort {
+  margin-top: 10px; }
+.property-form .add-form .description {
+  color: #848484; }
+.property-form .add-form .new_value_input {
+  width: 300px; }
+.property-form .add-form .add_enum_value {
+  width: 65px; }
+.property-form .add-form .table-btn.add {
+  cursor: pointer;
+  margin-top: 0; }
+.property-form .export-list {
+  font: 12px/20px openSans; }
+.property-form .prop-cover {
+  margin-right: 20px;
+  position: relative;
+  width: 100px; }
+.property-form .prop-cover .delete-cover {
+  background: white url("/templates/Admin/img/clear.png") 50% no-repeat;
+  border: 1px solid #DCE4E6;
+  position: absolute;
+  cursor: pointer;
+  height: 11px;
+  width: 11px;
+  right: 0;
+  top: 0; }
+.property-form .upload-cover .wblock {
+  margin-top: 10px; }
+.property-form .upload-cover .edit-property {
+  margin-top: 4px; }
+
+.edit_properties_form.sending {
+  opacity: .5; }
+  .edit_properties_form.sending:before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    z-index: 12; }
+
+.props-group {
+  position: relative; }
+  .prop-item-cont + .props-group, .props-group + .props-group {
+    margin-top: 30px; }
+  .props-group .props-group-header {
+    margin-bottom: 10px; }
+  .props-group .props-group-header H2 {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 0;
+    cursor: pointer; }
+    .props-group .props-group-header H2:hover {
+      color: #2c6dc6; }
+    .props-group .props-group-header H2:before {
+      position: absolute;
+      font-family: Arial;
+      font-size: 14px;
+      content: '►';
+      left: 0;
+      top: 0; }
+  .props-group.m-open .props-group-header H2:before {
+    content: '▼'; }
+  .props-group .props-group-list {
+    display: none; }
+  .props-group.m-open .props-group-list {
+    display: block; }
+
+.prop-item-cont {
+  position: relative; }
+  .prop-item-cont .delete-object I {
+    font-size: 31px; }
+
+.prop-item {
+  position: relative;
+  z-index: 2; }
+  .prop-item .prop-title {
+    margin-bottom: 10px; }
+  .prop-item .prop-title.m-nomargin {
+    margin-bottom: 0; }
+  .prop-item .field .inner-field,
+  .prop-item .prop-comments.m-hidden + .field,
+  .prop-item .field + .field {
+    margin-top: 8px; }
+  .prop-item .field.sortable {
+    margin-top: 10px; }
+  .prop-item .field TEXTAREA {
+    height: 116px; }
+  .prop-item .prop-enum-title {
+    line-height: 24px;
+    width: 150px; }
+  .prop-item .delete-item I {
+    font-size: 31px; }
+  .prop-item.m-cbx .field INPUT {
+    margin-right: 10px; }
+  .prop-item.m-cbx .field .f-col:first-child {
+    white-space: nowrap; }
+  .prop-item.m-cbx .field .f-col:first-child SPAN {
+    white-space: normal;
+    max-width: 290px; }
+  .prop-item.m-cbx .field .f-col.m-en .en-var {
+    margin-top: 0; }
+  .prop-item.m-multi .multi-item {
+    position: relative; }
+    .prop-item.m-multi .multi-item.row {
+      padding-bottom: 8px;
+      margin-top: 0;
+      border-top: 0; }
+      .prop-item.m-multi .multi-item.row TEXTAREA {
+        margin: 0; }
+      .prop-item.m-multi .multi-item.row > * {
+        line-height: 26px; }
+    .prop-item.m-multi .multi-item.origin {
+      display: none; }
+  .prop-item.m-multi .field LABEL + LABEL {
+    margin-left: 6px; }
+  .prop-item.m-multi .field INPUT.small {
+    width: 55px; }
+  .prop-item.m-multi .field INPUT.small-b {
+    width: 82px; }
+  .prop-item.m-multi .f-col.m-en {
+    padding-right: 30px; }
+  .prop-item.m-multi .field + .field .f-col.m-en {
+    padding-right: 0; }
+  .prop-item .add-button {
+    font-family: openSansItalic, Arial;
+    font-size: 12px;
+    color: #45c79e; }
+    .prop-item .add-button I {
+      text-align: left;
+      font-size: 28px;
+      float: left; }
+
+.prop-avail-cont .unset-all {
+  text-align: right; }
+
+.edit-rule-form .rule-props INPUT.m-small {
+  width: 100px; }
+.edit-rule-form .rule-props INPUT.m-med {
+  width: 300px; }
+
+/*# sourceMappingURL=index.css.map */

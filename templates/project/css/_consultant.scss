@@ -1,0 +1,128 @@
+.consultant {
+	@include clearbox;
+	background: #fff;
+	.person {
+		padding-bottom: 60px;
+		text-align: center;
+		&.m-left, &.m-right {
+			margin-top: -32px;
+			width: 17%;
+		}
+		&.m-left {
+			margin-left: 17%;
+			float: left;
+		}
+		&.m-right {
+			margin-right: 17%;
+			float: right;
+		}
+		.photo {
+			@include radius(50%);
+			margin-bottom: 12px;
+			position: relative;
+			overflow: hidden;
+			DIV {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				left: 0;
+				top: 0;
+			}
+			IMG {
+				min-width: 100%;
+				margin: 0 -100%;
+				height: 100%;
+			}
+			&:before {
+				padding-top: 100%;
+				display: block;
+				content: '';
+			}
+		}
+		.name {
+			text-transform: uppercase;
+			font: 30px/1em bebas;
+			font-size: vw(30);
+			letter-spacing: .1em;
+			margin-bottom: 15px;
+		}
+		.email {
+			font: 14px/1em gotham;
+			font-size: vw(14);
+			margin-bottom: 15px;
+			color:#000;
+			display:block;
+		}
+		.function {
+			font: 15px/1em school_book_italic;
+			font-size: vw(15);
+			color: #888;
+		}
+		&.w1 {
+			@include border-box;
+			padding: 70px 45px 20px;
+			.photo {margin-bottom: 18px;}
+		}
+	}
+	.info {
+		padding-bottom: 60px;
+		text-align: center;
+		position: relative;
+		margin-top: 80px;
+		&.m-center {
+			margin: 45px auto 0;
+			width: 20%;
+		}
+		.title {
+			font-size: 36px;
+			font-size: vw(36);
+			margin-bottom: 6px;
+			SPAN {
+				display: block;
+				font-size: 30px;
+				font-size: vw(30);
+			}
+			&:before {
+				background: $color-sand;
+				margin: 0 auto 34px;
+				display: block;
+				content: '';
+				height: 6px;
+				width: 42%;
+			}
+		}
+		.big-title {
+			color: $color-dark-magenta;
+			font: 70px/1em anglecia_italic;
+			font-size: vw(70);
+			margin-bottom: 22px;
+		}
+		.small-descr {
+			font: 15px/1em school_book_italic;
+			font-size: vw(15);
+			margin-bottom: 8px;
+			color: #888;
+		}
+		.phone {
+			font: 40px/1em anglecia_italic;
+			font-size: vw(40);
+			margin-bottom: 50px;
+		}
+		.slash {
+			border-color: #888888;
+			position: absolute;
+			height: 100%;
+			top: -20px;
+			right: 5%;
+		}
+		&.w2 {
+			.title{
+				margin-bottom: 50px;
+				line-height: .5em;
+				&:before {width: 18%;}
+			}
+			.small-descr {margin-bottom: 3px;}
+			.btn {padding: 18px;}
+		}
+	}
+}

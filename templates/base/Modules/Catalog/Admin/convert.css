@@ -1,0 +1,12 @@
+.convert-form .convert-selects {
+	vertical-align: top;
+	margin-bottom: 10px;
+	line-height: 26px;
+}
+.convert-form .chzn-container {vertical-align: top;}
+.convert-form .convert-from,
+.convert-form .convert-to {width: 100px;}
+.convert-form .ribbed .convert-button {
+	background: #fff;
+	padding: 10px 0;
+}

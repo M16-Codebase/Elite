@@ -1,0 +1,27 @@
+@charset "UTF-8";
+.sitemap-list .allow-menu .dropdown-toggle:after {
+  -webkit-transform: scaleY(.6);
+  -moz-transform: scaleY(.6);
+  -ms-transform: scaleY(.6);
+  -o-transform: scaleY(.6);
+  transform: scaleY(.6);
+  display: inline-block;
+  line-height: 12px;
+  margin-left: 3px;
+  font-size: 10px;
+  content: '▼'; }
+.sitemap-list .allow-menu .dropdown-menu {
+  position: absolute;
+  display: none;
+  left: -6px; }
+  .sitemap-list .allow-menu .dropdown-menu LI {
+    background: #fff;
+    padding: 2px 6px; }
+.sitemap-list .wblock.m-disallow .allow-type {
+  color: #9f9f9f; }
+
+.no-results {
+  margin: 140px 0 0 0;
+  text-align: center; }
+
+/*# sourceMappingURL=additionalRules.css.map */

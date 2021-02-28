@@ -1,0 +1,297 @@
+$wblock-line-spacing: 15px;
+.white-blocks {
+	display: block;
+	.white-body + .white-body {margin-top: $wblock-line-spacing;}
+	.wblock-tree {
+		padding-left: 30px;
+		position: relative;
+		* + &, & > * + * {margin-top: $wblock-line-spacing;}
+		&:before, &:after {display: none !important;}
+		& > * {
+			position: relative;
+			&:before, &:after {
+				border-left: 2px solid $color-gray-line;
+				position: absolute;
+				display: block;
+				content: "";
+				width: 15px;
+				left: -17px;
+				z-index: 1;
+			}
+			&:before {
+				border-bottom: 2px solid $color-gray-line;
+				top: -$wblock-line-spacing;
+				height: 40px;
+			}
+			&:after {
+				height: 100%;
+				top: 0;
+			}
+			&:last-child:after {display: none;}
+		}
+	}
+	.wblock {
+		@include shadow(0 2px 4px rgba(0, 0, 0, .1));
+		@include transition(box-shadow .3s ease);
+		position: relative;
+		background: #fff;
+		display: block;
+		z-index: 2;
+		&.m-open {
+			.closed-head {display: none;}
+			.open-head {display: block;}
+		}
+		&.m-open,
+		&:hover {
+			@include shadow(0 2px 5px rgba(0, 0, 0, .4));
+			.action-button {opacity: 1;}
+		}
+		&:hover {z-index: 3;}
+		&.m-error {}
+		&.ui-sortable-helper {@include transition(none);}
+		.closed-head {display: block;}
+		.open-head {display: none;}
+	}
+	* + .wblock {margin-top: $wblock-line-spacing;}
+	INPUT[type="hidden"] + .wblock {margin-top: 0;}
+	.white-block-row {
+		&.a-hidden {display: none;}
+		& > * {
+			padding: 15px 18px;
+			min-height: 48px;
+		}
+		& > * + .m-border {border-left: 1px solid $color-gray-line;}
+		INPUT[type=text], INPUT[type=password], TEXTAREA, SELECT {
+			position: relative;
+			margin: -4px 0;
+			& + * {margin-top: 4px;}
+		}
+		INPUT[type=checkbox] {top: 2px;}
+        INPUT.short {width: 120px;}
+		.user-status {
+			cursor:pointer;
+			& > * {
+				width:16px;
+				height:16px;
+				border-radius:50%;
+				margin:auto;
+			}
+			&.m-active > *{
+				background: rgb(3, 176, 141);
+			}
+			&.m-new > *{
+				background: #FEB300;
+			}
+			&.m-banned > *{
+				background:#ff845e;
+			}
+		}
+	}
+	.action-button {
+		I {
+			text-align: center;
+			position: relative;
+			margin: -15px;
+			height: 36px;
+			width: 36px;
+			top: 4px;
+			&:before {margin: 0;}
+		}
+		&.m-button-inline {
+			display: inline-block;
+			padding: 0;
+			top: 13px;
+		}
+		&.m-status-icon{
+			I {
+				color: #4a596e;
+				text-align: left;
+			}
+		}
+	}
+	
+	.row {
+		&.a-hidden {display: none;}
+		&.m-fullwidth {
+			margin: 0 -18px;
+			& > *:first-child:not(.change-img) {padding-left: 18px;}
+			& > *:last-child {padding-right: 18px;}
+		}
+		&:not(.a-hidden) + .row {
+			border-top: 1px solid $color-gray-line;
+			padding-top: 8px;
+			margin-top: 8px;
+		}
+		&.ui-sortable-helper {
+			@include shadow(0 5px 6px rgba(0, 0, 0, .2));
+			border-top: 1px solid $color-gray-line;
+			padding-top: 8px;
+			background: #fff;
+		}
+		.descr {color: $color-gray-text;}
+		.object-cover {
+			margin-right: 20px;
+			display: block;
+			IMG {
+				max-width: 100%;
+				display: block;
+			}
+		}
+		.action-button {
+			padding: 0;
+			I {
+				color: $color-main;
+				margin-top: -10px;
+			}
+			.icon-prop-delete {color: $color-gray-text;}
+		}
+		.add-btn {
+			padding: 10px 14px 10px 14px;
+			white-space: nowrap;
+			position: relative;
+			cursor: pointer;
+			margin: -8px 0;
+			color: #45c79e;
+			z-index: 2;
+			LABEL {
+				cursor: pointer;
+			}
+			I {
+				font-size: 28px;
+				margin-right:6px;
+				&:before {margin: 0;}
+			}
+			SPAN {
+				vertical-align: top;
+				line-height: 24px;
+			}
+		}
+		.prop-menu {
+			float: right;
+			.dropdown-toggle {
+				margin: -8px -18px -18px 0;
+				padding: 10px 18px;
+				cursor: pointer;
+				I {
+					color: $color-gray-text;
+					font-size: 28px;
+					&:before {margin: 0;}
+				}
+			}
+		}
+		.drag-drop:before {min-height: 25px;}
+		&.add-row {margin-bottom:-8px;}
+	}
+	.row-cover {
+		font: 20px/60px openSansBold;
+		color: $color-gray-text;
+		text-align: center;
+		display: block;
+		height: 60px;
+		width: 70px;
+		&.m-border {border: 1px solid $color-gray-line;}
+		IMG {
+			vertical-align: middle;
+			display: inline-block;
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+	.row-gallery {
+		margin-bottom: -3px;
+		margin-right: -8px;
+	}
+	.row-image {
+		@include inline-block;
+		text-align: center;
+		position: relative;
+		margin-bottom: 8px;
+		margin-right: 5px;
+		line-height: 70px;
+		height: 70px;
+		width: 70px;
+		&.m-banner{
+			width: 100px;
+			height: auto;
+			line-height:0;
+			IMG {max-height: auto;}
+		}
+		&:hover:after {
+			background: rgba(0, 0, 0, 0.5) url("#{$img}pic-uploader-zoom.png") 50% 50% no-repeat;
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			content: '';
+			z-index: 2;
+			left: 0;
+			top: 0;
+		}
+		IMG {
+			display: inline-block;
+			vertical-align: top;
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+	.row-progress-bar {
+		height: 4px !important;
+		position: absolute;
+		min-height: 0;
+		bottom: -4px;
+		width: 100%;
+		z-index: 6;
+		padding: 0;
+		margin: 0;
+		left: 0;
+		DIV {
+			background: $color-main;
+			position: absolute;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+	}
+	.drag-drop {
+		cursor: pointer;
+		&:before {
+			background: url("#{$img}drag-drop.png") 0 0;
+			min-height: 18px;
+			cursor: pointer;
+			display: block;
+			content: '';
+			height: 100%;
+			width: 7px;
+		}
+		&.m-inactive {opacity: .5}
+	}
+	.white-header {
+		border-bottom: 2px solid $color-main;
+		&, &:hover {@include shadow(none);};
+		& > * {
+			font: 12px openSans;
+			&:first-letter {text-transform: uppercase;}
+		}
+		& + .white-body {margin-top: $wblock-line-spacing;}
+	}
+	.white-inner-cont {
+		border-top: 1px solid #ebebeb;
+		background: #fbfbfb;
+		padding: 8px 0;
+	}
+	.sort-link {
+		white-space: nowrap;
+		SPAN {white-space: normal;}
+		&.m-sort-0:after {content: '↑';}
+		&.m-sort-1:after {content: '↓';}
+	}
+	.w12 {
+		INPUT[type=text], INPUT[type=password], SELECT, TEXTAREA {margin: 0;}
+	}
+	.prop-item {
+		&.m-unit .field INPUT {width: 300px;}
+		.prop-title {
+			margin-bottom: 10px;
+			&.m-nomargin {margin-bottom: 0;}
+		}
+	}
+}

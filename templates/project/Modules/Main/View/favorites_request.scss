@@ -1,0 +1,71 @@
+@import 'owner.scss';
+
+.request-form.m-swiper{
+	width:380px;
+}
+.swiper-container{
+	width:100%;
+}
+.swiper-slide {
+	/*width: 360px;*/
+	min-height: 304px;
+	color:#000;
+	LI{
+		padding-bottom:24px;
+		.iteration{
+			font:31px/1em bebas;
+			float:left;
+			padding:5px 10px 10px 0;
+			color:#000;
+		}
+	}
+	.title{
+		text-align: left;
+		font-size:16px;
+		SPAN{
+			font:18px/1.8em bebas;
+			color:$color-dark-magenta;
+			border-bottom: 1px solid rgba(106, 102, 106, .3);
+		}
+	}
+	.descr{
+		font: 15px/1em school_book_italic;
+		color:$color-dark-magenta;
+	}
+}
+.nav {
+	border-top: 1px solid #988164;
+	position: relative;
+	margin-top: 20px;
+	height: 60px;
+	.pagin {
+		font: 16px/60px bebas;
+		word-spacing: 10px;
+		float: left;
+		SPAN{
+			word-spacing: 3px;
+		}
+		I{
+			margin: 0 9px;
+		}
+	}
+	.swiper-pagination {
+		display:none;
+	}
+	.swiper-button-prev, .swiper-button-next {
+		@include border-box;
+		padding: 27px 28px 33px 35px;
+		background: none;
+		position: static;
+		cursor:pointer;
+		margin-top: 0;
+		float: right;
+		opacity: 1;
+		.svg polygon {fill: #000;}
+	}
+	.swiper-button-disabled {opacity: .3;}
+	.swiper-button-prev {
+		left: 2%;
+		.svg {@include transform(rotate(180deg));}
+	}
+}

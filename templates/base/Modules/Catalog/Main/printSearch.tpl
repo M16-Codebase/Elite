@@ -1,0 +1,1 @@
+{include file="print/print.tpl" path_to_inner="print/catalogSearch.tpl"}

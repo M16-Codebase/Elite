@@ -1,0 +1,11 @@
+.wblock.a-hidden {
+  display: none; }
+
+.white-block-row + .origin + .add-row {
+  border-top: 1px solid #e8e8e8; }
+
+.white-blocks .add-row.row {
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
+/*# sourceMappingURL=viewTest.css.map */

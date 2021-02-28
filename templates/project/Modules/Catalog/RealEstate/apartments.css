@@ -1,0 +1,110 @@
+.main-menu {
+  padding: 17px 8px; }
+
+.site-top {
+  padding: 21px 0 33px; }
+  .site-top .title {
+    font-size: 48px;
+    font-size: 3.99vw;
+    letter-spacing: .001em;
+    line-height: .9em;
+    color: #cfb27b;
+    margin-bottom: 28px; }
+    .site-top .title SPAN {
+      color: #fff;
+      font-size: 34px;
+      font-size: 2.8vw;
+      line-height: 1em; }
+  .site-top .btn {
+    padding-left: 18px;
+    padding-right: 18px; }
+
+.page-center:not(.header-big) {
+  width: 1134px;
+  margin: auto;
+  display: block;
+  overflow: hidden;
+  clear: both;
+  text-align: center; }
+
+.filter.user-form {
+  opacity: 1; }
+
+.flats-list {
+  padding: 26px 0 37px; }
+
+.flat-wrap {
+  position: relative;
+  background: #efefef;
+  padding: 16px;
+  width: 49.5%;
+  margin-top: 1%;
+  float: left; }
+  .flat-wrap:nth-of-type(even) {
+    margin-left: 1%; }
+  .flat-wrap .cover-padding {
+    overflow: hidden;
+    padding: 3%;
+    width: 50%;
+    float: left;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .flat-wrap .cover {
+    width: 100%;
+    padding-bottom: 94%;
+    background-color: #fff; }
+  .flat-wrap .params {
+    padding-left: 16px;
+    width: 50%; }
+    .flat-wrap .params .descr {
+      color: #000; }
+    .flat-wrap .params .main {
+      color: #757575;
+      letter-spacing: .32em;
+      margin-bottom: -4px; }
+    .flat-wrap .params .title SPAN {
+      color: #000; }
+    .flat-wrap .params .area {
+      word-spacing: -6px; }
+      .flat-wrap .params .area I {
+        color: #b59974; }
+    .flat-wrap .params .btn {
+      padding: 14px 19px 15px; }
+    .flat-wrap .params .favorite {
+      top: -80px;
+      right: -80px; }
+
+.callback-wrap {
+  text-align: center;
+  background: #272127;
+  padding: 50px 0 56px; }
+  .callback-wrap .descr {
+    font: 15px/1em school_book_italic;
+    color: #fff;
+    opacity: .61;
+    margin-bottom: 15px; }
+  .callback-wrap .buttons .btn + .btn {
+    margin-left: .8%; }
+
+.bg-wrap {
+  background: #fff; }
+
+.empty-result {
+  padding: 85px 0 66px;
+  background: #efefef; }
+  .empty-result .main {
+    padding-bottom: 6px;
+    color: #111111;
+    opacity: .55; }
+  .empty-result .title {
+    font-size: 31px;
+    font-size: 2.58333vw;
+    margin: 0 5%; }
+  .empty-result .title SPAN {
+    font-size: 31px;
+    font-size: 2.58333vw;
+    letter-spacing: .03em; }
+
+/*# sourceMappingURL=apartments.css.map */

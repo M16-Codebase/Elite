@@ -1,0 +1,28 @@
+@import url("/css/aside.css");
+
+.empty-search {
+	position: relative;
+	height: 400px;
+}
+.empty-search-inner {
+	position: relative;
+	border-left: none;
+	width: 550px;
+}
+.empty-search-inner.m-fixed {
+	position: fixed;
+	top: 37px;
+}
+.empty-search-inner.m-abs {
+	position: absolute;
+	bottom: 0;
+}
+.empty-search-inner:before {
+	background: #fff url("/img/design/review-item-bg.png") 50% 0 no-repeat;
+	position: absolute;
+	bottom: -11px;
+	height: 10px;
+	width: 100%;
+	content: '';
+	left: 0;
+}

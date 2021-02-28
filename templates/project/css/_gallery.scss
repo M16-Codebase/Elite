@@ -1,0 +1,173 @@
+.gallery-tiles {
+	position: relative;
+	background: #fff;
+	.gallery-big {
+		position: absolute;
+		overflow: hidden;
+		left: -99999px;
+		height: 100%;
+		width: 100%;
+		z-index: 2;
+		top: 0;
+		IMG {
+			max-width: 100%;
+			width: 100%;
+		}
+		.swiper-container {height: 100%;}
+		.swiper-button-prev, 
+		.swiper-button-next {
+			@include transition(all .4s ease);
+			position: absolute;
+			background: none;
+			cursor: pointer;
+			z-index: 99;
+			height: 100%;
+			width: 25%;
+			opacity: 0;
+			top: 0;
+			.arrow {
+				@include transition(all .4s ease);
+				position: absolute;
+				background: #000;
+				bottom: auto;
+				right: -30px;
+				height: 80px;
+				width: 110px;
+				top: 50%;
+				&:before {
+					border-bottom: 0 solid transparent;
+					border-top: 80px solid transparent;
+					border-right: 24px solid #000;
+					position: absolute;
+					content: '';
+					left: -24px;
+					top: 0;
+				}
+				.svg {
+					position: absolute;
+					margin: auto;
+					left: -40px;
+					bottom: 0;
+					right: 0;
+					top: 0;
+					polygon {fill: #fff;}
+				}
+			}
+			&:hover .arrow {right: 0;}
+		}
+		.swiper-button-prev {
+			left: 0;
+			.arrow {
+				left: -30px;
+				&:before {
+					border-right: 24px solid transparent;
+					border-top: 0 solid transparent;
+					border-bottom: 80px solid #000;
+					position: absolute;
+					content: '';
+					right: -24px;
+					top: 0;
+				}
+				.svg {
+					@include transform(rotate(180deg));
+					right: -40px;
+					left: 0;
+				}
+			}
+			&:hover .arrow {left: 0;}
+		}
+		.swiper-button-next {right: 0;}
+		.close-photo {
+			@include transition(all .4s ease);
+			position: absolute;
+			background: #000;
+			cursor: pointer;
+			right: -30px;
+			height: 80px;
+			width: 80px;
+			z-index: 99;
+			opacity: 0;
+			top: 20px;
+			&:before {
+				border-top: 80px solid transparent;
+				border-bottom: 0 solid transparent;
+				border-right: 24px solid #000;
+				position: absolute;
+				content: '';
+				left: -24px;
+				top: 0;
+			}
+			&:hover {right: 0;}
+			.svg {
+				margin-left: 10px;
+				margin-top: 32px;
+				path {fill: #fff;}
+			}
+		}
+		
+	}
+	&:hover .gallery-big {
+		.swiper-button-prev:not(.swiper-button-disabled), 
+		.swiper-button-next:not(.swiper-button-disabled),
+		.close-photo {opacity: 1;}
+	}
+	.gallery-small {
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+		.info {
+			background: $color-dark-magenta;
+			text-align: center;
+			color: #fff;
+			.title {
+				font: 18px bebas_book;
+				font-size: vw(18);
+				text-transform: uppercase;
+				letter-spacing: .36em;
+				margin-bottom: 7%;
+				margin-top: 14%;
+			}
+			.count {
+				margin-bottom: 9%;
+				.count-num {
+					font: 76px/1em anglecia_italic;
+					font-size: vw(76);
+				}
+				.count-text {
+					font: 30px/1em gotham_black;
+					font-size: vw(30);
+					text-transform: uppercase;
+					letter-spacing: .1em;
+				}
+			}
+			.btn {padding: 13px 30px 14px;}
+		}
+		.photo-cont {
+			text-align: center;
+			overflow: hidden;
+			cursor: pointer;
+			display: none;
+			height: 100%;
+			width: 100%;
+			left: 0;
+			top: 0;
+			DIV {
+				@include transition(all .3s ease);
+				@include transform(scale(1, 1));
+				height: 100%;
+				width: 100%;
+			}
+			&:after {
+				position: absolute;
+				display: block;
+				height: 100%;
+				width: 100%;
+				content: '';
+				z-index: 2;
+				left: 0;
+				top: 0;
+			}
+			&:hover DIV {@include transform(scale(1.1, 1.1));}
+		}
+	}
+}

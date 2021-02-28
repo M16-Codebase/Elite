@@ -1,0 +1,14 @@
+@import '../../../css/pdf';
+
+.pdf-item {
+	.price-wrap .opt-table .opt-col {
+		padding-bottom: 0;
+		padding-top: 0;
+		border: none;
+	}
+	.col1 {width: 42%;}
+	.col2 {
+		text-align: center;
+		width: 58%;
+	}
+}

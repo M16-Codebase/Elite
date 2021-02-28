@@ -1,0 +1,60 @@
+
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-left-radius: 3px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 3px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-top-radius: 3px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-bottom-radius: 3px;
+}
+
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+    margin: .5em .4em .5em 0;
+    cursor: pointer;
+}
+
+.row.expanded-content-panel-header {
+    padding: 1rem 0;
+    border: 1px solid #9a9da3;
+    border-left: none;
+    border-right: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.filter-seo-form {
+
+}
+
+.filter-seo-form > fieldset {
+    padding: 0;
+    border: 0;
+    margin-top: 25px;
+}
+
+.filter-seo-form label {
+    display: block;
+}
+.filter-seo-form input.text {
+    margin-bottom: 12px;
+    width: 95%;
+    padding: .4em;
+}
+
+h3.ui-accordion-header > a {
+    padding-left: 20px;
+}
+
+.post-block .redactor-title {
+    padding: 10px 20px;
+}

@@ -1,0 +1,30 @@
+@import "vars";
+
+.b-tip {
+	vertical-align: middle;
+	display: inline-block;
+	text-transform: none;
+	position: relative;
+	text-align: left;
+	height: 13px;
+	width: 13px;
+	.tip-icon {
+		background: url("#{$img}tip-icon.png") 0 0 no-repeat;
+		display: block;
+		height: 13px;
+		width: 13px;
+	}
+	.tip-text {
+		font: 12px/13px $font-italic;
+		background: #29384c;
+		position: absolute;
+		padding: 10px 12px;
+		display: none;
+		z-index: 100;
+		width: 300px;
+		color: #fff;
+		left: -30px;
+		top: 20px;
+	}
+	.tip-icon:hover + .tip-text {display: block;}
+}

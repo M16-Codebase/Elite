@@ -1,0 +1,156 @@
+@import '../../../css/vars';
+@import 'contacts';
+
+.contacts-page {
+	.aside-menu .aside-top {margin-bottom: 28px;}
+	.objects-list {
+		width: 184px;
+		float: left;
+		.object-item + .object-item {margin-top: 20px;}
+		.objects-title, .offer-title {
+			display: block;
+			font: bold 12px/16px OpenSans;
+		}
+		.small-descr {font: 13px/17px openSansItalic, Arial;}
+		.offer-title {margin-top: 10px;}
+		.i-wallet {
+			margin-right: 2px;
+			margin-top: 4px;
+		}
+		.offer-price {
+			color: #535353;
+			font: bold 12px/19px OpenSans;
+			margin-top: 2px;
+		}
+	}
+	.objects-paging {
+		margin-top: 25px;
+		overflow: hidden;
+		DIV {font: 16px/28px futuraDemi;}
+		DIV.m-inactive {display: none;}
+		DIV:before, DIV:after {
+			font-family: Arial;
+			font-size: 10px;
+			color: #70be45;
+		}
+		.car-prev {float: left;}
+		.car-prev:before {
+			margin-right: 6px;
+			content: '◄';
+		}
+		.car-next {float: right;}
+		.car-next:after {
+			margin-left: 6px;
+			content: '►';
+		}
+	}
+	.contacts-top {
+		background: #026e50;
+		color: #fff;
+		font: 16px/20px futuraDemi;
+		height: 20px;
+		padding: 19px;
+		.contacts-top-descr {
+			color: #fff;
+			font: 16px/20px futuraDemi;
+		}
+		I {
+			@include icon(0, 0, 16px, 16px, 'icons/star-field.png');
+			margin-right: 2px;
+			margin-top: 3px;
+		}
+	}
+	.contacts-block {
+		background: #ebebeb;
+		padding: 20px;
+		.contacts-form, .contacts-info {
+			padding: 15px 32px 40px;
+			background: #fff;
+			width: 360px;
+		}
+		.contacts-info {
+			padding-top: 28px;
+			.title-top {
+				margin-bottom: 27px;
+				padding-bottom: 11px;
+			}
+		}
+		.feedback-form {
+			position: relative;
+			.sending-block {
+				position: absolute;
+				display: none;
+				height: 100%;
+				width: 100%;
+				z-index: 5;
+				left: 0;
+				top: 0;
+			}
+			&.sending {
+				opacity: .5;
+				.sending-block {display: block;}
+			}
+		}
+	}
+	.fields-block {
+		&.contacts-fields {
+			INPUT[type="text"], INPUT[type="password"], TEXTAREA {margin-top: 7px;}
+			.f-row {
+				.field {
+					width: 154px;
+					& + .field {
+						margin-right: 0;
+						width: 185px;
+						INPUT {width: 170px;}
+					}
+					INPUT {width: 134px;}
+				}
+			}
+			TEXTAREA {
+				padding: 3px 7px 3px;
+				width: 343px;
+			}
+			INPUT[type="text"], INPUT[type="password"] {width: 343px;}
+			.f-row {margin: 4px 0;}
+		}
+	}
+	.contacts-descr {
+		border: none;
+		margin-top: 28px;
+		padding: 0;
+		.adress {
+			border-bottom: 1px solid #d9d9d9;
+			color: #656565;
+			font: 18px/27px OpenSans;
+			margin-bottom: 23px;
+			padding: 3px 0 19px;
+		}
+		.contacts-item {
+			margin-top: 18px;
+			&:first-child {margin: 0;}
+		}
+	}
+	.aside-link {margin: 21px 0 34px;}
+	.contacts-agent {
+		margin-top: 20px;
+		.agent-cover IMG {@include radius(50%);}
+		.agent-name {
+			@include inline-block;
+			font-weight: bold;
+			margin-left: 14px;
+			margin-top: 3px;
+			width: 170px;
+			vertical-align: top;
+		}
+		.agent-contacts {
+			margin-top: 12px;
+			SPAN + SPAN {margin-left: 18px;}
+		}
+		.i-contacts {
+			margin-top: 2px;
+			margin-right: 5px;
+		}
+	}
+	
+}
+.breadcrumb LI.m-current + .m-current A {color: #838383;}

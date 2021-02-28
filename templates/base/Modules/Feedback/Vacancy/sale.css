@@ -1,0 +1,58 @@
+.page-title {
+  background: none; }
+
+.order-block {
+  background: #ebebeb;
+  margin-top: 20px;
+  padding: 22px; }
+  .order-block .order-block-title {
+    color: #656565;
+    font: 18px/23px OpenSans; }
+  .order-block .feedback-form {
+    margin-top: 13px; }
+  .order-block .fields-block {
+    background: #fff;
+    padding: 32px 33px 44px; }
+    .order-block .fields-block .buttons {
+      margin-top: 35px;
+      text-align: center; }
+      .order-block .fields-block .buttons .a-btn-green {
+        padding: 9px 0; }
+    .order-block .fields-block.feedback-block INPUT[type="text"], .order-block .fields-block.feedback-block INPUT[type="password"], .order-block .fields-block.feedback-block TEXTAREA {
+      margin-top: 9px;
+      width: 471px; }
+    .order-block .fields-block.feedback-block .f-select {
+      margin-top: 9px; }
+    .order-block .fields-block TEXTAREA {
+      padding: 9px 7px 13px; }
+    .order-block .fields-block .f-row .field {
+      width: 154px; }
+      .order-block .fields-block .f-row .field + .field {
+        margin-right: 0;
+        width: 320px; }
+        .order-block .fields-block .f-row .field + .field INPUT {
+          width: 304px; }
+      .order-block .fields-block .f-row .field INPUT {
+        width: 134px; }
+    .order-block .fields-block .file-choice {
+      margin: 16px 0 2px; }
+      .order-block .fields-block .file-choice .file-choice-icon, .order-block .fields-block .file-choice .file-choice-cont {
+        vertical-align: top;
+        display: inline-block;
+        vertical-align: top; }
+      .order-block .fields-block .file-choice .file-choice-cont {
+        margin-top: 2px; }
+      .order-block .fields-block .file-choice .f-files {
+        margin-top: 11px; }
+      .order-block .fields-block .file-choice .file-choice-icon {
+        margin-right: 10px; }
+        .order-block .fields-block .file-choice .file-choice-icon I {
+          vertical-align: top;
+          display: inline-block;
+          background: url("/img/icons/icons/file-icon.png") -57px 0 no-repeat;
+          height: 57px;
+          width: 57px; }
+  .order-block .col2 {
+    width: 490px; }
+
+/*# sourceMappingURL=sale.css.map */

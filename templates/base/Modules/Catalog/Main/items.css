@@ -1,0 +1,15 @@
+/*****************Breadcrumbs******************/
+.breadcrumbs {
+  color: black; }
+  .page-aside .breadcrumbs {
+    margin: 0 30px 28px; }
+  .breadcrumbs .single-crumb:first-child:before {
+    content: none; }
+  .breadcrumbs .single-crumb:before {
+    content: "\2014";
+    padding: 0 7px; }
+
+.items-list-cont .empty-result {
+  margin: 30px; }
+
+/*# sourceMappingURL=items.css.map */

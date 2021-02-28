@@ -1,0 +1,1 @@
+{include file='Modules/Posts/Pages/editPost.tpl'}

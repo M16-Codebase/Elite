@@ -1,0 +1,46 @@
+.post-block {
+	font: $font-def;
+	position: relative;
+	background: #fff;
+	display: block;
+	color: #000;
+	P + P {margin-top: 1em;}
+	UL, OL {padding: 0;}
+	UL LI {list-style-type: disc;}
+	OL LI {list-style-type: decimal;}
+	LI {
+		padding-right: 1.2em;
+		position: relative;
+		left: 1.2em;
+	}
+	TABLE {}
+	.content-image {
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		&.a-left {margin-right: 20px;}
+		&.a-right {margin-left: 20px;}
+		&.a-center {clear: both;}
+		& > SPAN, & > A {
+			@include inline-block;
+		}
+		IMG {
+			height: auto !important;
+			opacity: 1 !important;
+			max-width: 100%;
+			display: block;
+			margin: 0 auto;
+			height: auto;
+			cursor: move;
+		}
+		.image-description {
+			font-style: italic;
+			margin: 8px auto 0;
+			color: #777;
+		}
+		.image-controls {display: none;}
+		#redactor-image-editter {display: none;}
+		#redactor-image-box IMG {cursor: default;}
+	}
+}
+

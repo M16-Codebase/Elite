@@ -1,0 +1,137 @@
+$width-mobile: 1100px;
+$color-link: #059fdb;
+$color-link-hover: #45cdfc;
+$color-main: #4a596e;
+$color-main-hover: #3f7ac3;
+$color-gray-bg: #f2f2f2;
+$color-gray-line: #e8e8e8;
+$color-gray-text: #aab5bd;
+$color-scrollbar: #aab5bd;
+$color-header: #f0f9ff;
+$color-header-sub: #03b08d;
+$color-header-border: #cfe4f2;
+$color-scrollbar-hover: $color-main-hover;
+$font-def: 14px/18px openSans,Arial;
+$font-bold: openSansBold,Arial;
+$font-italic: openSansItalic,Arial;
+$font-descr: 12px/15px openSansItalic; 
+$img: '/templates/Admin/img/';
+
+@mixin inline-block($vertical-align: top) {
+	vertical-align: $vertical-align;
+	display: inline-block;
+}
+
+@mixin clearbox {
+	position: relative;
+	&:before,
+	&:after {
+		display: table;
+		clear: both;
+		content: '';
+		width: 100%;
+		height: 0;
+	}
+}
+
+@mixin justify {
+	&, & > & {
+		text-align-last: justify;
+		text-justify: newspaper;
+		text-align: justify;
+		line-height: 0;
+		font-size: 1px; 
+		zoom: 1;
+		&:after {
+			display: inline-block;
+			visibility: hidden;
+			overflow: hidden;
+			content: '';
+			width: 100%;
+			height: 0;
+		}
+		& > * {
+			@include inline-block;
+			text-align-last: auto;
+			text-align: left;
+			font: $font-def;
+		}
+		.browser-ie8 & {text-align-last: center;}
+	}
+}
+
+@mixin border-box($s:border-box) {
+	-webkit-box-sizing: $s;
+	-moz-box-sizing: $s;
+	box-sizing: $s;
+}
+
+@mixin background-size($s:auto) {
+	-webkit-background-size: $s;
+	-moz-background-size: $s;
+	-o-background-size: $s;
+	background-size: $s;
+}
+
+@mixin radius($r:0) {
+	-webkit-border-radius: $r;
+	-moz-border-radius: $r;
+	border-radius: $r;
+}
+
+@mixin shadow($s...) {
+	-webkit-box-shadow: $s;
+	-moz-box-shadow: $s;
+	box-shadow: $s;
+}
+
+@mixin gradient($from, $to, $start:0%, $end:100%, $dir:top, $alt-dir:to bottom) {
+	background: $from; 
+	background: -webkit-linear-gradient($dir, $from $start, $to $end);
+	background: -moz-linear-gradient($dir, $from $start, $to $end);
+	background: -ms-linear-gradient($dir, $from $start, $to $end);
+	background: -o-linear-gradient($dir, $from $start, $to $end);
+	background: linear-gradient($alt-dir, $from $start, $to $end);
+}
+
+@mixin gradientStr($dir, $alt-dir, $str) {
+	background: -webkit-linear-gradient($dir, $str);
+	background: -moz-linear-gradient($dir, $str);
+	background: -ms-linear-gradient($dir, $str);
+	background: -o-linear-gradient($dir, $str);
+	background: linear-gradient($alt-dir, $str);
+}
+
+@mixin transition($t...) {
+	-webkit-transition: $t;
+	-moz-transition: $t;
+	-ms-transition: $t;
+	-o-transition: $t;
+	transition: $t;
+}
+
+@mixin transform($t...) {
+	-webkit-transform: $t;
+	-moz-transform: $t;
+	-ms-transform: $t;
+	-o-transform: $t;
+	transform: $t;
+}
+
+@mixin icon($x, $y, $w, $h, $url:'icons.png') {
+	@include inline-block;
+	background: url("#{$img}#{$url}") $x $y no-repeat;
+	height: $h;
+	width: $w;
+}
+
+@mixin image-2x($image, $width, $height) {
+	@media (min--moz-device-pixel-ratio: 1.3),
+		(-o-min-device-pixel-ratio: 2.6/2),
+		(-webkit-min-device-pixel-ratio: 1.3),
+		(min-device-pixel-ratio: 1.3),
+		(min-resolution: 1.3dppx) {
+		background-image: url($image);
+		background-size: $width $height;
+	}
+}

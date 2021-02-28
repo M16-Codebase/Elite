@@ -1,0 +1,299 @@
+@import '../../../css/vars';
+
+.top-bg.m-white{
+	overflow:visible;
+	margin-bottom:45px;
+	.site-top{
+		padding-top:32px;
+		.title{
+			font-size:78px;
+			font-size: vw(78);
+			line-height: .7em;
+			color:$color-light-black;
+			text-transform: uppercase;
+		}
+	}
+	.top-links {
+		margin-top: -6px;
+		A {
+			font: 16px/28px bebas;
+			letter-spacing: .36em;
+			padding: 6px;
+			color: #000;
+		}
+		.slash {
+			border-color: $color-gray;
+			margin: 0 12px;
+			height: 40px;
+		}
+	}
+}
+
+.main-sc8 {
+  width: 100%;
+  height: 34.8vw;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 75px;
+}
+.main-sc8-bg {
+  background-color: #b59974;
+  position: absolute;
+  top: 13%;
+  bottom: -13%;
+  left: -13%;
+  right: -13%;
+  @include transform(rotate(-2deg));
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.main-sc8-bg-content {
+  position: absolute;
+  top: -17%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background: url(/img/main-sc8-bg.png) 50% no-repeat;
+  background-size:contain;
+  @include transform(rotate(2deg));
+}
+
+.main-sc8-photo {
+  position: absolute;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  img {
+    height: 100%;
+    position: relative
+  }
+}
+
+.main-sc8-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 30;
+
+  .row {
+    height: 100%;
+  }
+
+  .col {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+
+.main-sc8-quoute {
+  font-family: school_book_italic;
+  font-size: 2vw;
+  display: inline-block;
+  line-height: 0.91;
+  position: relative;
+  top: 5vw;
+  left: -3.5vw;
+
+  &:before {
+    content:"“";
+    font-size: 8.4vw;
+    color: #fff;
+    position: absolute;
+    display: block;
+    top: -5.3vw;
+    left: 50%;
+    margin-left: -3vw;
+    font-family: gotham_black;
+  }
+}
+
+.main-sc8-desc {
+  display: inline-block;
+  position: relative;
+  top: 1.5vw;
+  left: 5.8vw;
+  .logo {
+	  background: url("/img/sign.png") 50% 0 no-repeat;
+	  border-bottom: 1px solid #fff;
+	  margin: 0 auto 15px;
+	  height: 110px;
+	  width: 155px;
+  }
+}
+
+.main-sc8-desc-line_1 {
+  font-size: 1.28vw;
+  color: #111111;
+  margin-bottom: 0.55vw;
+  font-family: school_book_italic;
+}
+.main-sc8-desc-line_2 {
+  position: relative;
+  padding-bottom: 2.18vw;
+
+  .btn {
+    font-size: 1.45vw;
+    background-color: #383138;
+  }
+
+  &:after {
+    content:" ";
+    position: absolute;
+    display: block;
+    width: 10.18vw;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    margin-left: -5.09vw;
+  }
+
+}
+.main-sc8-desc-line_3 {
+  margin-top: 2.64vw;
+  margin-bottom: 1.27vw;
+  font-size: 2.82vw;
+  font-family: Bebas,sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+.main-sc8-desc-line_4 {
+  color: #fff;
+  font-family: school_book_italic;
+  font-size: 1.36vw;
+  margin-bottom: 1.27vw;
+  line-height: 1.2;
+}
+
+.main-sc8-desc-line_5 {
+  svg {
+    height: 4vw;
+  }
+}
+
+
+.main-sc5 {
+  .about.post {
+    padding-top: 0;
+    margin-top: -14px;
+    padding-bottom: 40px;
+	&:not(#about){
+		.title{
+			padding-top: 0;
+			margin-bottom: 0;
+			padding-bottom: 1px;
+			&:after{
+				display: none;
+			}
+		}
+	}
+  }
+}
+
+.main-sc6 + .main-sc5 {
+	margin-top: 10px;
+}
+.main-sc6-item {
+	margin-bottom: 74px;
+	vertical-align: top;
+	text-align: center;
+	position: relative;
+	width: 24.8%;
+	.counter {
+		text-align: center;
+		position: absolute;
+		width: 100%;
+		z-index: 2;
+		top: -18px;
+		left: 0;
+		.skew {padding: 0 18px;}
+	}
+	&.m-empty {
+		background: #e6e6e6;
+		height: 23vw;
+	}
+	.empty-content {
+		@include transform(translate(0, -50%));
+		position: relative;
+		display: block;
+		color: #fff;
+		top: 50%;
+		.main-sc6-item-title {line-height: 1.2em;}
+		.main-sc6-item-caption {
+			line-height: 1em;
+			margin-top: 15px;
+		}
+	}
+}
+.main-sc6-item-pic {
+	height: 23vw;
+	background-size: cover;
+	background-position: 50%;
+	background-repeat:no-repeat;
+	margin-bottom: 23px;
+	position: relative
+
+}
+.main-sc6-item-logo {
+	width: 118px;
+	height: 118px;
+	line-height: 118px;
+	background-color: #fff;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 10;
+	img {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		max-width:100%;
+		max-height:100%;
+		padding: 10px;
+		@include border-box;
+	}
+}
+.main-sc6-item-desc {
+	color: #111;
+}
+.main-sc6-item-title {
+	text-transform: uppercase;
+	font-family: gotham_black;
+	font-size: 23px;
+	margin-bottom: 5px;
+	em {
+		font-family: anglecia_italic;
+		font-size: 31px;
+		position: relative;
+		text-transform: none;
+		display: block;
+		margin-top: 1px;
+	}
+}
+.main-sc6-item-caption {
+	font-family: school_book_italic;
+	font-size: 15px;
+}
+
+.main-sc6-skew {
+	position: relative;
+	top: -18px;
+}

@@ -1,0 +1,62 @@
+@import url("../../Catalog/Main/items.css");
+
+.promo-page .white-block-inner H1 {margin: 16px 0 0;}
+.promo-page .promo-images {position: relative;}
+.promo-page .promo-image {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	z-index: 2;
+} 
+.promo-page .promo-images IMG {
+	position: relative;
+	min-width: 100%;
+	display: block;
+}
+.promo-page .main-col .col1 {width: 25%;}
+.promo-page .main-col .col2 {width: 50%;}
+.promo-page .promo-images:after {
+	-webkit-box-shadow: 0 0 25px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0 0 25px rgba(0,0,0,0.8);
+	box-shadow: 0 0 25px rgba(0,0,0,0.8);
+	-webkit-border-radius: 100px / 10px;
+	-moz-border-radius: 100px / 10px;
+	border-radius: 100px / 10px;
+	bottom: 3px;
+	content: "";
+	height: 83%;
+	left: 5%;
+	position: absolute;
+	width: 88%;
+}
+.promo-page .content-white-block + .content-white-block {margin-top: 16px;}
+.promo-page .grey-block-inner {padding: 20px 15px 34px;}
+.promo-page .more-btn {
+	margin-top: 32px;
+	text-align: center;
+}
+.promo-page .promo-bottom {margin: 28px 25px 33px 15px;}
+.browser-ie7 .promo-page .promo-bottom {height: 70px;}
+.promo-page .main {font-size: 9px;}
+.promo-page .promo-title A {
+	color: #000;
+	font-size: 18px;
+	line-height: 18px;
+}
+.promo-page .promo-descr {
+	color: #666;
+	font-size: 12px;
+	font-style: italic;
+}
+/* SHADOW */
+.promo-page .grey-block-inner {
+	-webkit-box-shadow: inset 0px 1px 1px rgba(100, 100, 100, 0.2);
+	-moz-box-shadow: inset 0px 1px 1px rgba(100, 100, 100, 0.2);
+	box-shadow: inset 0px 1px 1px rgba(100, 100, 100, 0.2);
+}
+.promo-page .grey-block-inner {
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}

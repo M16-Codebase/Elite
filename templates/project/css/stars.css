@@ -1,0 +1,17 @@
+
+i { font-size:21px !important; }
+
+/*.wrapper { width:960px; margin:0 auto; padding:45px 0; }*/
+.text-center { text-align:center; }
+
+.complex-rating-wrapper {padding: 0 66px 70px;}
+.rating i { margin:0 3px; font-size:48px !important; color: #b59974; }
+.complex-rating-wrapper p.descr {
+    font: 16px/1em gotham_medium;
+    text-transform: uppercase;
+    letter-spacing: .24em;
+    padding-top: 20px;
+}
+
+/** RATINGS **/
+.font-size i { font-size:9px !important; }

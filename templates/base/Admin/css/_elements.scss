@@ -1,0 +1,361 @@
+.a-left {float: left;}
+.a-right {float: right;}
+.a-hidden {display: none;}
+.a-block {display: block;}
+.a-pre {white-space: pre-wrap;}
+.a-center {text-align: center;}
+.a-right-align {text-align: right;}
+.a-inline-cont > *,
+.a-inline-block {@include inline-block;}
+.a-clearbox {@include clearbox;}
+.a-justify {@include justify;}
+
+// Ссылки
+A, A:link, A:visited, .a-link {
+	text-decoration: none;
+	color: $color-link;
+	cursor: pointer;
+	&:hover {color: $color-link-hover;}
+	&.m-dotted {
+		border-bottom: 1px dotted $color-link;
+		&:hover {border-bottom-color: $color-link-hover;}
+	}
+}
+.a-link-toggle:hover {
+	A, .a-link {
+		color: $color-link-hover;
+		&.m-dotted {border-bottom-color: $color-link-hover;}
+	}
+}
+.link-wrap {cursor: pointer;}
+
+// Заголовки
+H1, .h1 {
+	font: 22px/26px openSansBold;
+	text-transform: uppercase;
+	margin-bottom: 18px;
+}
+H2, .h2 {
+	font: 18px/22px openSansBold;
+	margin-bottom: 14px;
+}
+H3, .h3 {
+	font: 16px/20px openSans;
+	margin-bottom: 8px;
+}
+H4, .h4 {
+	font: 14px/18px openSansBold;
+	margin-bottom: 3px;
+}
+
+// Стили текста
+.small-descr {font: $font-descr;}
+
+// Инпуты
+INPUT[type="text"], INPUT[type="password"], TEXTAREA, SELECT {
+	@include radius(2px);
+	@include border-box;
+	border: 1px solid #e2e3ea;
+	border-top-color: #abadb3;
+	font: 14px/18px openSans;
+	padding: 3px 8px;
+	background: #fff;
+	height: 26px;
+	color: #000;
+	width: 100%;
+	outline:none;
+	transition: box-shadow .5s,border-color .5s;
+	&:focus{
+		box-shadow:0px 0px 2px #059fdb;
+		border-color:#58d0ff;
+	}
+	&.m-small {width: auto;}
+}
+TEXTAREA {
+	min-height: 26px;
+	height: auto;
+}
+INPUT[type="text"], INPUT[type="password"] {height: 26px;}
+INPUT[type="text"],INPUT[type="password"],TEXTAREA{
+	&::-webkit-input-placeholder {font-family: $font-italic; font-style: normal; color: #bfbfbf; opacity:1;}
+	&:-ms-input-placeholder {font-family: $font-italic; font-style: normal; color: #bfbfbf; opacity:1;}
+	&::-moz-placeholder {font-family: $font-italic; font-style: normal;color: #bfbfbf; opacity:1;}
+	&:-moz-placeholder {font-family: $font-italic; font-style: normal; color: #bfbfbf; opacity:1;}
+}
+INPUT:disabled, TEXTAREA:disabled{
+    background-color: #F4F6F7;
+}
+INPUT[type="text"].m-error, 
+INPUT[type="password"].m-error, 
+TEXTAREA.m-error {
+	background-color: #FFF0F0; 
+	border-color: #FF7E7E;
+}
+SELECT.m-error {
+	border-color: #FF7E7E;
+	outline: none;
+}
+INPUT[type="checkbox"], INPUT[type="radio"] {
+	position: relative;
+	top: 1px;
+}
+.disabled-input {
+	@include radius(2px);
+	border: 1px solid #e2e3ea;
+	border-top-color: #abadb3;
+	background-color: #F4F6F7;
+	font: 12px/18px openSans;
+	padding: 3px 8px;
+	height: 18px;
+	color: #000;
+}
+.hidden-input {
+	position: fixed;
+	left: -9999px;
+}
+FORM.sending {
+	position: relative;
+	opacity: 0.6;
+	&:before {display: none;}
+	&:after {
+		position: absolute;
+		background: none;
+		display: block;
+		height: 100%;
+		width: 100%;
+		content: '';
+		z-index: 5;
+		left: 0;
+		top: 0;
+	}
+}
+
+// автокомплит
+.ui-autocomplete {
+	@include shadow(2px 4px rgba(0, 0, 0, 0.1));
+	@include radius(0);
+	.ui-menu-item {
+		font: 14px/18px openSans;
+		padding: 4px 8px;
+		&.ui-state-focus {margin: -1px;}
+	}
+}
+
+
+.tag-editor{
+	@include radius(2px);
+	@include border-box;
+	border: 1px solid #e2e3ea;
+	border-top-color: #abadb3;
+	font: 14px/18px openSans;
+	padding: 3px 8px;
+	background: #fff;
+	color: #000;
+	min-height:99px;
+	width: 100%;
+	outline:none;
+	transition: box-shadow .5s,border-color .5s;
+	&.active{
+		box-shadow:0px 0px 2px #059fdb;
+		border-color:#58d0ff;
+	}
+	&.m-small {width: auto;}
+}
+
+// Слайдеры
+.slider.ui-slider {
+	background: #1353aa;
+	margin: 15px 0 36px;
+	border: none;
+	height: 2px;
+}
+.slider.range.ui-slider {background: #c6c6c6;}
+.slider .ui-slider-range {background: #1353aa;}
+.slider .ui-slider-handle {
+	background: url("#{$img}slider-handle.png") 0 0 no-repeat;
+	margin-left: -6px;
+	border: none;
+	height: 23px;
+	width: 12px;
+	top: 4px;
+}
+
+// Выпадающие списки
+.dropdown {
+	position: relative;
+	.dropdown-menu {
+		position: absolute;
+		padding: 0 9px 2px 9px;
+		background: #8a9ba7;
+		top: 100%;
+		margin-top:9px;
+		box-shadow: 0 0 4px #aab5bd;
+		border-radius: 2px;
+		color:#fff;
+		A, SPAN{
+			font: 12px/23px $font-italic;
+			color:#fff;
+			display: block;
+			white-space:nowrap;
+		}
+		LI {border-top: 1px solid #a1afb8;}
+		LI:first-child {border: 0;}
+		LI:hover A, LI:hover SPAN {color:#000;}
+		&:hover I {color: #000;}
+	}
+	&.m-status{
+		.action-button{
+			text-align: left !important;
+			I{
+				margin:-15px 0 0 0;
+			}
+			SPAN{
+				display:inline-block;
+				&:first-letter{
+					text-transform: uppercase;
+				}
+			}
+		}
+		.dropdown-menu{
+			margin-top:-5px;
+			left:17px;
+			right:auto;
+			LI{
+				SPAN:first-letter{
+					text-transform: uppercase;
+				}
+				cursor: pointer;
+			}
+		}
+	}
+}
+.white-block-row .dropdown-menu {
+	margin-top: 9px;
+	right: 0;
+}
+.bc-menu {left: 0px;}
+
+// Иконки после текста
+.text-icon {
+	padding-right: 20px;
+	& + * {
+		margin-right: -25px;
+		position: relative;
+		left: -18px;
+	}
+}
+
+// Кнопки
+.btn {
+	cursor: pointer;
+	&.btn-main {
+		@include inline-block;
+		font: 13px/20px openSansBold;
+		text-transform: uppercase;
+		background: $color-main;
+		text-align: center;
+		padding: 12px;
+		color: #fff;
+		&:hover {
+			color: $color-main;
+			background: #fff;
+		}
+	}
+	&.a-block {
+		display: block;
+		width: 100%;
+	}
+}
+
+.variants-block {background: #fff;}
+.select-variant {
+	background: $color-gray-bg;
+	padding: 22px 123px 22px 16px;
+	margin-bottom: 5px;
+	position: relative;
+	& + .content-scroll {border-top: none;}
+	.choose-variant-to-edit {
+		SELECT {
+			font-family: openSansBold;
+			color: $color-link;
+		}
+	}
+	.variant-actions {
+		@include shadow(0 0 5px rgba(0, 0, 0, .1));
+		position: absolute;
+		overflow: hidden;
+		right: 26px;
+		top: 16px;
+		.action-button {
+			background: #fff;
+			padding: 0 2px;
+			float: left;
+			I {
+				color: $color-main;
+				background: none;
+			}
+			&:hover, &.m-current {
+				background: $color-main;
+				I {
+					background: none;
+					color: #fff;
+				}
+			}
+			& + .action-button {border-left: 1px solid $color-gray-line;}
+			&.m-current {cursor: default;}
+		}
+	}
+}
+
+.switch-type {
+	margin-top: -8px;
+	overflow: hidden;
+	width: 102px;
+	A.action-button {
+		padding: 2px 2px 12px;
+		float: left;
+		I {color: $color-gray-text;}
+		&:hover, &.m-current {
+			I {
+				color: $color-main;
+				background: none;
+			}
+		}
+		&.m-current {
+			border-bottom: 3px solid $color-main;
+			color:  $color-main;
+			cursor: default;
+		}
+	}
+	.content-top & + * {margin-right: 125px;}
+}
+
+//прелоадер для превью
+.wblock .row-image {
+	position: relative;
+	&.origin{
+		display:none;
+	}
+	.preloader{
+		display:none;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		border: 1px solid #e8e8e8;
+		position: absolute;
+		height: 8px;
+		width: 100%;
+		top:0;
+		right:0;
+		bottom:0;
+		left: 0;
+		margin:auto;
+		DIV{
+			position: absolute;
+			top:0;
+			left:0;
+			height:100%;
+			background:#4a596e;
+		}
+	}
+}

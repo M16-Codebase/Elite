@@ -1,0 +1,1 @@
+{*{$items|var_dump}*}

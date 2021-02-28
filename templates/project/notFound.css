@@ -1,0 +1,362 @@
+.top-bg.m-black {
+  overflow: visible;
+  background: #111111; }
+  .top-bg.m-black .site-top {
+    padding-top: 33px;
+    width: 94%;
+    margin: 0 3%;
+    border-bottom: 1px solid rgba(111, 111, 111, 0.4); }
+    .top-bg.m-black .site-top .title {
+      font-size: 78px;
+      font-size: 6.5vw;
+      line-height: .7em;
+      color: #fff;
+      text-transform: uppercase; }
+    .top-bg.m-black .site-top .btn {
+      padding: 14px 20px 15px;
+      margin-top: 56px; }
+    .top-bg.m-black .site-top .ball-wrap {
+      overflow: hidden;
+      padding-top: 61px; }
+      .top-bg.m-black .site-top .ball-wrap .ball {
+        width: 26%;
+        padding-bottom: 29%;
+        background: url(/img/404.jpg) center no-repeat, #111111;
+        background-size: 100%;
+        float: left;
+        margin-top: -6%; }
+      .top-bg.m-black .site-top .ball-wrap .w2 {
+        position: relative;
+        text-align: right;
+        border-bottom: 2px solid #cfb27b;
+        font: 188px/1em gotham_black;
+        font-size: 15.66667vw;
+        width: 37%;
+        float: left;
+        padding-bottom: 12px;
+        margin: 0 -2% 0 2%; }
+        .top-bg.m-black .site-top .ball-wrap .w2:before {
+          content: '';
+          position: absolute;
+          right: -45px;
+          bottom: -2px;
+          width: 45px;
+          border-bottom: 2px solid #cfb27b; }
+      .top-bg.m-black .site-top .ball-wrap .w2:last-child {
+        text-align: left;
+        margin-left: -2%;
+        /*margin-left: 10%;*/ }
+        .top-bg.m-black .site-top .ball-wrap .w2:last-child:before {
+          right: auto;
+          left: -45px; }
+
+/*# sourceMappingURL=notFound.css.map */
+
+@media only screen and (max-width: 1280px) {
+  .top-header {
+    padding: 0;
+    display: block !important;
+    text-align: center;
+    position: relative;
+  }
+  .d-none {
+    display: inline-block !important;
+    float: none;
+    padding: 0;
+    width: 80% !important;
+    vertical-align: top;
+  }
+  .d-none ul {
+    justify-content: left !important;
+  }
+  .d-none ul li {
+    padding: 0 4%;
+  }
+  .d-none ul li a {
+    padding: 31px 0;
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .d-none li.elite {
+    margin-bottom: -14px;
+  }
+  .d-none .elite a {
+    font: 18px/15px bebas;
+    letter-spacing: 0.1em;
+  }
+  .navbar-brand {
+    padding-top: 25px;
+    margin: 0;
+  }
+  .navbar-expand-md .navbar-collapse {
+    padding: 0;
+  }
+  .navbar-expand-md .navbar-collapse ul {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .navbar-expand-md .navbar-collapse ul li.main-menu {
+    padding: 0 2%;
+  }
+  .navbar-expand-md .navbar-collapse ul li.item-gold a, .navbar-expand-md .navbar-collapse ul li.translation a, .navbar-expand-md .navbar-collapse ul li.roistat_phone a {
+    padding: 31px 0;
+  }
+  #header {
+    margin-top: 15px !important;
+  }
+  .container-spacer {
+    margin-top: 45px !important;
+    margin-bottom: 45px !important;
+  }
+  #interview-header .interview-path-links {
+    display: none;
+  }
+  #interviews .interview-div {
+    padding: 2rem 0 !important;
+  }
+  #interview-header .interview-header {
+    max-width: 95%;
+  }
+}
+@media only screen and (max-width: 1155px) {
+  .d-none ul li {
+    padding: 0 3%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .container-footer {
+    max-width: 97%;
+    padding: 0;
+  }
+  .footer-phone, .footer-address {
+    font-size: 22px;
+  }
+  .footer-border .slash {
+    margin: -3px 0;
+  }
+  .footer-nedv a {
+    font-size: 13px;
+  }
+  #brochure .container-spacer, #header .container-spacer, #where .container-spacer, #interviews .container-spacer, #last-publications .container-spacer, #contact-form .container {
+    max-width: 95%;
+  }
+  #brochure .container-spacer .carousel.container {
+    max-width: 100%;
+  }
+  #last-publications .publication-div .justify-content-center.publication-rows, #interviews .container-spacer .interview-div .justify-content-center.interview-rows  {
+    justify-content: left !important;
+  }
+  .modal-dialog {
+    margin: 35px auto !important;
+  }
+  #interview-header .interview-header-name {
+    font-size: 38px !important;
+  }
+  #interview-header .interview-header-description {
+    font-size: 14px !important;
+  }
+  #primary #main .entry-content .interview-text .container-interview-spacer .col-md-7 {
+    max-width: 95%;
+    flex: none;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .d-none ul li {
+    padding: 0 2%;
+  }
+  .sign-up-letters {
+    font-size: 12px !important;
+  }
+  .contact-row .contact-title {
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .nav-item.elite a span {
+    font-size: 10px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .top-header {
+    display: none !important;
+  }
+  .container-spacer {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  #mm_one, #mm_two, #menu_one, #menu_two, .container-footer .footer-menu, .container-footer .footer-contacts .footer-border, .container-footer .footer-catalog .footer-border {
+    display: none;
+  }
+  #mobile_header {
+    display: block;
+    text-align: center;
+    background-color: #000;
+  }
+  #mobile_header .navbar-brand {
+    padding: 0;
+    margin: 5px 0 0 0;
+  }
+  #mobile_header .phone {
+    display: block;
+    font: 22px/28px "gotham_medium";
+    color: #fff;
+    margin: 6px 0 5px 0;
+  }
+  .zag_one, .zag_two {
+    border-top: 1px solid #352f35;
+    height: 40px;
+    color: #fff;
+    background-color: #111;
+    text-align: center;
+  }
+  .menu_one .zag {
+    line-height: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .menu_one ul {
+    margin: 0;
+    padding: 0;
+  }
+  .menu_one ul li {
+    border-top: 1px solid #352f35;
+  }
+  .menu_one ul li a {
+    color: #cfb27b;
+    display: block;
+    height: 27px;
+    line-height: 27px;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .burgerBtn {
+    width: 38px;
+    color: #fff;
+    height: 38px;
+    position: absolute;
+    left: 10px;
+  }
+  .burgerBtn span {
+    margin: 7px 0;
+    height: 3px;
+    background-color: #ffffff;
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+  }
+  .burgerBtn.active span:first-child {
+    opacity: 0;
+  }
+  .burgerBtn.active span:nth-child(2) {
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  .burgerBtn.active span:nth-child(3) {
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+  #brochure .container-spacer, #header .container-spacer, #where .container-spacer, #interviews .container-spacer, #last-publications .container-spacer, #contact-form .container {
+    max-width: 100%;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    padding: 5px;
+  }
+  #primary .wrap {
+    margin-top: 5px !important;
+  }
+  #primary .wrap .top-100 {
+    margin-bottom: 20px !important;
+  }
+  .brochure-div {
+    padding: 10px 0 !important;
+  }
+  .brochure-div .brochure-overlay .brochure-img {
+    box-shadow: none;
+    max-width: 100%;
+  }
+  .brochure-div .brochure-text-desc {
+    margin-top: 10px;
+    padding-left: 0;
+  }
+  .brochure-div .brochure-download {
+    max-width: calc(100% - 30px);
+    max-height: calc(100% - 15px);
+  }
+  #carouselExampleControls .carousel-control-next.carousel-control-next-interview {
+    display: none;
+  }
+  #metaslider_320.flexslider .flex-control-nav a {
+    margin: 0 3px;
+    width: 8px;
+    height: 8px;
+  }
+  .where-header, .partners-header, .interview-header, .publication-header {
+    margin-bottom: 15px !important;
+  }
+  #interviews .interview-div {
+    padding: 10px 0 !important;
+  }
+  .wrap {
+    margin-top: 10px !important;
+  }
+  .interview-rows .interview-desc, .publication-rows .interview-desc {
+    margin: 8px 0;
+    max-width: 65%;
+  }
+  .interview-rows .interview-link, .publication-rows .interview-link {
+    height: 60px;
+    padding: 0 5px;
+  }
+  .interview-rows .interview-link .interview-person, .publication-rows .interview-link .interview-person {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  #interview-header {
+    top: 0 !important;
+  }
+  #interview-header .interview-header {
+    padding: 0;
+  }
+  #interview-header .overlay, #interview-header .interview-header > p {
+    display: none;
+  }
+  #interview-header .interview-header, #interview-header .interview-header-description {
+    position: relative !important;
+  }
+  #interview-header .interview-header-name, #interview-header .interview-header-description {
+    color: #000 !important;
+  }
+  #interview-header .interview-header-name {
+    font-size: 22px !important;
+    margin-bottom: 10px !important;
+    margin-top: 15px;
+  }
+  #interview-header .interview-header-description {
+    font-size: 12px !important;
+  }
+  #primary #main .entry-content .interview-text .container-interview-spacer {
+    margin: 10px 0 !important;
+    padding: 0;
+    max-width: 100%;
+  }
+  .malafeev-footer {
+    font-size: 25px !important;
+    letter-spacing: 4px;
+  }
+  .container-footer .footer-catalog .footer-nedv, .container-footer .footer-contacts .footer-phone, .container-footer .footer-contacts .footer-address {
+    width: 100%;
+  }
+  .container-footer {
+    margin-top: 5px !important;
+  }
+}
+
+
+

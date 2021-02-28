@@ -1,0 +1,155 @@
+.about {
+	padding: 77px 0 100px 0;
+	text-align: center;
+	position: relative;
+	background: #fff;
+	overflow: hidden;
+	.main{
+		width:80vw;
+		margin:auto;
+	}
+	.opinion, .text {
+		text-align: left;
+		max-width: 540px;
+		&.m-center {
+			padding: 25px 0 0;
+			max-width: 900px;
+			width: 100%;
+		}
+	}
+	.post-row {
+		position: relative;
+		&.m-border:before {
+			border-right: 1px solid $color-gray;
+			position: absolute;
+			padding-top: 60px;
+			display: block;
+			content: '';
+			width: 2px;
+			bottom: 0;
+			left: 50%;
+			top: 60px;
+		}
+		&.m-dborder .text {
+			position: relative;
+			&:before, &:after {
+				border-right: 1px solid $color-gray;
+				position: absolute;
+				display: block;
+				content: '';
+				top: 30px;
+				bottom: 0;
+				width: 0;
+			}
+			&:before {left: -50px;}
+			&:after {right: -50px;}
+		}
+	}
+	.text {width: 100%;}
+	.opinion {
+		@include border-box;
+		display: inline-block;
+		padding: 0 0 0 43px;
+		position: relative;
+		text-align: left;
+		margin-top: 61px;
+		width: 46%;
+		z-index:1;
+		&.m-center .photo {right: -9%;}
+		.check-text{
+			letter-spacing: -.027em;
+			font: 18px/1.3em gotham;
+			margin-bottom: 28px;
+			&:before {
+				background: url(/img/check-icon.png);
+				display: inline-block;
+				margin: 0 5px 0 -9px;
+				height: 16px;
+				content: '';
+				width: 25px;
+			}
+		}
+		.opinion-text {
+			font: 18px/1.75em gotham;
+			letter-spacing: -0.02em;
+			padding-right: 29%;
+			max-width: 380px;
+			z-index:1;
+			position: relative;
+			&:before {
+				position: relative;
+				font-size: 60px;
+				line-height: 0;
+				bottom: -10px;
+				content: '«';
+			}
+			&:after {
+				position: relative;
+				font-size: 60px;
+				line-height: 0;
+				bottom: -10px;
+				content: '»';
+			}
+		}
+		
+		.main {
+			color: $color-dark-sand;
+			padding: 0 0 25px 2px;
+			letter-spacing: 9px;
+			line-height: 1.1em;
+			margin-top: 48px;
+			font-size: 31px;
+			z-index:1;
+			position: relative;
+		}
+		.descr {
+			font: 15px/1em school_book_italic;
+			padding-bottom: 23px;
+			color: #000;
+			z-index:1;
+			position: relative;
+			&.m-gray {color: $color-dark-gray;}
+		}
+		.logo {
+			background: url("/img/zenit-logo.png");
+			margin-left: -10px;
+			height: 44px;
+			width: 93px;
+			z-index:1;
+			position: relative;
+		}
+		.photo{
+			position: absolute;
+			right: -32%;
+			top: -9px;
+		}
+	}
+	&.m-two{
+		border-bottom: 6px solid $color-sand;
+		padding-bottom: 69px;
+		.opinion{
+			padding-top: 10px;
+			&.m-center {max-width: 600px;}
+			&.m-center + .photo {left: 52%;}
+			.main {margin-top: 22px;}
+			.logo{
+				background: url("/img/sign.png");
+				height: 82px;
+				width: 148px;
+			}
+			.btn {
+				margin: 40px 0 0 6px;
+				padding-right: 15px;
+				padding-left: 15px;
+				color: #000;
+			}
+		}
+		.photo{
+			position: absolute;
+			bottom: -123px;
+			left: 72%;
+			z-index:0;
+			IMG {display: block;}
+		}
+	}
+}

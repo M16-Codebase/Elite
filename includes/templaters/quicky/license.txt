@@ -1,0 +1,4 @@
+This is freeware, but it MAY be used in commercial projects. You may edit the sources, but you may not delete copyright and you may NOT distribute edited copies without a consent of the author.
+
+Данное ПО распространяется бесплатно, но может быть также использовано в коммерческих проектах.
+Вы имеете право вносить изменения в исходный код, но не имеете права удалять авторские комментарии (copyright), и распространять изменные копии без согласия Автора.

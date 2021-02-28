@@ -1,0 +1,53 @@
+<form action="/subscribe/editSubscriber/">
+    <input class="group_id" type="hidden" name="group_id">
+    <table class="ribbed">
+        <tr>
+            <td class="td-title" style="width:180px;">
+                <label for="email">Электронная почта</label>
+            </td>
+            <td>
+                <input type="text" name="email" disabled="disabled"/><input type="hidden" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td class="td-title">
+                <label for="name">Имя</label>
+            </td>
+            <td>
+                <input type="text" name="name" />
+            </td>
+        </tr>
+        <tr>
+            <td class="td-title">
+                <label for="name">Фамилия</label>
+            </td>
+            <td>
+                <input type="text" name="surname" />
+            </td>
+        </tr>
+        <tr>
+            <td class="td-title">
+                <label for="name">Название компании</label>
+            </td>
+            <td>
+                <input type="text" name="company_name" />
+            </td>
+        </tr>
+        <tr>
+            <td class="td-title">
+                <label for="scope">Сфера деятельности</label>
+            </td>
+            <td>
+                <select name="scope">
+                    <option value="">Выберите...</option>
+                    {foreach from=$scopes key=scope_id item=scope_name}
+                        <option value="{$scope_id}">{$scope_name}</option>
+                    {/foreach}
+                </select>
+            </td>
+        </tr>
+    </table>
+    <div class="buttons">
+        <button class="submit a-button-blue">Сохранить</button>
+    </div>
+</form>

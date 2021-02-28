@@ -1,0 +1,12 @@
+.roles-scroll-cont {
+  overflow: hidden; }
+
+.roles-scroll {
+  position: relative; }
+  .roles-scroll > DIV {
+    padding: 0 12px; }
+
+.action-row {
+  background: #fbfbfb; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,136 @@
+.art-tiles {
+	background: #fff;
+	.article {
+		@include border-box;
+		text-align: center;
+		overflow: hidden;
+		display: none;
+		.hatch {
+			@include transition(all .3s ease);
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			opacity: .7;
+			z-index: 2;
+			left: 0;
+			top: 0;
+		}
+		.img {
+			@include transition(all .3s ease);
+			@include transform(scale(1, 1));
+			height: 100%;
+			width: 100%;
+		}
+		.num {
+			font: 30px/27px anglecia_italic;
+			position: absolute;
+			right: 20px;
+			left: 20px;
+			z-index: 3;
+			top: 40px;
+		}
+		.content {
+			@include transform(translateY(-50%));
+			position: absolute;
+			display: block;
+			z-index: 5;
+			right: 20px;
+			left: 20px;
+			top: 50%;
+		}
+		.title {
+			margin-bottom: 48px;
+			padding-top: 60px;
+			position: relative;
+			SPAN {
+				line-height: 1.2em;
+				font-size: 30px;
+				font-size: vw(30);
+				display: block;
+				color: #000;
+			}
+			&:before {
+				background: $color-sand;
+				position: absolute;
+				display: block;
+				content: '';
+				height: 6px;
+				right: 72px;
+				left: 72px;
+				top: 0;
+			}
+		}
+		.btn {
+			font-family: gotham_medium;
+			letter-spacing: 2px;
+		}
+		&.m-rotated .btn {@include transform(rotate(-90deg));}
+		&.m-white .btn, &.m-black .btn, &.m-orange .btn {
+			@include transition(background .3s ease);
+			font: 30px/0.9em gotham_black;
+			font-size: vw(30);
+			letter-spacing: 4px;
+			padding: 16px 18px;
+			border-width: 3px;
+			margin: 0 -100%;
+		} 
+		&.m-white {
+			.hatch {background: #fff;}
+			.num {color: #000;}
+			.btn {
+				border-color: rgba(#000, .5);
+				background: rgba(#fff, 0);
+				color: #000;
+			}
+		}
+		&.m-black {
+			.hatch {background: #000;}
+			.num {color: #fff;}
+			.btn {
+				border-color: rgba($color-sand, .5);
+				background: rgba(#000, 0);
+				color: #fff;
+			}
+		}
+		&.m-orange {
+			.hatch {background: #ff8300;}
+			.num {color: #f8bf84;}
+			.btn {
+				border-color: rgba(#fff, .5);
+				background: rgba(#ff8300, 0);
+				color: #fff;
+			}
+		}
+		&.m-info {
+			background: $color-dark-sand;
+			color: #fff;
+			.quote-icon {
+				margin-bottom: 25px;
+				.svg {
+					path {fill: #fff;}
+				}
+			}
+			.quote {
+				font: 24px/0.9em school_book_italic;
+				font-size: vw(24);
+				margin-bottom: 32px;
+				color: #000;
+			}
+			.author {
+				font-family: bebas_book;
+				margin-bottom: 14px;
+				color: #fff;
+			}
+			.main {
+				font-size: vw(15);
+			}
+			.function {
+				font: 15px/16px school_book_italic;
+				font-size: vw(12);
+			}
+		}
+	}
+	A.article:hover {
+		.img {@include transform(scale(1.1, 1.1));} 
+	}
+}

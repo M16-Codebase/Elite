@@ -1,0 +1,185 @@
+/* Кнопки */
+.action-button {
+	text-align: center !important;
+	position: relative;
+	cursor: pointer;
+	display: block;
+	I {
+		@include radius(50%);
+		display: inline-block !important;
+		line-height: 36px;
+		font-size: 24px;
+	}
+	DIV {
+		font: $font-descr;
+		text-align: center;
+		margin-top: 3px;
+	}
+	@mixin action-btn($ic:$color-main, $c:$color-main, $ch:$color-main-hover, $ich:#fff) {
+		color: $c;
+		I {color: $ic;}
+		&:hover {
+			color: $ch;
+			I {
+				background: $ic;
+				color: $ich;
+				.content-options & {color: $ic;}
+			}
+		}
+		&.m-inactive {
+			color: $color-gray-text;
+			cursor: default;
+			I {
+				color: $color-gray-text;
+				background: none;
+			}
+		}
+	}
+	&.action-back {@include action-btn();}
+	&.action-next {@include action-btn();}
+	&.action-add {@include action-btn(#45c79e);}
+	&.action-edit {@include action-btn();}
+	&.action-edit-group {@include action-btn();}
+	&.action-delete {@include action-btn();}
+	&.action-cancel {@include action-btn();}
+	&.action-save {@include action-btn();}
+	&.action-ok {@include action-btn();}
+	&.action-lock {@include action-btn();}
+	&.action-copy {@include action-btn();}
+	&.action-import {@include action-btn();}
+	&.action-export {@include action-btn();}
+	&.action-show {@include action-btn();}
+	&.action-hide {@include action-btn();}
+	&.action-upload {@include action-btn();}
+	&.action-sync {@include action-btn();}
+	&.action-type {@include action-btn();}
+	&.action-items {@include action-btn();}
+	&.action-site {@include action-btn();}
+	&.action-user {@include action-btn();}
+	&.action-more {@include action-btn();}
+	&.action-sort {@include action-btn();}
+	&.action-move {@include action-btn();}
+}
+
+
+/* Панели кнопок */
+.actions-panel {
+	@include transition(all .5s ease .1s);
+	position: relative;
+}
+.actions-panel-inner > * {
+	text-align: center;
+	position: relative;
+	float: left;
+	& + * {}
+	&.hidden-action {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+	}
+	&.dropdown .dropdown-toggle DIV:after {
+		font-style: normal;
+		position: relative;
+		margin-left: 4px;
+		font-size: 8px;
+		content: '▼';
+		top: -1px;
+	}
+	.dropdown-menu {
+		display: none;
+		LI {cursor: pointer;}
+		LI.a-hidden {display: none;}
+	}
+}
+
+// боковые кнопки
+.aside-panel {
+	margin-bottom: 20px;
+	position: absolute;
+	height: 100%;
+	width: 70px;
+	right: 16px;
+	z-index: 2;
+	top: 26px;
+	.actions-panel {}
+	.actions-panel-inner > * {
+		float: none;
+		& + * {margin-top: 14px;}
+	}
+	.action-button I {
+		height: 36px;
+		width: 36px;
+	}
+}
+
+// верхние кнопки
+.content-options {
+	.actions-panel {
+		background: $color-main;
+		overflow: hidden;
+		float: left;
+		&.expanded {padding-right: 33px;}
+		.action-expand {
+			@include transition(opacity .3s ease .2s);
+			&, &:hover {background: $color-main;}
+			position: absolute;
+			width: 26px;
+			opacity: 1;
+			right: 0;
+			I {
+				color: $color-gray-text;
+				display: block;
+				&:before {margin: 0;}
+			}
+		}
+		&.m-open {
+			padding-right: 0;
+			.action-expand {
+				pointer-events: none;
+				opacity: 0;
+			}
+		}
+	}
+	.action-button {
+		padding: 4px;
+		color: #fff;
+		I {color: #fff;}
+		DIV {display: none;}
+		&:hover {
+			background: #fff;
+			I {background: none;} 
+		}
+		&.m-inactive,
+		&.m-inactive:hover {
+			background: none;
+			I {color: $color-gray-text;}
+		}
+	}
+	.action-button + .action-button:before {
+		background: rgba(255, 255, 255, .2);
+		position: absolute;
+		height: 100%;
+		content: '';
+		width: 1px;
+		left: 0;
+		top: 0;
+	}
+}
+
+// мобильный вид
+@media (max-width: $width-mobile) {
+	.aside-panel {
+		text-align: center;
+		position: relative;
+		height: auto;
+		width: auto;
+		right: 0;
+		top: 0;
+		.actions-panel-inner > * {
+			@include inline-block;
+			max-width: 70px;
+			margin-top: 0;
+			& + * {margin-left: 15px;}
+		}
+	}
+}

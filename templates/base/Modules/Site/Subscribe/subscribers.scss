@@ -1,0 +1,338 @@
+@import "../../../css/vars"; 
+.white-block-row .dropdown-menu {
+	left:0;
+	right:auto;
+	margin-top:0;
+}
+/* line 3, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table-cont {
+  position: relative;
+}
+
+ line 4, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table {
+  width: 100%;
+}
+ line 6, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table TD, .subscribers-table TH {
+  border: 1px solid #e5e6e6;
+  vertical-align: middle;
+  padding: 12px 10px;
+}
+ line 12, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table TH {
+  border-bottom: 2px solid #4598c7;
+  font: 14px/16px openSans;
+  background: #fff;
+  text-align: left;
+}
+ line 16, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table TH:first-child {
+  width: 30px;
+  text-align: center;
+}
+ line 18, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table TD {
+  font: 14px/16px openSans;
+  color: #000;
+}
+ line 22, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table TR.odd TD {
+  background: #f7f7f7;
+}
+ line 23, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table TR:hover TD {
+  background: #f0f9ff;
+}
+.subscribers-table .user_id, .subscribers-table .status, .subscribers-table .email{
+    text-align: center;
+}
+ line 24, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .i-comment-th {
+  display: inline-block;
+  vertical-align: top;
+  background: url("/templates/Admin/img/signs.png") 0 0 no-repeat;
+  height: 24px;
+  width: 23px;
+}
+ line 13, D:/work/santech/templates/Modules/Site/Icons/../../../css/vars.scss 
+.browser-oldie .subscribers-table .i-comment-th {
+  display: inline;
+  zoom: 1;
+}
+ line 27, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .i-settings-th {
+  display: inline-block;
+  vertical-align: top;
+  background: url("/templates/Admin/img/signs.png") -15px 0 no-repeat;
+  height: 28px;
+  width: 28px;
+}
+ line 13, D:/work/santech/templates/Modules/Site/Icons/../../../css/vars.scss 
+.browser-oldie .subscribers-table .i-settings-th {
+  display: inline;
+  zoom: 1;
+}
+ line 27, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .i-lock-th {
+  display: inline-block;
+  vertical-align: top;
+  background: url("/templates/Admin/img/signs.png") -43px 0 no-repeat;
+  height: 28px;
+  width: 28px;
+}
+ line 13, D:/work/santech/templates/Modules/Site/Icons/../../../css/vars.scss 
+.browser-oldie .subscribers-table .i-lock-th {
+  display: inline;
+  zoom: 1;
+}
+
+ line 27, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .i-delete-th {
+  display: inline-block;
+  vertical-align: top;
+  background: url("/templates/Admin/img/signs.png") -70px 0 no-repeat;
+  height: 28px;
+  width: 28px;
+}
+ line 13, D:/work/santech/templates/Modules/Site/Icons/../../../css/vars.scss 
+.browser-oldie .subscribers-table .i-delete-th {
+  display: inline;
+  zoom: 1;
+}
+ line 30, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .i-check {
+  display: inline-block;
+  vertical-align: top;
+  background: url("/img/icons/li-icon.png") 0 0 no-repeat;
+  height: 15px;
+  width: 15px;
+  visibility: hidden;
+}
+ line 13, D:/work/santech/templates/Modules/Site/Icons/../../../css/vars.scss 
+.browser-oldie .subscribers-table .i-check {
+  display: inline;
+  zoom: 1;
+}
+ line 33, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .i-check.m-checked {
+  visibility: visible;
+}
+ line 35, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .i-comment {
+  display: inline-block;
+  vertical-align: top;
+  background: url("/templates/Admin/img/signs.png") 0 -24px no-repeat;
+  height: 16px;
+  width: 15px;
+}
+ line 13, D:/work/santech/templates/Modules/Site/Icons/../../../css/vars.scss 
+.browser-oldie .subscribers-table .i-comment {
+  display: inline;
+  zoom: 1;
+}
+ line 38, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .i-settings {
+  display: inline-block;
+  vertical-align: top;
+  background: url("/templates/Admin/img/signs.png") -15px -28px no-repeat;
+  height: 28px;
+  width: 28px;
+  visibility: hidden;
+  cursor: pointer;
+}
+ line 13, D:/work/santech/templates/Modules/Site/Icons/../../../css/vars.scss 
+.browser-oldie .subscribers-table .i-settings {
+  display: inline;
+  zoom: 1;
+}
+ line 38, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .i-lock {
+  display: inline-block;
+  vertical-align: top;
+  background: url("/templates/Admin/img/signs.png") -43px -27px no-repeat;
+  height: 28px;
+  width: 28px;
+  visibility: hidden;
+  cursor: pointer;
+}
+.subscribers-table .i-lock.unlock{
+    background-position: -43px -54px;
+}
+ line 13, D:/work/santech/templates/Modules/Site/Icons/../../../css/vars.scss 
+.browser-oldie .subscribers-table .i-lock {
+  display: inline;
+  zoom: 1;
+}
+ line 38, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .i-delete {
+  display: inline-block;
+  vertical-align: top;
+  background: url("/templates/Admin/img/signs.png") -70px -27px no-repeat;
+  height: 28px;
+  width: 28px;
+  visibility: hidden;
+  cursor: pointer;
+}
+ line 13, D:/work/santech/templates/Modules/Site/Icons/../../../css/vars.scss 
+.browser-oldie .subscribers-table .i-delete {
+  display: inline;
+  zoom: 1;
+}
+ line 43, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table TR:hover .i-settings, .subscribers-table TR:hover .i-lock, .subscribers-table TR:hover .i-delete {
+  visibility: visible;
+}
+ line 44, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .popup-inner {
+  display: none;
+}
+ line 45, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .sign-comment {
+  visibility: hidden;
+  position: relative;
+}
+ line 48, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .sign-comment.m-active {
+  visibility: visible;
+}
+ line 49, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .sign-comment:hover .i-comment {
+  background-position: 0 -40px;
+}
+ line 50, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .sign-comment .sign-text {
+  font: 12px/13px openSansItalic;
+  background: #29384c;
+  position: absolute;
+  padding: 12px;
+  display: none;
+  width: 280px;
+  color: #fff;
+  right: 25px;
+  top: 25px;
+}
+ line 60, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .sign-comment .sign-text:before {
+  position: absolute;
+  right: -15px;
+  height: 100%;
+  width: 100%;
+  top: -25px;
+  content: '';
+}
+ line 69, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table .sign-comment:hover .sign-text {
+  display: block;
+}
+ line 71, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table.float-header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+ line 75, D:/work/santech/templates/Modules/Site/Icons/index.scss 
+.subscribers-table.float-header.m-fixed {
+  position: fixed;
+  width: 807px;
+  top: 78px;
+}
+
+.subscribers-table .i-user-status {
+  display: inline-block;
+  vertical-align: top;
+  background: url("/templates/Admin/img/active_status.png") 0 0 no-repeat;
+  height: 15px;
+  width: 15px;
+}
+.subscribers-table .i-user-status.lock {
+    background: url("/templates/Admin/img/deleted_status.png") 0 0 no-repeat;
+}
+.subscribers-table .i-user-status.new {
+    background: url("/templates/Admin/img/new_status.png") 0 0 no-repeat;
+}
+.subscribers-table .i-user-email {
+  display: inline-block;
+  vertical-align: top;
+  background: url("/templates/Admin/img/envelope.png") 0 0 no-repeat;
+  height: 15px;
+  width: 15px;
+}
+
+.subscribers-table .i-site-client {
+  display: none;
+  vertical-align: top;
+  background: url("/templates/Admin/img/user.png") 0 -15px no-repeat;
+  height: 14px;
+  width: 13px;
+}
+.subscribers-table tr.s-client .i-site-client {
+  display: inline-block;
+}
+.subscribers-table th .i-site-client{
+    display: inline-block;
+    background-position-y: 0;
+}
+
+.subscribers-table th.th-client-name{
+    padding-left:42px;
+    background-image: url("/templates/Admin/img/user_gray.png");
+    background-repeat: no-repeat;
+    background-position: 15px 18px;
+}
+
+.subscribers-table td.td-client-name{
+    padding-left:42px;
+}
+.subscribers-table .s-client>td.td-client-name{
+    background-image: url("/templates/Admin/img/user_blue.png");
+    background-repeat: no-repeat;
+    background-position: 15px 18px;
+}
+выпадающее меню   
+.subscr-list-wrapper {
+		display:inline-block;
+	.subscr-list-handler {
+		cursor:pointer;
+        span{
+            display: inline-block;
+            width:10px;
+            height:15px;
+            background:url(/img/icons/blue-tr-down.png) 50% 75% no-repeat;
+        }
+	}
+	.subscr-list {		
+		border:1px solid #dbdce6;
+		@include shadow(0px 1px 5px 0px rgba(0, 0, 0, 0.3) ); 
+		position:absolute;
+		left: -10px;
+		z-index:1;
+		background:white;
+		width:260px;
+		@include border-box();
+		padding: 15px 10px 8px 35px;
+		display:block !important;
+			LI {
+				margin:0 0 9px 0;
+				position:relative;
+				&:before {
+					position:absolute;
+					content:"";
+					left:-17px;
+					top:7px;
+					width:10px;
+					height:2px;
+					background:#174e83;
+				}
+			}
+			A {
+				color:#3d8ab4;
+				display:block;
+				line-height:15px;
+				&:hover {
+					color: #3db9ff;
+				}
+			}
+	}
+}
+выпадающее меню */

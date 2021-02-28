@@ -1,0 +1,79 @@
+@import '../../../Admin/css/vars';
+
+.orders-filter {
+	margin-bottom: 30px;
+	margin-top: 24px;
+	overflow: hidden;
+	.field {margin-right: 20px;}
+	.title {
+		margin-bottom: 10px;
+		color: #67727e;
+	}
+	.search-button {
+		padding-top: 29px;
+		.submit {
+			background: #f2f2f2 url("/templates/Admin/img/search-order.png") 50% no-repeat;
+			border: 1px solid #dbdce6;
+			cursor: pointer;
+			height: 22px;
+			padding: 12px;
+			width: 30px;
+		}
+	}
+}
+
+.order {
+	.order-header {
+		.action-button I {margin-top: -3px;}
+		.state {
+			background: #9c95ec;
+			padding: 0 4px;
+			&.order-status {color: #fff;}
+		}
+	}
+	.order-inner {
+		position: relative;
+		.order-aside {
+			background: #fbfbfb;
+			position: absolute;
+			padding-top: 18px;
+			width: 8.3%;
+			bottom: 0;
+			right: 0;
+			top: 0;
+			.action-button DIV {margin-top: 10px;}
+			.action-icon {margin-top: -8px;}
+		}
+		.white-inner-cont {min-height: 100px;}
+		.white-block-row + .white-block-row {
+			border-top: 1px solid $color-gray-line;
+		}
+		.count-price {
+			line-height: 32px;
+			text-align: right;
+			margin-top: -7px;
+			INPUT {
+				border-color: transparent;
+				background: transparent;
+				color: $color-link;
+				cursor: pointer;
+				width: 42%;
+				margin: 0;
+				top: -1px;
+				&:hover {color: $color-link-hover;}
+				&:focus {
+					border: 1px solid #e2e3ea;
+					border-top-color: #abadb3;
+					background: #fff;
+					color: #000;
+				}
+			}
+			.count-input {text-align: right;}
+			.input-col {
+				@include inline-block;
+				text-align: left;
+				width: 54%;
+			}
+		}
+	}
+}

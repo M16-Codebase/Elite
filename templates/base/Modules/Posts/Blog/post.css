@@ -1,0 +1,323 @@
+@charset "UTF-8";
+.blog-page .breadcrumb LI.m-current A {
+  color: #838383; }
+.blog-page .blog-block {
+  background: #ebebeb;
+  width: 100%; }
+.blog-page .blog-search {
+  width: 900px; }
+.blog-page .blog-top {
+  background: #026e50;
+  color: #fff;
+  font: 16px/20px futuraDemi;
+  height: 58px; }
+  .blog-page .blog-top .rss-link {
+    color: #fff;
+    font: 16px/20px futuraDemi;
+    padding-top: 19px; }
+    .blog-page .blog-top .rss-link I {
+      vertical-align: top;
+      display: inline-block;
+      background: url("/img/icons/icons/rss-icon.png") 0 0 no-repeat;
+      height: 16px;
+      width: 16px;
+      margin-right: 8px;
+      margin-top: 1px; }
+.blog-page .date {
+  color: #000;
+  font: 13px/17px OpenSans;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+.blog-page .author .author-cover {
+  padding-top: 19px; }
+  .blog-page .author .author-cover IMG {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 8px; }
+  .blog-page .author .author-cover .nocurator {
+    height: 60px;
+    width: 60px; }
+.blog-page .author SPAN {
+  vertical-align: top;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 12px;
+  vertical-align: top; }
+.blog-page .author .small-descr {
+  color: #000;
+  font: italic 13px/15px openSans;
+  margin-top: 5px; }
+.blog-page .comments-num {
+  margin-top: 25px; }
+  .blog-page .comments-num I {
+    vertical-align: top;
+    display: inline-block;
+    background: url("/img/icons/icons/comments-icon.png") 0 0 no-repeat;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    margin-top: 1px; }
+  .blog-page .comments-num A {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 4px; }
+.blog-page .tags {
+  font: 13px/13px OpenSans;
+  margin-top: 23px; }
+  .blog-page .tags SPAN {
+    font-weight: bold; }
+  .blog-page .tags I {
+    vertical-align: top;
+    display: inline-block;
+    background: url("/img/icons/icons/tags-icon.png") 0 0 no-repeat;
+    height: 11px;
+    width: 18px;
+    margin-right: 6px;
+    margin-top: 2px; }
+  .blog-page .tags A {
+    font: italic 13px/13px OpenSans; }
+  .blog-page .tags .tags-list {
+    vertical-align: top;
+    display: inline-block; }
+    .blog-page .tags .tags-list SPAN {
+      color: #808080;
+      font: italic 13px/13px OpenSans; }
+    .blog-page .tags .tags-list LI {
+      vertical-align: top;
+      display: inline-block;
+      color: #016a46; }
+.blog-page .blogs-list {
+  background: #ebebeb;
+  padding: 27px 19px 23px 20px; }
+  .blog-page .blogs-list .item {
+    background: #fff;
+    margin-top: 21px;
+    padding-bottom: 24px;
+    position: relative; }
+    .blog-page .blogs-list .item:first-child {
+      margin-top: 0; }
+    .blog-page .blogs-list .item:before {
+      background: url("/img/design/news-arrow.png");
+      bottom: 0;
+      content: '';
+      right: 0;
+      height: 15px;
+      position: absolute;
+      width: 15px; }
+  .blog-page .blogs-list .aside-col {
+    margin: 0;
+    padding: 28px 12px 0 28px;
+    width: 173px; }
+  .blog-page .blogs-list .main-col {
+    width: 889px; }
+  .blog-page .blogs-list .blog-desrc {
+    margin: 30px 100px 0 0;
+    position: relative; }
+    .blog-page .blogs-list .blog-desrc:after {
+      background: #70be45;
+      top: -30px;
+      content: '';
+      left: -215px;
+      height: 3px;
+      position: absolute;
+      width: 216px; }
+    .blog-page .blogs-list .blog-desrc .blog-title {
+      font: 27px/27px futuraDemi;
+      margin-top: 25px; }
+      .blog-page .blogs-list .blog-desrc .blog-title:after {
+        font-size: 9px;
+        color: #6fbf44;
+        margin-left: 6px;
+        vertical-align: middle; }
+    .blog-page .blogs-list .blog-desrc .blog-annotation {
+      color: #656565;
+      font: 18px/27px OpenSans;
+      margin-top: 18px; }
+    .blog-page .blogs-list .blog-desrc + .tags {
+      margin-top: 26px; }
+.blog-page .paging {
+  margin: 22px 0 3px;
+  padding: 8px 22px 11px 14px; }
+  .blog-page .paging:after {
+    display: none; }
+  .blog-page .paging:before {
+    background: url("/img/design/news-arrow.png");
+    bottom: 0;
+    content: '';
+    height: 15px;
+    right: 0;
+    position: absolute;
+    width: 15px; }
+  .blog-page .paging .pg-arrows {
+    width: 100%; }
+.blog-page .rss-link {
+  cursor: pointer; }
+.blog-page .empty-result {
+  background: #ebebeb;
+  padding: 18px 19px 20px 20px; }
+  .blog-page .empty-result .empty-result-cont {
+    background: #fff;
+    padding: 153px 186px 160px 214px; }
+  .blog-page .empty-result .empty-title {
+    color: #016a46;
+    font: 36px/42px futuraLight;
+    text-transform: uppercase; }
+  .blog-page .empty-result .empty-descr {
+    color: #656565;
+    font: 18px/27px OpenSans;
+    margin-top: 16px; }
+
+.blog-page {
+  /* tags */ }
+  .blog-page .breadcrumb LI.m-current A {
+    cursor: pointer; }
+  .blog-page .blog-block {
+    background: #fff; }
+  .blog-page .blog-search {
+    width: 902px; }
+  .blog-page .object-aside-cont {
+    margin: 38px 0 0 19px; }
+  .blog-page .main-col {
+    margin-bottom: 0; }
+  .blog-page .aside-menu .aside-top {
+    margin-bottom: 0px;
+    padding-bottom: 7px; }
+    .blog-page .aside-menu .aside-top .author .author-cover {
+      padding-top: 18px; }
+  .blog-page .aside-link {
+    margin: 12px 0 40px; }
+  .blog-page .post-descr-cont {
+    margin-top: 24px; }
+    .blog-page .post-descr-cont .comments-num {
+      margin-left: 46px;
+      margin-top: 19px; }
+    .blog-page .post-descr-cont .news-date {
+      margin-top: -1px; }
+  .blog-page .comments-cont {
+    padding: 57px 63px 31px 72px; }
+    .blog-page .comments-cont .comments-cont-title {
+      border-bottom: 3px solid #70be45;
+      color: #000;
+      font: 18px/27px futuraDemi;
+      padding-bottom: 3px;
+      text-transform: uppercase; }
+    .blog-page .comments-cont .comment-add {
+      vertical-align: top;
+      display: inline-block;
+      margin-top: 20px;
+      font: 16px/26px futuraDemi; }
+      .blog-page .comments-cont .comment-add I {
+        vertical-align: top;
+        display: inline-block;
+        background: url("/img/icons/icons/comments-icon.png") -25px 0 no-repeat;
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+        margin-top: 1px; }
+    .blog-page .comments-cont .comment-top {
+      height: 26px;
+      padding-top: 5px; }
+      .blog-page .comments-cont .comment-top I {
+        vertical-align: top;
+        display: inline-block;
+        background: url("/img/icons/icons/comments-icon.png") 0 0 no-repeat;
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+        margin-top: -3px; }
+      .blog-page .comments-cont .comment-top .author {
+        font: bold 13px/13px OpenSans;
+        margin-top: 7px; }
+      .blog-page .comments-cont .comment-top .news-date {
+        margin-top: 6px; }
+    .blog-page .comments-cont .comments-list {
+      margin-top: 31px;
+      padding: 0; }
+      .blog-page .comments-cont .comments-list LI {
+        border-top: 1px solid #cfd0cc;
+        padding: 14px 0 6px; }
+        .blog-page .comments-cont .comments-list LI:first-child {
+          border: none;
+          padding-top: 0; }
+    .blog-page .comments-cont .comment-text {
+      font: 13px/22px OpenSansItalic;
+      margin-top: 5px; }
+  .blog-page .post {
+    padding: 56px 90px 81px 76px; }
+  .blog-page .post .news-annotation {
+    margin-bottom: 34px;
+    margin-top: 40px; }
+  .blog-page .tags {
+    background: #fff;
+    margin-top: 0;
+    margin-top: 40px; }
+    .blog-page .tags .tags-list {
+      padding: 0;
+      margin: 0; }
+    .blog-page .tags LI {
+      line-height: 1;
+      margin-bottom: 0; }
+  .blog-page .remove-comment {
+    float: right;
+    margin-right: 10px;
+    margin-top: 2px; }
+    .blog-page .remove-comment I {
+      vertical-align: top;
+      display: inline-block;
+      background: url("/img/icons/icons/delete.png") -26px 0 no-repeat;
+      height: 25px;
+      width: 13px; }
+      .blog-page .remove-comment I:hover {
+        background-position: -39px 0; }
+
+.comments-num {
+  vertical-align: top;
+  display: inline-block; }
+  .comments-num A {
+    font-weight: normal; }
+
+/* блок поделиться */
+.share-block {
+  margin: 38px 0 48px; }
+  .share-block .col1 {
+    width: 18%; }
+  .share-block .col3 {
+    width: 80%; }
+
+.author + .share-cont {
+  margin-top: 31px; }
+
+.share-cont .share-cont-title {
+  color: #000;
+  font: 13px/13px OpenSans;
+  letter-spacing: 2px;
+  margin-bottom: 11px;
+  text-transform: uppercase; }
+.share-cont .share-title {
+  border-top: 1px solid #e2e6e3;
+  cursor: pointer;
+  font: 13px/38px OpenSans;
+  height: 38px;
+  margin-left: 3px;
+  padding-left: 12px;
+  padding-right: 3px;
+  width: 166px; }
+  .share-cont .share-title:first-child {
+    border-top: none; }
+.share-cont .b-share-wrap .b-share {
+  margin-left: 0px !important;
+  margin-top: -4px !important; }
+.share-cont .share-link {
+  float: right; }
+.share-cont .facebook {
+  color: #5286b6; }
+.share-cont .vkontakte {
+  color: #3370a9; }
+.share-cont .twitter {
+  color: #58b3ff; }
+.share-cont .share-link {
+  vertical-align: top;
+  display: inline-block; }
+
+/*# sourceMappingURL=post.css.map */

@@ -1,0 +1,222 @@
+@import '../../../css/vars';
+
+.top-bg.m-white{
+	overflow:visible;
+	margin-bottom:45px;
+	.site-top{
+		padding-top:32px;
+		.title{
+			font-size:78px;
+			font-size: vw(78);
+			line-height: .7em;
+			color:$color-light-black;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.favorites {
+	.fav-header {
+		background: $color-dark-magenta;
+		color: #fff;
+	}
+	.fav-row {
+		&>* {
+			@include border-box;
+			font: 18px/22px bebas;
+			letter-spacing: .1em;
+			text-align: center;
+			color: #272127;
+			padding: 10px;
+			padding-left: 0;
+			height: 96px;
+		}
+		&>*:first-child {padding-left: 40px;}
+		&>*:last-child {padding-right: 40px;}
+		.f-cbx {width: percent(72,1200);}
+		.f-date {width: percent(60,1200);}
+		.f-object {
+			width: percent(232,1200);
+			text-align: left;
+			A {white-space: nowrap;}
+			A>* {vertical-align: middle;}
+			IMG {
+				margin-right: 8px;
+				width: 82px;
+			}
+			DIV {
+				white-space: normal;
+				max-width: 60%;
+			}
+		}
+		.f-plan {
+			width: percent(115,1200);
+			IMG {
+				@include inline-block;
+				width: 82px;
+			}
+		}
+		.f-area {width: percent(95,1200);}
+		.f-level {width: percent(76,1200);}
+		.f-bed {width: percent(86,1200);}
+		.f-wc {width: percent(46,1200);}
+		.f-floor {width: percent(64,1200);}
+		.f-price {
+			width: percent(112,1200);
+			padding-left: 10px;
+			text-align: left;
+		}
+		.f-link {
+			width: percent(150,1200);
+			padding: 0;
+			.btn {
+				padding: 15px 10px;
+				display: block;
+				width: 100%;
+				color: #000;
+			}
+		}
+		.f-del {
+			width: percent(80,1200);
+			text-align: right;
+			cursor: pointer;
+		}
+	}
+	.cell-inner {
+		@include transform(translate(0, -50%));
+		position: relative;
+		display: block;
+		top: 50%;
+	}
+	.fav-sort {
+		&>* {
+			position: relative;
+			padding-top: 45px;
+			color: #878787;
+			height: 110px;
+			&.m-border:before {
+				@include transform(rotate(20deg));
+				border-left: 1px solid #878787;
+				position: absolute;
+				display: block;
+				height: 40px;
+				content: '';
+				top: 35px;
+				width: 0;
+				left: -4%;
+			}
+		}
+		&>A {color: #fff;}
+		&>.m-current {color: $color-dark-sand;}
+		.f-area:before {left: -8%;}
+		.f-wc:before {left: -12%;}
+		.f-del .svg path {fill: #fff;}
+	}
+	.fav-order {
+		.cell-inner {
+			white-space: nowrap;
+		}
+		&>* {height: 110px;}
+		.col1 {
+			cursor: pointer;
+			width: 20%;
+			.main {
+				letter-spacing: .1em;
+				color: #847d84;
+			}
+			.num {font: 70px/34px anglecia_italic;}
+			.cell-inner {padding-left: 40px;}
+		}
+		.col2 {width: 40%;}
+		.col3 {
+			cursor: pointer;
+			width: 20%;
+			SPAN {
+				border-bottom: 1px solid #3a343a;
+				font: 16px/27px gotham_medium;
+				text-transform: uppercase;
+				color: $color-dark-sand;
+				letter-spacing: 0.12em;
+				padding-bottom: 5px;
+			}
+			.cell-inner {padding-right: 40px;}
+			&:hover SPAN {color: #fff;}
+		}
+		.svg {
+			@include transform(rotate(-180deg));
+			margin-right: 18px;
+			margin-top: 10px;
+			polygon {fill: #fff;}
+		}
+	}
+	.fav-type {
+		font: 24px/1em gotham_black;
+		text-transform: uppercase;
+		letter-spacing: .12em;
+		text-align: center;
+		padding: 25px 40px;
+		background: #fff;
+		font-size: vw(24);
+	}
+	.fav-list {}
+	.fav-item {
+		@include transition(background .4s ease);
+		background: #efefef;
+		&.m-even {background: #f8f8f8;}
+		&.m-active {background: #f9eeda;}
+		.m-disable {color: #7f7f7f;}
+		.f-object A {
+			SPAN {
+				border-bottom: 1px solid #d0cfd0;
+				color: #272127;
+			}
+		}
+		.f-price {color: $color-dark-sand;}
+		IMG {
+			@include transition(all .3s ease);
+			@include transform(scale(1));
+		}
+		IMG:hover {
+			@include shadow(0 0 6px rgba(0, 0, 0, .5));
+			@include transform(scale(1.6));
+		}
+	}
+	.fav-item + .fav-item {margin-top: 3px;}
+	.fav-empty {
+		background: #efefef;
+		text-align: center;
+		margin: 0 24px;
+		padding: 50px;
+		.main {
+			color: #929292;
+		}
+		.title  {
+			line-height: 30px;
+			SPAN {font-size: 30px;}
+		}
+		.descr {
+			font: 15px/24px school_book_italic;
+			margin-top: 20px;
+			color: #929292;
+			.svg {
+				vertical-align: middle;
+				margin-top: -4px;
+			}
+		}
+	}
+	
+	.consultant {
+		.info.w2 {
+			.title {
+				font: 30px/32px bebas;
+				letter-spacing: .1em;
+				margin-bottom: 38px;
+				SPAN {
+					font: 50px/28px anglecia_italic;
+					letter-spacing: 0;
+					display: inline;
+				}
+			}
+		}
+	}
+}

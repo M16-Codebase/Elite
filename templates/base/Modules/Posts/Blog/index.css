@@ -1,0 +1,170 @@
+.blog-page .breadcrumb LI.m-current A {
+  color: #838383; }
+.blog-page .blog-block {
+  background: #ebebeb;
+  width: 100%; }
+.blog-page .blog-search {
+  width: 900px; }
+.blog-page .blog-top {
+  background: #026e50;
+  color: #fff;
+  font: 16px/20px futuraDemi;
+  height: 58px; }
+  .blog-page .blog-top .rss-link {
+    color: #fff;
+    font: 16px/20px futuraDemi;
+    padding-top: 19px; }
+    .blog-page .blog-top .rss-link I {
+      vertical-align: top;
+      display: inline-block;
+      background: url("/img/icons/icons/rss-icon.png") 0 0 no-repeat;
+      height: 16px;
+      width: 16px;
+      margin-right: 8px;
+      margin-top: 1px; }
+.blog-page .date {
+  color: #000;
+  font: 13px/17px OpenSans;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+.blog-page .author .author-cover {
+  padding-top: 19px; }
+  .blog-page .author .author-cover IMG {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 8px; }
+  .blog-page .author .author-cover .nocurator {
+    height: 60px;
+    width: 60px; }
+.blog-page .author SPAN {
+  vertical-align: top;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 12px;
+  vertical-align: top; }
+.blog-page .author .small-descr {
+  color: #000;
+  font: italic 13px/15px openSans;
+  margin-top: 5px; }
+.blog-page .comments-num {
+  margin-top: 25px; }
+  .blog-page .comments-num I {
+    vertical-align: top;
+    display: inline-block;
+    background: url("/img/icons/icons/comments-icon.png") 0 0 no-repeat;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    margin-top: 1px; }
+  .blog-page .comments-num A {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 4px; }
+.blog-page .tags {
+  font: 13px/13px OpenSans;
+  margin-top: 23px; }
+  .blog-page .tags SPAN {
+    font-weight: bold; }
+  .blog-page .tags I {
+    vertical-align: top;
+    display: inline-block;
+    background: url("/img/icons/icons/tags-icon.png") 0 0 no-repeat;
+    height: 11px;
+    width: 18px;
+    margin-right: 6px;
+    margin-top: 2px; }
+  .blog-page .tags A {
+    font: italic 13px/13px OpenSans; }
+  .blog-page .tags .tags-list {
+    vertical-align: top;
+    display: inline-block; }
+    .blog-page .tags .tags-list SPAN {
+      color: #808080;
+      font: italic 13px/13px OpenSans; }
+    .blog-page .tags .tags-list LI {
+      vertical-align: top;
+      display: inline-block;
+      color: #016a46; }
+.blog-page .blogs-list {
+  background: #ebebeb;
+  padding: 27px 19px 23px 20px; }
+  .blog-page .blogs-list .item {
+    background: #fff;
+    margin-top: 21px;
+    padding-bottom: 24px;
+    position: relative; }
+    .blog-page .blogs-list .item:first-child {
+      margin-top: 0; }
+    .blog-page .blogs-list .item:before {
+      background: url("/img/design/news-arrow.png");
+      bottom: 0;
+      content: '';
+      right: 0;
+      height: 15px;
+      position: absolute;
+      width: 15px; }
+  .blog-page .blogs-list .aside-col {
+    margin: 0;
+    padding: 28px 12px 0 28px;
+    width: 173px; }
+  .blog-page .blogs-list .main-col {
+    width: 889px; }
+  .blog-page .blogs-list .blog-desrc {
+    margin: 30px 100px 0 0;
+    position: relative; }
+    .blog-page .blogs-list .blog-desrc:after {
+      background: #70be45;
+      top: -30px;
+      content: '';
+      left: -215px;
+      height: 3px;
+      position: absolute;
+      width: 216px; }
+    .blog-page .blogs-list .blog-desrc .blog-title {
+      font: 27px/27px futuraDemi;
+      margin-top: 25px; }
+      .blog-page .blogs-list .blog-desrc .blog-title:after {
+        font-size: 9px;
+        color: #6fbf44;
+        margin-left: 6px;
+        vertical-align: middle; }
+    .blog-page .blogs-list .blog-desrc .blog-annotation {
+      color: #656565;
+      font: 18px/27px OpenSans;
+      margin-top: 18px; }
+    .blog-page .blogs-list .blog-desrc + .tags {
+      margin-top: 26px; }
+.blog-page .paging {
+  margin: 22px 0 3px;
+  padding: 8px 22px 11px 14px; }
+  .blog-page .paging:after {
+    display: none; }
+  .blog-page .paging:before {
+    background: url("/img/design/news-arrow.png");
+    bottom: 0;
+    content: '';
+    height: 15px;
+    right: 0;
+    position: absolute;
+    width: 15px; }
+  .blog-page .paging .pg-arrows {
+    width: 100%; }
+.blog-page .rss-link {
+  cursor: pointer; }
+.blog-page .empty-result {
+  background: #ebebeb;
+  padding: 18px 19px 20px 20px; }
+  .blog-page .empty-result .empty-result-cont {
+    background: #fff;
+    padding: 153px 186px 160px 214px; }
+  .blog-page .empty-result .empty-title {
+    color: #016a46;
+    font: 36px/42px futuraLight;
+    text-transform: uppercase; }
+  .blog-page .empty-result .empty-descr {
+    color: #656565;
+    font: 18px/27px OpenSans;
+    margin-top: 16px; }
+
+/*# sourceMappingURL=index.css.map */

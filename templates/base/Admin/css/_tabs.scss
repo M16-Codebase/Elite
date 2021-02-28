@@ -1,0 +1,64 @@
+.tabs {
+	height: 44px;
+	float: left;
+	& > A {
+		border-right: 1px solid transparent;
+		border-left: 1px solid transparent;
+		font: 13px/24px openSansBold;
+		text-transform: uppercase;
+		text-shadow: 0 1px #fff;
+		color: $color-gray-text;
+		position: relative;
+		display: block;
+		padding: 10px;
+		float: left;
+		&.m-current,
+		&:hover {color: $color-main;}
+		&.m-current {
+			@include shadow(inset 0 6px 10px -8px rgba(0, 0, 0, 0.15));
+			border-color: $color-gray-line;
+			background: $color-gray-bg;
+			cursor: default;
+			&:after {
+				background: $color-gray-bg;
+				position: absolute;
+				display: block;
+				bottom: -2px;
+				height: 3px;
+				content: '';
+				z-index: 2;
+				right: 0;
+				left: 0;
+			}
+		}
+		&.m-inactive {
+			color: $color-gray-text;
+			cursor: default;
+		}
+		&.a-hidden {display: none;}
+		.num {
+			color: $color-gray-text;
+			font-family: openSans;
+			padding-left: 3px;
+			text-shadow: none;
+			I:before {
+				position: relative;
+				font-size: 21px;
+				bottom: -2px;
+				left: -8px;
+			}
+			.icon-check {
+				display: inline-block;
+				width: 12px;
+			}
+		}
+	}
+	.tab-select {
+		float: left;
+	}
+}
+
+.tab-page {
+	display: none;
+	&.m-current {display: block;}
+}

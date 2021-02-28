@@ -1,0 +1,266 @@
+@import '../../../css/vars';
+
+.site-top {
+	padding: 34px 0;
+	.title {
+		font-size: ceil(57*0.84)*1px;
+		font-size: vw(57*0.84);
+		letter-spacing: .001em;
+		margin-bottom: 28px;
+		color: $color-sand;
+		line-height: .9em;
+		SPAN {
+			font-size: ceil(40*0.84)*1px;
+			font-size: vw(40*0.84);
+			line-height: 1em;
+			display: block;
+			color: #fff;
+		}
+	}
+	.btn {
+		padding-right: 18px;
+		padding-left: 18px;
+	}
+}
+
+.scheme-block {
+	background: $color-dark-magenta;
+	position: relative;
+	padding-top: 110px;
+	padding-top: 9vw;
+	color: #fff;
+	.no-scheme {padding-bottom: 80px;}
+	.scheme-img {
+		position: relative;
+		z-index: 1;
+		&.m-white {background: #fff;}
+		.poly-cont {margin: 0 auto;}
+		.poly, .svg {
+			position: absolute !important;
+			height: 100% !important;
+			width: 100% !important;
+		}
+		IMG {
+			max-width: 100%;
+			display: block;
+			margin: 0 auto;
+			height: auto;
+		}
+	}
+	.scheme-header {
+		background: $color-dark-magenta;
+		position: absolute;
+		height: 110px;
+		height: 9vw;
+		width: 100%;
+		z-index: 2;
+		left: 0;
+		top: 0;
+		&.m-fixed {position: fixed;}
+		&.m-bottom {
+			bottom: 0;
+			top: auto;
+		}
+		.default-scheme {
+			.main {
+				color: $color-light-magenta;
+				letter-spacing: .12em;
+				text-align: center;
+				margin-top: 48px;
+				margin-top: 4vw;
+			}
+			&.m-empty {
+				& > * {
+					vertical-align: top;
+					padding-top: 30px;
+					padding-top: 2.3vw;
+				}
+				.main {
+					letter-spacing: .12em;
+					text-align: left;
+					margin: 0;
+				}
+				.title {
+					letter-spacing: 0;
+					margin-left: 10px;
+				}
+			}
+		}
+		.scheme-item {
+			vertical-align: top;
+			padding: 0 26px;
+			& > * {
+				vertical-align: top;
+				padding-top: 30px;
+				padding-top: 2.3vw;
+			}
+		}
+		.col1 {width: 30%;}
+		.col2 {width: 27%;}
+		.col3 {width: 41%;}
+		.col-small {
+			@include border-box;
+			padding-left: 26px;
+			padding-top: 30px;
+			padding-top: 2.3vw;
+			width: 16%;
+		}
+		.col-small.m-floor {
+			position: relative;
+			padding-left: 0;
+			.arrows {
+				margin: 0 8px;
+				margin: 0 .2vw;
+			}
+			.arrow {
+				text-align: center;
+				cursor: pointer;
+				height: 28px;
+				width: 28px;
+				height: 2.2vw;
+				width: 2.2vw;
+				.svg {
+					margin: 0 auto;
+					height: 80%;
+					width: 80%;
+				}
+				.svg polygon {
+					@include transition(all .4s ease);
+					fill: $color-dark-sand;
+				}
+				&:hover {
+					.svg polygon {fill: $color-dark-blue;}
+				}
+				&.m-disabled {
+					cursor: default;
+					opacity: .6;
+					.svg polygon {fill: $color-light-magenta;}
+				}
+				&.m-up {
+					.svg {
+						margin-top: -4px;
+						margin-top: -0.3vw;
+					}
+				}
+				&.m-down {
+					border-top: 1px solid $color-light-magenta;
+					margin-top: -1px;
+					.svg {
+						@include transform(rotate(180deg));
+						margin-top: 8px;
+						margin-top: 0.7vw;
+					}
+				}
+			}
+		}
+		.col-large {
+			width: 66%;
+			.default-scheme {padding-right: 15%;}
+			.scheme-item {
+				padding-left: 0;
+				.col1 {width: 42%;}
+				.col2 {width: 56%;}
+			}
+		}
+		.col-big {
+			width: 83%;
+			.default-scheme {padding-right: 6%;}
+			.scheme-item {
+				padding-left: 0;
+				.col1 {width: 20%;}
+				.col2 {width: 30%;}
+				.col3 {width: 48%;}
+			}
+		}
+		.back-scheme {
+			padding-bottom: 26px;
+			padding-bottom: 2vw;
+			cursor: pointer;
+			.title, .main  {@include transition(color .4s ease);}
+			.title {color: $color-dark-sand;}
+			&:hover {
+				.title, .main  {color: $color-dark-blue;}
+			}
+		}
+		.main {
+			color: $color-light-magenta;
+			letter-spacing: .12em;
+		}
+		.title {
+			font-size: 70px;
+			font-size: vw(70);
+			line-height: .78em;
+			&.m-gray {color: $color-light-magenta;}
+			&.m-short {
+				//-ms-text-overflow: ellipsis;
+				//text-overflow: ellipsis;
+				//overflow: hidden;
+				white-space: nowrap;
+				width: 112px;
+				width: 7vw;
+			}
+			I {
+				font-size: 36px;
+				font-size: vw(36);
+			}
+		}
+		.bedrooms {
+			margin-left: 6%;
+			DIV {
+				@include radius(50%);
+				background: $color-light-magenta;
+				color: $color-dark-magenta;
+				font: 18px/1.3em bebas;
+				font-size: vw(18);
+				margin-bottom: .3em;
+			    margin-right: .03em;
+				text-align: center;
+				height: 1.3em;
+				width: 1.3em;
+			}
+			.m-active {background: #fff;}
+		}
+	}
+	.back-btn-data {display: none;}
+}
+
+.resale{
+	background: $color-dark-magenta;
+	margin:auto;
+	text-align:center;
+	padding: 2px 0 55px;
+	text-align:center;
+	&.m-gray {
+		margin: 27px 35px;
+		padding: 85px 0 66px;
+		background:#efefef;
+		.main{
+			color: $color-light-black;
+			opacity:.55;
+			padding-bottom: 6px;
+		}
+		.title {
+			font-size: 31px;
+			font-size: vw(31);
+			margin: 0 5%;
+			SPAN{
+				font-size: 31px;
+				font-size: vw(31);
+				letter-spacing: .03em;
+			}
+		}
+		.descr {
+			color: $color-light-black;
+			opacity:.61;
+			margin:25px 0 10px;
+		}
+		.btn {
+			color:#000;
+		}
+	}
+	.descr {
+		color: #fff;
+		opacity: .61;
+		margin: 43px 0 17px;
+	}
+}

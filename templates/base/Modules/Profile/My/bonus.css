@@ -1,0 +1,63 @@
+@import url("index.css");
+
+.bonus-page .white-block-inner {padding: 27px 19px 32px;}
+.bonus-page .breadcrumb {padding-bottom: 16px;}
+.bonus-page .main-col H1 {
+	margin-top: 16px;
+	margin-bottom: 51px;
+}
+.bonus-page .invite-cont {margin-top: 0;}
+.bonus-page .invite-cont .invite .col1{width: 50%;}
+.bonus-page .invite-cont .invite .col1 + .col1 {width: 46%;}
+.bonus-page .more-arrow {float: right;}
+.bonus-page .bonus {width: 100%;}
+.bonus-page .bonus .col1{width: 23.8%;}
+.bonus-page .bonus .col3{width: 73.75%;}
+.bonus-info {
+	border: 1px solid #ebebeb;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #000;
+	font-size: 14px;
+	padding: 20px 15px 20px 13px;
+}
+.bonus-info-bottom {padding-top: 20px;}
+.bonus-info-top {
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 20px;
+}
+.bonus-info-title {
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+.bonus-cont {
+	border: 2px solid #ffc203;
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+	display: inline-block;
+	font: 18px/42px Arial;
+	height: 42px;
+	margin-top: 4px;
+	padding: 0px 10px 0 15px;
+	position: relative;
+}
+.bonus-cont .currency {
+	font-size: 12px;
+	font-style: italic;
+	margin-left: 5px;
+}
+.bonus-cont:after {
+	background: url("/img/icons/arrow-plank.png") 0 no-repeat;
+	content: "";
+	display: block;
+	height: 46px;
+	right: -21px;
+	position: absolute;
+	top: -2px;
+	width: 23px;
+	
+}
+
+

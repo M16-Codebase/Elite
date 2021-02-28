@@ -1,0 +1,151 @@
+.using-page {
+  background: #f7f7f7;
+  border-top: 2px solid #1353aa;
+  padding: 24px 24px 50px;
+  margin: 0 -24px; }
+
+.using-circle {
+  vertical-align: top;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  font: bold 18px/36px Arial;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  text-align: center;
+  height: 36px;
+  width: 36px;
+  color: #000; }
+  .using-circle.m-big {
+    font: bold 24px/46px Arial;
+    height: 46px;
+    width: 46px; }
+
+.using-types-list {
+  position: relative; }
+
+.using-type-item {
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  height: 60px; }
+  .using-type-item + .using-type-item {
+    margin-top: 10px; }
+  .using-type-item:hover {
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); }
+  .using-type-item .using-row > * {
+    line-height: 40px;
+    padding: 10px 0; }
+  .using-type-item .drag-drop {
+    cursor: pointer;
+    width: 44px; }
+    .using-type-item .drag-drop I {
+      background: url("/templates/Admin/img/drag-drop.png") 0 0 no-repeat;
+      margin: 7px auto 0;
+      cursor: pointer;
+      display: block;
+      height: 27px;
+      width: 9px; }
+  .using-type-item .short-name {
+    text-transform: uppercase;
+    font-size: 16px; }
+  .using-type-item .short-name,
+  .using-type-item .circle {
+    width: 100px; }
+  .using-type-item .title {
+    width: 400px; }
+  .using-type-item .buttons {
+    text-align: center;
+    padding: 0; }
+    .using-type-item .buttons .delete-property {
+      border-left: 1px solid #e7e7e7;
+      height: 60px;
+      width: 58px; }
+      .using-type-item .buttons .delete-property I {
+        vertical-align: top;
+        display: inline-block;
+        background: url("/templates/Admin/img/action-buttons.png") -112px 0 no-repeat;
+        height: 33px;
+        width: 23px;
+        margin: 14px auto 0; }
+    .using-type-item .buttons .edit-property {
+      height: 60px;
+      width: 64px; }
+      .using-type-item .buttons .edit-property I {
+        vertical-align: top;
+        display: inline-block;
+        background: url("/templates/Admin/img/action-buttons-big.png") -182px 0 no-repeat;
+        height: 38px;
+        width: 32px;
+        margin: 10px auto 0; }
+
+.popup-edit-property .ribbed TD {
+  padding: 15px 20px; }
+.popup-edit-property .ribbed .td-title {
+  vertical-align: top;
+  padding-top: 18px;
+  width: 160px;
+  color: #000; }
+.popup-edit-property .color-select-list {
+  margin-bottom: -6px;
+  width: 290px; }
+  .popup-edit-property .color-select-list LI {
+    vertical-align: top;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #f4f6f7;
+    position: relative;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 20px;
+    width: 20px; }
+    .popup-edit-property .color-select-list LI:hover:before {
+      background: rgba(255, 255, 255, .4);
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, 0) 100%);
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, 0) 100%);
+      background: -ms-linear-gradient(top, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, 0) 100%);
+      background: -o-linear-gradient(top, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, .4) 0%, rgba(255, 255, 255, 0) 100%);
+      position: absolute;
+      padding: 2px;
+      height: 100%;
+      width: 100%;
+      content: '';
+      left: -2px;
+      top: -2px; }
+    .popup-edit-property .color-select-list LI.m-current {
+      -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      border: 2px solid #fff;
+      height: 18px;
+      width: 18px; }
+    .popup-edit-property .color-select-list LI.disabled {
+      -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.4);
+      box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.4);
+      cursor: default; }
+      .popup-edit-property .color-select-list LI.disabled:before {
+        background: url("/templates/Admin/img/using-hatch.png") 0 0 repeat;
+        position: absolute;
+        padding: 2px;
+        height: 100%;
+        width: 100%;
+        content: '';
+        left: -2px;
+        top: -2px; }
+.popup-edit-property .small-descr {
+  color: #5e5e5e; }
+.popup-edit-property .using-preview {
+  border-left: 1px solid #e7e7e7;
+  padding: 16px 30px 16px 40px; }
+
+/*# sourceMappingURL=usingTypes.css.map */

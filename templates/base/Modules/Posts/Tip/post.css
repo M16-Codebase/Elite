@@ -1,0 +1,65 @@
+@import url("index.css");
+@import url("css/carousel-block.css");
+
+.post-page .info-block .main {
+	margin-bottom: 34px;
+	text-align: center;
+}
+.post-page .post-cover {
+	float: left;
+	margin: 25px 0 10px;
+}
+.main-catalog-types {
+	margin: 0 auto;
+    width: 104%;
+}
+.post-page H1 { 
+	border: none;
+	margin-top: 15px;
+	margin-bottom: 22px;
+	padding: 0;
+}
+.post-page .info-block H1 { 
+	margin-left: 0px;
+	width: 100%;
+}
+.post-page H2 {margin-top: 34px;}
+.main-catalog-types .catalog-item {
+	background: #f1f1f1 url("/img/design/types-bg.png") 0 0 no-repeat;
+	-webkit-border-radius:  4px;
+	-moz-border-radius:  4px;
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
+	min-height: 217px;
+	margin: 5px 4px 0 0;
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+	width: 185px;
+}
+.main-catalog-types .catalog-item A {
+	display: block;
+	font: 18px/18px Arial;
+	padding: 0 8px;
+	vertical-align: middle;
+	width: 169px;
+}
+.main-catalog-types .catalog-item .info {
+	display: block;
+	padding-bottom: 15px;
+	vertical-align: middle;
+	width: 100%;
+}
+.main-catalog-types .catalog-item .cover{
+	display: block;
+	height: 121px;
+	margin: 25px auto 10px;
+	width: 130px;
+}
+.carousel-items-cont LI {list-style: none;}
+
+.post-page .news-block .news-content {padding: 45px 15px 45px 0;}
+.post-page .catalog-item {margin-right: 0px;}
+.post-page .carousel-items-cont {height: 225px;}
+.news-block Li {width: 475px;}

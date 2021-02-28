@@ -1,0 +1,104 @@
+@import '../../../css/vars';
+
+.site-top {
+	.title {
+		margin:0 0 16px;
+	}
+}
+.bedrooms-wrap {
+	background: $color-dark-blue;
+	text-align: center;
+	padding: 36px 0px;
+	.main {
+		letter-spacing: .31em;
+		margin-bottom: 22px;
+		opacity: .55;
+		color: #fff;
+	}
+}
+.swipe-wrap {
+	.swiper-slide{
+      .cover-block{
+        padding:10px;
+        background:#fff;
+      }
+		.cover{
+			margin-left:3%;
+			margin-right:3%;
+            padding: 10px;
+			width:40%;
+            background: #ffffff;
+			@include border-box;
+          A{
+            padding-bottom: 105%;
+            display: block;
+          }
+		}
+		.params{
+			width: 54%;
+            padding-bottom: 12.8%;
+			.bottom{
+				width:54%;
+				padding-left: 0;
+			}
+		}
+		&:nth-of-type(even) {
+			.cover{
+				float:right;
+			}
+		}
+	}
+}
+.swipe-wrap.m-see-more {
+  .cover{
+    padding-bottom:80%;
+    width:97%;
+    background:none;
+  }
+	.params {
+		.area{
+		   line-height:.6em;
+		   margin:0;
+		   SPAN{
+			   display:block;
+			   @include transform(translateY(32%));
+		   }
+		}
+		.btn{
+			margin-top:23px;
+		}
+	}
+}
+
+.btn {
+  @include transform( translateZ(0) );
+}
+
+.open-map:not(.visible-map):hover {
+  .open-map-cover {
+    opacity: 1;
+  }
+}
+
+.open-map.visible-map {
+  .open-map-cover {
+    opacity: 1 !important;
+  }
+}
+
+.open-map-cover {
+  position: absolute;
+  background: #8298b3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  @include transform( matrix(1, 0, 0, 1, 0, 0) );
+  @include transition(opacity .4s ease);
+  opacity: 0;
+}
+.page-main > div {
+  @include transform( translateZ(0) );
+}

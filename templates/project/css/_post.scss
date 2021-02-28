@@ -1,0 +1,257 @@
+@import './fonts';
+@import './vars';
+
+.redactor-box .redactor-editor.post-block, .post .text {
+	&, P, LI, TD {
+		font-family: school_book_italic;
+		letter-spacing: -0.03em;
+		color: $color-dark-gray;
+		line-height: 30px;
+		font-size: 18px;
+	}
+	P + P {margin-top: 1em;}
+	EM, I {font-style: italic;}
+	STRONG, B {font-weight: bold;}
+	A {
+		color: $color-link;
+		&:hover {color: $color-link-hover;}
+	}
+	
+	H1, .h1 {
+		font: 30px/36px gotham_black;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		margin-bottom: .5em;
+		color: #000;
+	}
+	H2, .h2 {
+		text-transform: uppercase;
+		font: 30px/36px bebas;
+		letter-spacing: .24em;
+		margin-bottom: .5em;
+		color: #000;
+	}
+	H3, .h3 {
+		text-transform: uppercase;
+		letter-spacing: .36em;
+		font: 18px/20px bebas;
+		margin-bottom: .5em;
+		color: #000;
+	}
+	H4, .h4 {
+		font:18px/1em bebas;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		color:#000;
+		padding: 26px 0 10px;
+	}
+	* + H1, * + .h1, 
+	* + H2, * + .h2, 
+	* + H3, * + .h3, 
+	* + H4, * + .h4 {margin-top: 1.4em;}
+	UL, OL {
+		margin: 1em 0;
+		padding: 0;
+	}
+	UL LI {list-style-type: disc;}
+	OL LI {list-style-type: decimal;}
+	LI {
+		padding-right: 1.2em;
+		position: relative;
+		left: 1.2em;
+	}
+	LI + LI {margin-top: .2em;}
+	
+	.post-annotation {
+		font: 26px/1.25em school_book_italic;
+	}
+	.nowrap {
+		white-space: nowrap;
+	}
+	P.m-left, P.m-right{
+		display:inline-block;
+		font: 26px/1.2em school_book_italic;
+		color:#000;
+		padding: 0px 60px 29px;
+		width:400px;
+		@include border-box;
+		text-align: left;
+		margin:0px;
+		background:#fff;
+		position: relative;
+		z-index: 11;
+		float:left;
+	}
+	P.m-right {
+		float:right;
+		margin:0px;
+	}
+	.content-image {
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		&.a-left {margin-right: 20px;}
+		&.a-right {margin-left: 20px;}
+		&.a-center {clear: both;}
+		& > SPAN, & > A {
+			@include inline-block;
+		}
+		IMG {
+			height: auto !important;
+			opacity: 1 !important;
+			max-width: 100%;
+			cursor: default;
+			display: block;
+			margin: 0 auto;
+			height: auto;
+		}
+		.image-description {
+			font-style: italic;
+			margin: 8px auto 0;
+			color: #777;
+		}
+		.image-controls {display: none;}
+	}
+}
+
+.redactor-dropdown-box-formatting {
+	.redactor-formatting-p,
+	.redactor-formatting-span-nowrap {
+		font: 18px/30px school_book_italic;
+		color: $color-dark-gray;
+	}
+	.redactor-formatting-p-h1 {
+		font: 30px/36px gotham_black;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		color: #000;
+	}
+	.redactor-formatting-p-h2 {
+		text-transform: uppercase;
+		letter-spacing: .24em;
+		font: 30px/36px bebas;
+		color: #000;
+	}
+	.redactor-formatting-p-h3 {
+		text-transform: uppercase;
+		letter-spacing: .36em;
+		font: 18px/20px bebas;
+		color: #000;
+	}
+	.redactor-formatting-h4-h4{
+		font:18px/1em bebas;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		color:#000;
+	}
+	.redactor-formatting-p-post-annotation {
+		font: 26px/30px school_book_italic;
+		color: #000;
+	}
+	.redactor-formatting-p-m-left, .redactor-formatting-p-m-right {
+		font: 26px/1.2em school_book_italic;
+		color: #000;
+	}
+}
+
+
+.redactor-box .redactor-editor.post-block {
+	overflow-x: hidden;
+}
+.post {
+	.main {
+		color: $color-gray;
+		word-spacing: 2px;
+	} 
+	.title { 
+		padding-bottom: 42px;
+		margin: 9px 10% 33px; 
+		position: relative;
+		&:after { 
+			background: $color-dark-sand;
+			position: absolute; 
+			display: block;
+			content: '';
+			height: 6px; 
+			right: 45%; 
+			left: 45%;
+			bottom: 0;
+		}
+	}
+	& > .descr {
+		font: 26px/1.25em school_book_italic;
+		max-width: 900px;
+		margin: 0 14%;
+		margin: auto; 
+	}
+	.text {  
+		position: relative;
+		@include inline-block;
+		@include border-box;
+		padding: 25px 25px 0 16px;
+		width: 100%;
+		P:first-child:first-letter {
+			font: 60px gotham_black;
+			color: $color-sand;
+			letter-spacing: 3px;
+		}
+		P + P {
+			margin-top: 35px;
+		}
+		P.m-left, P.m-right{
+			display:inline-block;
+			font: 26px/1.2em school_book_italic;
+			color:#000;
+			padding: 32px 60px 29px;
+			width:400px;
+			@include border-box;
+			text-align: left;
+			margin:0px 0px 0px -119px;
+			background:#fff;
+			position: relative;
+			z-index: 11;
+			float:left;
+		}
+		P.m-right {
+			float:right;
+			margin:0px -119px 0px 0px ;
+		}
+		.content-image.a-center {
+			width:700px !important;
+			padding: 43px 0;
+			margin: 0 -60px;
+			background: #fff;
+			IMG{
+				width:100% !important;
+			}
+		}
+	}
+	.text.m-borders:before, .text.m-borders:after{
+		content:'';
+		border-left:1px solid #e2e2e2;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height:100%;
+	}
+	.text.m-borders:after{
+		left:auto;
+		right: 0;
+	}
+	.gallery {
+		width:700px;
+		margin:auto;
+		background:#fff;
+		overflow:hidden;
+		border-left:none;
+		margin-top:40px;
+		A{
+			margin: 6px 0;
+			display:block;
+			float:left;
+		}
+		A:nth-of-type(3n+2){
+			margin:6px 16px;
+		}
+	}
+}

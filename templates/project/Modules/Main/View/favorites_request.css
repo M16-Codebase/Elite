@@ -1,0 +1,149 @@
+.top-bg .bg-img {
+  background: #fff; }
+.top-bg .site-top *, .top-bg .site-top SPAN {
+  color: #000;
+  text-transform: uppercase; }
+.top-bg .site-top {
+  padding: 30px 0 47px; }
+  .top-bg .site-top .title {
+    line-height: .75em; }
+
+.sand-wrap {
+  background: #b59974; }
+
+.request-wrap {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 62px; }
+  .request-wrap .small-descr {
+    margin-top: 32px; }
+  .request-wrap .w2 {
+    width: 49.5%; }
+    .request-wrap .w2 .request-form {
+      padding-right: 90px; }
+    .request-wrap .w2:nth-of-type(odd) .request-form {
+      padding-left: 90px;
+      padding-right: 38px;
+      float: right; }
+  .request-wrap .request-form {
+    padding-right: 90px;
+    padding-bottom: 0; }
+    .request-wrap .request-form .f-group.m-checkboxes {
+      margin-top: -12px; }
+      .request-wrap .request-form .f-group.m-checkboxes .field.checkbox {
+        width: auto;
+        display: inline-block;
+        margin-bottom: 17px; }
+      .request-wrap .request-form .f-group.m-checkboxes .slash {
+        height: 33px;
+        margin: 0 25px; }
+      .request-wrap .request-form .f-group.m-checkboxes LABEL SPAN {
+        display: inline-block; }
+      .request-wrap .request-form .f-group.m-checkboxes LABEL DIV {
+        vertical-align: top; }
+    .request-wrap .request-form .f-input TEXTAREA {
+      height: 89px; }
+    .request-wrap .request-form .field.checkbox:last-child {
+      margin-bottom: 0; }
+  .request-wrap .buttons {
+    padding-top: 33px;
+    text-align: center;
+    clear: both; }
+    .request-wrap .buttons .btn {
+      border-color: #fff;
+      padding: 14px 16px 15px; }
+
+.request-wrap .user-form .sended-block {
+  text-align: center;
+  margin-top: 56px;
+  padding: 0; }
+  .request-wrap .user-form .sended-block .small-descr {
+    width: 285px;
+    margin: auto; }
+
+.request-form.m-swiper {
+  width: 380px; }
+
+.swiper-container {
+  width: 100%; }
+
+.swiper-slide {
+  /*width: 360px;*/
+  min-height: 304px;
+  color: #000; }
+  .swiper-slide LI {
+    padding-bottom: 24px; }
+    .swiper-slide LI .iteration {
+      font: 31px/1em bebas;
+      float: left;
+      padding: 5px 10px 10px 0;
+      color: #000; }
+  .swiper-slide .title {
+    text-align: left;
+    font-size: 16px; }
+    .swiper-slide .title SPAN {
+      font: 18px/1.8em bebas;
+      color: #272127;
+      border-bottom: 1px solid rgba(106, 102, 106, 0.3); }
+  .swiper-slide .descr {
+    font: 15px/1em school_book_italic;
+    color: #272127; }
+
+.nav {
+  border-top: 1px solid #988164;
+  position: relative;
+  margin-top: 20px;
+  height: 60px; }
+  .nav .pagin {
+    font: 16px/60px bebas;
+    word-spacing: 10px;
+    float: left; }
+    .nav .pagin SPAN {
+      word-spacing: 3px; }
+    .nav .pagin I {
+      margin: 0 9px; }
+  .nav .swiper-pagination {
+    display: none; }
+  .nav .swiper-button-prev, .nav .swiper-button-next {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 27px 28px 33px 35px;
+    background: none;
+    position: static;
+    cursor: pointer;
+    margin-top: 0;
+    float: right;
+    opacity: 1; }
+    .nav .swiper-button-prev .svg polygon, .nav .swiper-button-next .svg polygon {
+      fill: #000; }
+  .nav .swiper-button-disabled {
+    opacity: .3; }
+  .nav .swiper-button-prev {
+    left: 2%; }
+    .nav .swiper-button-prev .svg {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg); }
+
+/*# sourceMappingURL=favorites_request.css.map */
+
+@media only screen and (max-width: 820px) {
+  .request-wrap .request-form .swiper-container .swiper-slide ul {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .request-form.m-swiper {
+    width: 100%;
+  }
+  .request-wrap .request-form .swiper-container .swiper-slide {
+    min-height: 35px;
+  }
+  .request-wrap .request-form .swiper-container .swiper-slide ul {
+    padding-left: 0;
+  }
+}

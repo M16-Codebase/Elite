@@ -1,0 +1,104 @@
+@import "../../../css/vars";
+
+.edit-questions-form {
+	border-top: 2px solid #4598c7;
+	padding: 24px 22px 32px;
+	margin: 0 -22px -32px;
+	background: #f7f7f7;
+}
+.question-item {
+	@include shadow(0 3px 6px #{'rgba(0, 0, 0, .1)'});	
+	background: #fff;
+	.q-header {
+		position: relative;
+		padding: 22px 45px;
+		cursor: pointer;
+		.drag-drop {
+			background: url("/templates/Admin/img/drag-drop.png") 0 0 no-repeat;
+			position: absolute;
+			cursor: pointer;
+			height: 27px;
+			width: 9px;
+			left: 20px;
+			top: 17px;
+		}
+	}
+	.q-body {
+		padding: 4px 100px 22px 45px;
+		position: relative;
+		
+	}
+	&.m-open {
+		.q-header {font-weight: bold;}
+	}
+	.delete-q {
+		text-align: center;
+		position: absolute;
+		width: 60px;
+		right: 20px;
+		top: 0;
+		I {
+			background: url("/templates/Admin/img/action-buttons.png") -105px 0 no-repeat;
+			margin: 0 auto 2px;
+			display: block;
+			height: 35px;
+			width: 35px;
+			&:hover {background-position: -105px -35px;}
+		}
+		SPAN {
+			font: italic 12px openSans;
+			padding: 0 2px;
+			display: block;
+			color: #ff6204;
+		}
+	}
+	.q-table {
+		width: 100%;
+		TD:first-child {
+			vertical-align: top;
+			font-style: italic;
+			line-height: 26px;
+			width: 110px;
+			color: #777;
+		}
+		TR + TR TD {padding-top: 18px;}
+		INPUT.m-small {width: 94%;}
+		.delete-a {
+			background: url("/templates/Admin/img/table-buttons.png") -17px 0 no-repeat;
+			margin-top: 5px;
+			cursor: pointer;
+			display: none;
+			float: right;
+			height: 16px;
+			width: 17px;
+			&:hover {background-position: -17px -16px;}
+		}
+		.add-btn {
+			background: url("/templates/Admin/img/table-buttons.png") 0 0 no-repeat;
+			margin-top: 5px;
+			cursor: pointer;
+			display: none;
+			float: right;
+			height: 16px;
+			width: 17px;
+			&:hover {background-position: 0 -16px;}
+		}
+		INPUT.add-a {
+			border: 1px #abadb3 dashed;
+			width: 220px;
+		}
+		.m-focus {
+			INPUT.add-a {
+				border: 1px solid #e2e3ea;
+				border-top-color: #abadb3;
+				width: 94%;
+			}
+			.add-btn {display: block;}
+		}
+		.answer-item {
+			.delete-a {display: block;}
+			.add-btn {display: none;}
+		}
+	}
+}
+.question-item + .question-item {margin-top: 12px;}

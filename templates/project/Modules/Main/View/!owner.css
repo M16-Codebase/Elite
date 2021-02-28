@@ -1,0 +1,64 @@
+.top-bg .bg-img {
+  background: #fff; }
+.top-bg .site-top *, .top-bg .site-top SPAN {
+  color: #000;
+  text-transform: uppercase; }
+.top-bg .site-top {
+  padding: 30px 0 47px; }
+  .top-bg .site-top .title {
+    line-height: .75em; }
+
+.sand-wrap {
+  background: #b59974; }
+
+.request-wrap {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 62px; }
+  .request-wrap .small-descr {
+    margin-top: 32px; }
+  .request-wrap .w2 {
+    width: 49.5%; }
+    .request-wrap .w2 .request-form {
+      padding-right: 90px; }
+    .request-wrap .w2:nth-of-type(odd) .request-form {
+      padding-left: 90px;
+      padding-right: 38px;
+      float: right; }
+  .request-wrap .request-form {
+    padding-right: 90px;
+    padding-bottom: 0; }
+    .request-wrap .request-form .f-group.m-checkboxes {
+      margin-top: -12px; }
+      .request-wrap .request-form .f-group.m-checkboxes .field.checkbox {
+        width: auto;
+        display: inline-block;
+        margin-bottom: 17px; }
+      .request-wrap .request-form .f-group.m-checkboxes .slash {
+        height: 33px;
+        margin: 0 25px; }
+      .request-wrap .request-form .f-group.m-checkboxes LABEL SPAN {
+        display: inline-block; }
+      .request-wrap .request-form .f-group.m-checkboxes LABEL DIV {
+        vertical-align: top; }
+    .request-wrap .request-form .f-input TEXTAREA {
+      height: 89px; }
+    .request-wrap .request-form .field.checkbox:last-child {
+      margin-bottom: 0; }
+  .request-wrap .buttons {
+    padding-top: 33px;
+    text-align: center;
+    clear: both; }
+    .request-wrap .buttons .btn {
+      border-color: #fff;
+      padding: 14px 16px 15px; }
+
+.request-wrap .user-form .sended-block {
+  text-align: center;
+  margin-top: 56px;
+  padding: 0; }
+  .request-wrap .user-form .sended-block .small-descr {
+    width: 285px;
+    margin: auto; }
+
+/*# sourceMappingURL=owner.css.map */

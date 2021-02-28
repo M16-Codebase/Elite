@@ -1,0 +1,25 @@
+@import '../../base/css/vars';
+
+$color-link: #0096ff;
+$color-link-hover: #468fe0;
+$color-sand: #cfb27b;
+$color-dark-sand: #b59974;
+$color-light-black: #111;
+$color-light-magenta: #6a666a;
+$color-dark-magenta: #272127;
+$color-blue: #8298b3;
+$color-dark-blue: #4a6a91;
+$color-gray: #b3b3b3;
+$color-dark-gray: #5d5d5d;
+
+$width-mobile: 300px;
+$width-tablet: 700px;
+$width-desktop: 1220px;
+
+$easeInOutQuad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$easeInOutSine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+@function vw($target, $context: 1200){
+	@return (100/$context)*$target*1vw;
+}

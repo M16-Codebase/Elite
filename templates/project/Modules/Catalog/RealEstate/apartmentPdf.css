@@ -1,0 +1,476 @@
+/* Bebas */
+@font-face {
+  font-family: 'bebas';
+  src: url("{$tmp_path}project/fonts/BebasNeueRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'bebas_book';
+  src: url("{$tmp_path}project/fonts/BebasNeueBook.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* Gotham */
+@font-face {
+  font-family: 'gotham';
+  src: url("{$tmp_path}project/fonts/GothaProReg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'gotham_medium';
+  src: url("{$tmp_path}project/fonts/GothaProMed.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'gotham_black';
+  src: url("{$tmp_path}project/fonts/GothaProBla.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+/* School Book */
+@font-face {
+  font-family: 'school_book_italic';
+  src: url("{$tmp_path}project/fonts/scb56.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* Angelecia */
+@font-face {
+  font-family: 'anglecia_italic';
+  src: url("{$tmp_path}project/fonts/angleciaprodisplay-italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+.btn {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .m-black.btn {
+    text-transform: uppercase;
+    border: 2px solid #000;
+    padding: 9px 11px 7px;
+    font: 16px/1em bebas;
+    letter-spacing: 6px;
+    color: #000; }
+    .m-black.btn:hover {
+      background: rgba(0, 0, 0, 0.2); }
+    .m-black.m-vw.btn {
+      font-size: 1.33333vw; }
+  .m-white.btn {
+    font: 16px/1em gotham_medium;
+    text-transform: uppercase;
+    padding: 13px 16px 14px;
+    border: 2px solid #fff;
+    letter-spacing: 2px;
+    color: #fff; }
+    .m-white.btn:hover {
+      background: rgba(255, 255, 255, 0.2); }
+    .m-white.m-vw.btn {
+      font-size: 1.33333vw; }
+  .m-light-magenta.btn {
+    border: 2px solid #6a666a;
+    font: 16px/1em gotham_medium;
+    text-transform: uppercase;
+    padding: 13px 16px 14px;
+    letter-spacing: 2px;
+    color: #fff; }
+    .m-light-magenta.btn:hover {
+      background: rgba(106, 102, 106, 0.3); }
+    .m-light-magenta.m-vw.btn {
+      font-size: 1.33333vw; }
+  .m-dark-magenta.btn {
+    border: 2px solid #272127;
+    font: 16px/1em gotham_medium;
+    color: #272127;
+    text-transform: uppercase;
+    padding: 14px 33px 15px;
+    letter-spacing: 2px; }
+    .m-dark-magenta.btn:hover {
+      background: rgba(39, 33, 39, 0.3); }
+    .m-dark-magenta.m-vw.btn {
+      font-size: 1.33333vw; }
+  .m-magenta-fill.btn {
+    background: #272127;
+    font: 16px/1em gotham_medium;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 16px;
+    color: #fff; }
+    .m-magenta-fill.btn .svg {
+      display: inline-block;
+      margin-right: 3px;
+      max-height: 18px;
+      max-width: 18px; }
+    .m-magenta-fill.btn:hover {
+      background: #8298b3; }
+    .m-magenta-fill.m-vw.btn {
+      font-size: 1.33333vw; }
+  .m-blue.btn {
+    border: 2px solid #8298b3;
+    font: 31px/1em bebas_book;
+    padding: 3px 20px 12px;
+    color: #fff; }
+    .m-blue.btn:hover {
+      background: rgba(130, 152, 179, 0.3); }
+    .m-blue.m-vw.btn {
+      font-size: 2.58333vw; }
+  .m-sand.btn {
+    font: 16px/18px gotham_medium;
+    border: 2px solid #cfb27b;
+    text-transform: uppercase;
+    padding: 14px 33px 15px;
+    letter-spacing: 2px;
+    color: #fff; }
+    .m-sand.btn:hover {
+      background: rgba(207, 178, 123, 0.3); }
+    .m-sand.m-vw.btn {
+      font-size: 1.33333vw; }
+  .m-dark-sand-fill.btn {
+    font: 16px/18px gotham_medium;
+    background: #b59974;
+    text-transform: uppercase;
+    padding: 14px 33px 15px;
+    letter-spacing: 2px;
+    color: #fff; }
+    .m-dark-sand-fill.btn:hover {
+      background: rgba(181, 153, 116, 0.7); }
+    .m-dark-sand-fill.m-vw.btn {
+      font-size: 1.33333vw; }
+  .btn .svg {
+    vertical-align: top; }
+
+@page {
+  margin: 0; }
+BODY {
+  background: #fff;
+  width: 297mm;
+  color: #000;
+  padding: 0;
+  margin: 0; }
+  BODY SUP {
+    line-height: 0.2em;
+    font-size: 0.8em;
+    letter-spacing: normal; }
+
+.page {
+  page-break-before: always;
+  overflow: hidden; }
+  .page.m-first {
+    page-break-before: auto; }
+
+A {
+  text-decoration: none; }
+
+.title {
+  font-family: anglecia_italic;
+  letter-spacing: -.01em;
+  font-size: 44px; }
+  .title SPAN {
+    text-transform: uppercase;
+    font-family: gotham_black;
+    letter-spacing: -.01em;
+    font-size: 36px; }
+
+.main {
+  text-transform: uppercase;
+  letter-spacing: .36em;
+  font-family: bebas;
+  font-size: 18px; }
+
+.pdf-header {
+  border-top: 12px solid #272127;
+  margin-bottom: 18px;
+  text-align: center;
+  padding-top: 36px;
+  display: block; }
+  .pdf-header.m-sand {
+    border-color: #b59974; }
+  .pdf-header SPAN {
+    color: #272127;
+    vertical-align: middle;
+    letter-spacing: .45em;
+    font-family: bebas;
+    line-height: 34px;
+    font-size: 14px; }
+  .pdf-header IMG {
+    vertical-align: middle;
+    margin-right: 15px; }
+
+.pdf-item {
+  margin: 0 30px;
+  width: auto; }
+  .pdf-item TABLE {
+    width: 100%; }
+    .pdf-item TABLE TD {
+      vertical-align: top; }
+  .pdf-item .row-top {
+    border-bottom: 2px solid #cfb27b;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: left; }
+    .pdf-item .row-top.m-noborder {
+      padding-bottom: 0;
+      border: none; }
+  .pdf-item .title {
+    text-transform: uppercase;
+    font-family: gotham_black;
+    line-height: 40px;
+    font-size: 36px;
+    text-align: left; }
+  .pdf-item .price {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-family: bebas;
+    line-height: 26px;
+    font-size: 26px; }
+  .pdf-item .price_per_m {
+    font-family: school_book_italic;
+    letter-spacing: 0;
+    line-height: 15px;
+    font-size: 14px; }
+  .pdf-item .pdf-special {
+    font-family: gotham_medium;
+    text-transform: uppercase;
+    margin: 18px 0 12px;
+    border-spacing: 6px;
+    line-height: 20px;
+    font-size: 16px;
+    width: 100%; }
+    .pdf-item .pdf-special .special-main {
+      background: #cfb27b;
+      text-align: center;
+      padding: 10px 0;
+      color: #111111;
+      width: 90px; }
+    .pdf-item .pdf-special .special-text {
+      border-bottom: 2px solid #cfb27b;
+      border-top: 2px solid #cfb27b;
+      padding: 8px 10px; }
+  .pdf-item .item-cover {
+    margin-bottom: 20px;
+    background: #efefef;
+    text-align: center;
+    padding: 18px 20px;
+    min-height: 100px;
+    max-height: 330px;
+    height: auto; }
+  .pdf-item .consultant {
+    margin-bottom: 40px; }
+    .pdf-item .consultant .photo {
+      width: 120px; }
+      .pdf-item .consultant .photo DIV {
+        border-radius: 60px;
+        overflow: hidden;
+        height: 120px;
+        width: 120px; }
+      .pdf-item .consultant .photo IMG {
+        min-width: 100%;
+        height: 100%; }
+    .pdf-item .consultant .text {
+      padding-left: 20px;
+      padding-top: 20px;
+      text-align: left; }
+      .pdf-item .consultant .text .name {
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-family: bebas;
+        font-size: 26px; }
+      .pdf-item .consultant .text .phone {
+        font-family: gotham_black;
+        font-size: 16px; }
+      .pdf-item .consultant .text .email {
+        font-family: gotham;
+        font-size: 14px;
+        color: #272127; }
+      .pdf-item .consultant .text .function {
+        font-family: school_book_italic;
+        line-height: 1em;
+        font-size: 14px;
+        margin-top: 4px; }
+  .pdf-item .small-schemes {
+    padding-left: 20px; }
+    .pdf-item .small-schemes .parent-scheme {
+      margin-bottom: 24px;
+      text-align: center; }
+    .pdf-item .small-schemes .main {
+      letter-spacing: .1em;
+      margin-bottom: 18px;
+      font-size: 16px; }
+    .pdf-item .small-schemes IMG {
+      width: 126px;
+      height: auto; }
+  .pdf-item .item-features {
+    color: #b59974;
+    letter-spacing: .06em;
+    font-family: bebas;
+    line-height: 1.2em;
+    font-size: 16px;
+    margin-bottom: 12px;
+    padding: 0 50px; }
+  .pdf-item .opt-table {
+    padding: 0 50px 0 75px; }
+    .pdf-item .opt-table .opt-col {
+      border-top: 1px solid #f1f1f1;
+      letter-spacing: .06em;
+      font-family: bebas;
+      line-height: 1.4em;
+      font-size: 16px;
+      text-align: right;
+      padding: 6px 0;
+      color: #b8b8b8;
+      width: 42%; }
+    .pdf-item .opt-table .opt-col.m-right {
+      padding-left: 30px;
+      text-align: left;
+      color: #272127;
+      width: 58%; }
+  .pdf-item .buttons {
+    margin: 10px 0 50px; }
+    .pdf-item .buttons .opt-col {
+      text-align: right;
+      padding-top: 10px;
+      border: none;
+      height: 50px; }
+    .pdf-item .buttons .m-sand {
+      letter-spacing: .12em;
+      text-align: center;
+      padding: 12px 5px;
+      font-size: 14px;
+      display: block;
+      color: #000; }
+
+.center-title {
+  margin: 0 30px 50px;
+  text-align: center; }
+  .center-title .main {
+    margin-bottom: 10px;
+    color: #919191; }
+  .center-title .title {
+    text-transform: uppercase;
+    font-family: gotham_black;
+    margin-bottom: 8px;
+    font-size: 36px; }
+  .center-title .big-descr {
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-family: gotham;
+    font-size: 16px;
+    margin-bottom: 4px; }
+    .center-title .big-descr I {
+      text-decoration: line-through;
+      letter-spacing: 2em;
+      color: #e2e2e2;
+      margin: 0 4px;
+      width: 120px; }
+  .center-title .small-descr {
+    font-family: school_book_italic;
+    font-size: 14px; }
+  .center-title .annotation {
+    margin-top: 26px; }
+    .center-title .annotation DIV {
+      background: #b59974;
+      margin: 0 auto 18px;
+      width: 100px;
+      height: 6px; }
+    .center-title .annotation P {
+      font-family: school_book_italic;
+      letter-spacing: -.03em;
+      line-height: 24px;
+      font-size: 22px;
+      margin: 0; }
+
+.specs-row {
+  background: #272127;
+  padding: 20px;
+  margin: 3px 0; }
+  .specs-row TABLE {
+    width: 100%; }
+  .specs-row TD {
+    vertical-align: middle;
+    text-align: center;
+    width: 10px;
+    color: #fff;
+    padding: 0; }
+  .specs-row .border {
+    font-family: bebas_book;
+    line-height: 50px;
+    font-size: 64px;
+    padding: 0 6px;
+    color: #847d84;
+    width: 25px; }
+  .specs-row .sp-main {
+    font-family: anglecia_italic;
+    white-space: nowrap;
+    line-height: 28px;
+    font-size: 32px; }
+    .specs-row .sp-main SPAN {
+      color: #b59974; }
+  .specs-row .sp-descr {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    white-space: nowrap;
+    font-family: bebas;
+    line-height: 16px;
+    font-size: 14px;
+    margin-top: 4px;
+    color: #847d84; }
+
+.gallery TABLE {
+  vertical-align: top;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; }
+.gallery TD {
+  width: 25%;
+  padding: 1px; }
+  .gallery TD IMG {
+    width: 275px;
+    height: auto; }
+.gallery TD[colspan="2"] {
+  width: 50%; }
+  .gallery TD[colspan="2"] IMG {
+    width: 563px; }
+
+.center-price {
+  text-align: center;
+  margin: 50px 0 20px;
+  width: 100%; }
+  .center-price .price-wrap {
+    border: 2px solid #e2e2e2;
+    padding: 12px 16px;
+    width: 250px; }
+  .center-price .price {
+    letter-spacing: .1em;
+    font-family: bebas;
+    font-size: 26px; }
+  .center-price .price_per_m {
+    border-top: 1px solid #e2e2e2;
+    font-family: school_book_italic;
+    font-size: 14px;
+    padding-top: 5px;
+    margin-top: 5px; }
+
+.pdf-item .row-top .col1 {
+  width: 76%; }
+.pdf-item .row-top .col2 {
+  width: 24%; }
+.pdf-item .row-top .price-wrap .border {
+  vertical-align: middle;
+  font-family: bebas_book;
+  text-align: center;
+  line-height: 30px;
+  font-size: 45px;
+  width: 42px; }
+.pdf-item .row-top .price-wrap .m-last {
+  text-align: center;
+  width: 82px; }
+.pdf-item .row-bottom .col1 {
+  width: 43%; }
+.pdf-item .row-bottom .col2 {
+  width: 12%; }
+.pdf-item .row-bottom .col3 {
+  width: 45%; }
+.pdf-item .row-bottom .opt-table {
+  padding: 0 30px 0 20px; }
+  .pdf-item .row-bottom .opt-table .opt-col {
+    width: 30%; }
+  .pdf-item .row-bottom .opt-table .opt-col.m-right {
+    width: 70%; }
+
+/*# sourceMappingURL=apartmentPdf.css.map */

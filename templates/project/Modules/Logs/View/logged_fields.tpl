@@ -1,0 +1,62 @@
+{*пока что берется из php скрипта*}{*?$logged_fields = array(
+    'item_type' => array(
+        'title' => 'Навание',
+        'key' => 'Ключ',
+        'item_prefix' => 'Префикс',
+        'url' => 'Url',
+        'parent_id' => 'Родительская категория',
+        'annotation' => 'Аннотация',
+        'only_items' => 'Без вариантов',
+        'position' => 'Позиция',
+        'status' => 'Статус',        
+        'allow_children' => 'Подкатегории',
+        'nested_in' => 'Вложен в категорию'
+    ),
+    'property' => array(
+        'title' => 'Наименование',
+        'description' => 'Описание для админки',
+        'public_description' => 'Описание для паблика',
+        'key' => 'Ключ',
+        'data_type' => 'Тип данных',
+        'major' => 'Подбор похожих',
+        'major_count' => 'Разброс значений',
+        'search_type' => 'Тип поиска',
+        'visible' => 'Видимость',
+        'values' => 'Значения',
+        'mask' => 'Шаблон отображения',
+        'filter_title' => 'Название в фильтре',
+        'necessary' => 'Обязательный',
+        'unique' => 'Уникальный',
+        'multiple' => 'Расщепляемый',
+        'group_id' => 'ID группы',
+        'position' => 'Позиция',
+        'read_only' => 'Только для чтения',
+        'set' => 'Множественное',
+        'filter_visible' => 'Видимость в фильтре',
+        'filter_slide' => 'Разворачивать в фильтре',
+        'segment' => 'Сегментированное',
+        'context' => 'Контекст',
+        'sort' => 'Сортировка',
+        'external_key' => 'Внешний ключ',
+        'default_value' => 'Значение по умолчанию'
+    ),
+    'post' => array(
+        'title' => 'Навание',
+        'key' => 'Ключ',
+        'annotation' => 'Аннотация',
+        'position' => 'Позиция',
+        'status' => 'Статус',
+        'text' => 'Текст',
+        'segment_id' => 'Сегмент',
+        'theme_id' => 'Тема',
+        'tags' => 'Тэги'
+    ),
+    'file' => array(
+        'title' => 'Заголовок',
+        'full_name' => 'Название',
+        'full_size' => 'Размер',
+        'ext' => 'Расширение',
+        'cover_id' => 'Обложка',
+        'position' => 'Позиция'
+    )
+)*}

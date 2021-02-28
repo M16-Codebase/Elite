@@ -1,0 +1,227 @@
+.contacts-map {
+	position: relative;
+	background: #fff;
+	overflow: hidden;
+	.map-big {
+		position: absolute;
+		background: #fff;
+		display: none;
+		height: 100%;
+		width: 100%;
+		z-index: 2;
+		left: 0;
+		top: 0;
+		.close-map {
+			@include transition(all .4s ease);
+			position: absolute;
+			background: #000;
+			cursor: pointer;
+			right: -30px;
+			height: 80px;
+			width: 80px;
+			z-index: 2;
+			top: 80px;
+			&:before {
+				border-top: 80px solid transparent;
+				border-bottom: 0 solid transparent;
+				border-right: 24px solid #000;
+				position: absolute;
+				content: '';
+				left: -24px;
+				top: 0;
+			}
+			&:hover {right: 0;}
+			.svg {
+				margin-left: 10px;
+				margin-top: 32px;
+				path {fill: #fff;}
+			}
+		}
+		.map {
+			position: absolute;
+			// bottom: 16px;
+      bottom: 0;
+			width: 100%;
+			z-index: 1;
+			// top: 16px;
+      top: 3px;
+			left: 0;
+		}
+	}
+	.map-small {
+		padding: 54px 66px 70px;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		.main-top {
+			margin-bottom: 36px;
+			color: #b3b3b3;
+		}
+		.distr {margin-bottom: 4px;}
+		.address {
+			@include inline-block;
+			margin-bottom: 55px;
+			position: relative;
+			padding: 0 120px;
+			&:before {
+				border-top: 1px solid #e2e2e2;
+				position: absolute;
+				display: block;
+				content: '';
+				width: 100%;
+				z-index: 1;
+				height: 0;
+				top: 50%;
+				left: 0;
+			}
+			SPAN {
+				position: relative;
+				background: #fff;
+				padding: 0 10px;
+				z-index: 2;
+			}
+		}
+		.open-map {
+			margin-bottom: 64px;
+			position: relative;
+			cursor: pointer;
+			height: 200px;
+			&:before, &:after {
+				position: absolute;
+				display: block;
+				content: '';
+				z-index: 2;
+				top: 0;
+			}
+			&:before {
+				border-bottom: 200px solid transparent;
+				border-top: 0 solid transparent;
+				border-left: 80px solid #fff;
+				left: 0;
+			}
+			&:after {
+				border-top: 200px solid transparent;
+				border-bottom: 0 solid transparent;
+				border-right: 80px solid #fff;
+				right: 0;
+			}
+			.map-wrap, .map-lock {
+				position: absolute;
+				overflow: hidden;
+				height: 100%;
+				width: 100%;
+				left: 0;
+				top: 0;
+			}
+			.map-wrap {z-index: 1;}
+			.map-lock {z-index: 2;}
+			.map {
+				position: absolute;
+				bottom: -30px;
+				width: 100%;
+				top: -30px;
+				left: 0;
+			}
+			.marker {
+				background: url("/img/marker.png") 50% 0 no-repeat;
+				position: absolute;
+				width: 100%;
+				z-index: 3;
+				top: -34px;
+				bottom: 0;
+				left: 0;
+			}
+			.btn {
+				position: relative;
+				margin-top: 135px;
+				z-index: 5;
+				.svg {
+					path {
+						@include transition(all .4s ease);
+						fill: $color-light-magenta;
+					}
+				}
+			}
+			.btn-fake {
+				@include transition(none);
+				outline: 0 solid $color-blue;
+				position: absolute;
+				z-index: 4;
+				opacity: 0;
+			}
+      .btn .svg {
+        @include transition(all .1s $easeInOutQuad);
+        path {fill: #fff;}
+      }
+			&:hover .btn {
+				background: $color-blue;
+				.svg {
+					// path {fill: #fff;}
+          @include transform(scale(1.2));
+				}
+			}
+		}
+		.map-info {
+			.w2 {
+				padding: 0 20px;
+				margin: 0 auto;
+			}
+			.info-block + .info-block {margin-top: 25px;}
+			.main {
+				letter-spacing: 0.1em;
+				margin-bottom: 4px;
+				color: #000;
+			}
+			.val {
+				font: 18px/26px gotham;
+				color: #8e8e8e;
+			}
+			.quote {
+				font: 26px/32px school_book_italic;
+				letter-spacing: -1px;
+				margin-bottom: 22px;
+			}
+			.about-url {
+				color: $color-link-hover;
+				SPAN {
+					@include transition(all .4s ease);
+					color: #000;
+				}
+				&:hover SPAN {color: $color-link-hover;}
+			}
+		}
+	}
+	.map-bubble:before {
+		@include transform(translateX(-50%));
+		position: absolute;
+		background: #000;
+		display: block;
+		bottom: -36px;
+		height: 36px;
+		content: '';
+		width: 3px;
+		left: 50%;
+	}
+	.map-bubble .close-box {
+		padding: 8px 10px;
+		right: 0 !important;
+		top: 0 !important;
+	}
+	.map-content {
+		padding: 14px 12px !important;
+		text-align: center;
+		.item-type {
+			margin-bottom: 4px;
+			color: #111;
+		}
+		.item-title {
+			font: 18px gotham_black;
+			letter-spacing: .1em;
+			margin-bottom: 4px;
+		}
+		.item-address, .address {
+			font: 15px school_book_italic;
+			color: #111;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.puzzle-list {}
+.puzzle-list LI {}
+.puzzle-list LI + LI {margin-top: 10px;}
+.puzzle-list LI A {
+	background: url('/templates/Admin/img/puzzle.png') no-repeat left top;
+	display: inline-block;
+	padding-left: 30px;
+	line-height: 30px;
+	font-size: 18px;
+}

@@ -1,0 +1,143 @@
+@import "../../../Admin/css/vars";
+
+.using-page {
+	background: #f7f7f7;
+	border-top: 2px solid #1353aa;
+	padding: 24px 24px 50px;
+	margin: 0 -24px;
+}
+
+.using-circle {
+	@include inline-block;
+	@include radius(50%);
+	font: bold 18px/36px Arial;
+	text-transform: uppercase;
+	border: 2px solid #000;
+	text-align: center;
+	height: 36px;
+	width: 36px;
+	color: #000;
+	&.m-big {
+		font: bold 24px/46px Arial;
+		height: 46px;
+		width: 46px;
+	}
+}
+
+.using-types-list {position: relative;}
+.using-type-item {
+	@include shadow(0 2px 3px rgba(0, 0, 0, .1));
+	background: #fff;
+	height: 60px;
+	& + & {margin-top: 10px;}
+	&:hover {
+		@include shadow(0 2px 5px rgba(0, 0, 0, .4));
+	}
+	.using-row > * {
+		line-height: 40px;
+		padding: 10px 0;
+	}
+	.drag-drop {
+		cursor: pointer;
+		width: 44px;
+		I {
+			background: url("/templates/Admin/img/drag-drop.png") 0 0 no-repeat;
+			margin: 7px auto 0;
+			cursor: pointer;
+			display: block;
+			height: 27px;
+			width: 9px;
+		}
+	}
+	.short-name {
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+	.short-name,
+	.circle {width: 100px;}
+	.title {width: 400px;}
+	.buttons {
+		text-align: center;
+		padding: 0;
+		.delete-property {
+			border-left: 1px solid #e7e7e7;
+			height: 60px;
+			width: 58px;
+			I {
+				@include icon(-112px, 0, 23px, 33px, 'action-buttons.png');
+				margin: 14px auto 0;
+			}
+		}
+		.edit-property {
+			height: 60px;
+			width: 64px;
+			I {
+				@include icon(-182px, 0, 32px, 38px, 'action-buttons-big.png');
+				margin: 10px auto 0;
+			}
+		}
+	}
+}
+
+.popup-edit-property {
+	.ribbed {
+		TD {padding: 15px 20px;}
+		.td-title {
+			vertical-align: top;
+			padding-top: 18px;
+			width: 160px;
+			color: #000;
+		}
+	}
+	.color-select-list {
+		margin-bottom: -6px;
+		width: 290px;
+		LI {
+			@include inline-block;
+			@include radius(50%);
+			border: 1px solid #f4f6f7;
+			position: relative;
+			margin-bottom: 8px;
+			margin-right: 5px;
+			overflow: hidden;
+			cursor: pointer;
+			height: 20px;
+			width: 20px;
+			&:hover:before {
+				@include gradient(#{'rgba(255, 255, 255, .4)'}, #{'rgba(255, 255, 255, 0)'});
+				position: absolute;
+				padding: 2px;
+				height: 100%;
+				width: 100%;
+				content: '';
+				left: -2px;
+				top: -2px;
+			}
+			&.m-current {
+				@include shadow(0 2px 4px rgba(0, 0, 0, .4));
+				border: 2px solid #fff;
+				height: 18px;
+				width: 18px;
+			}
+			&.disabled {
+				@include shadow(inset 0 2px 3px rgba(0, 0, 0, .4));
+				cursor: default;
+				&:before {
+					background: url("/templates/Admin/img/using-hatch.png") 0 0 repeat;
+					position: absolute;
+					padding: 2px;
+					height: 100%;
+					width: 100%;
+					content: '';
+					left: -2px;
+					top: -2px;
+				}
+			}
+		}
+	}
+	.small-descr {color: #5e5e5e;}
+	.using-preview {
+		border-left: 1px solid #e7e7e7;
+		padding: 16px 30px 16px 40px;
+	}
+}

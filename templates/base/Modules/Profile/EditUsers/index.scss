@@ -1,0 +1,43 @@
+@import "../../../Admin/css/vars";
+
+.user-fields .white-blocks {
+	.wblock + .wblock {margin-top: 10px;}
+	.icon-prop-delete{font-size:31px;}
+	.row-image {width:51px;height:51px;}
+}
+.img-preview{
+	.delete-photo.a-hidden{
+		display:none;
+	}
+}
+.add-address {
+	.origin {display: none;}
+	.add-value INPUT {
+		border: 1px dashed #ABADB3;
+		background: none;
+		&:hover {border-color: #018CE5;}
+		&:focus {
+			border: 1px solid #e2e3ea;
+			border-top-color: #abadb3;
+			background: #fff;
+		}
+	}
+	.action-button {
+		.icon-prop-delete {
+			color: $color-gray-text;
+			font-size: 31px;
+		}
+	}
+}
+.user-status {
+	width:16px;
+	height:16px;
+	border-radius:50%;
+	margin:auto;
+	&.m-active{
+		background: rgb(3, 176, 141);
+	}
+	&.m-banned{
+		background:#ff845e;
+	}
+}

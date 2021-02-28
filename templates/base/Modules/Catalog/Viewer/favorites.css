@@ -1,0 +1,59 @@
+.selection .offer-body .offers-item:first-child {
+  border-top: none; }
+.selection .offers-item .offer-cbx {
+  margin-right: 15px; }
+.selection .offer-item .offer-header .a-right.offer-visibility {
+  padding: 0 10px;
+  width: 28px; }
+.selection .offer-body .offers-item .offer-visibility {
+  width: 27px;
+  padding: 0 10px; }
+.selection .offer-selection {
+  background: #b9baba;
+  padding: 0 10px;
+  text-align: center;
+  width: 30px; }
+  .selection .offer-selection .i-selection {
+    margin-top: 22px; }
+.selection .offers-item .offer-selection {
+  background: #fff; }
+  .selection .offers-item .offer-selection .i-selection {
+    margin-top: 12px; }
+
+.offer-item.m-open, .input-item {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
+
+.offer-body .offer-list .offer-item + .offer-item {
+  margin-top: 29px; }
+
+.offer-list {
+  margin: 30px 0 10px; }
+
+.input-item-cont {
+  margin-bottom: 24px; }
+
+.input-item {
+  padding: 10px 20px 12px;
+  position: relative;
+  background: #fff; }
+  .input-item INPUT {
+    height: 26px; }
+  .input-item TEXTAREA {
+    height: 74px; }
+  .input-item .input-title {
+    margin-bottom: 10px; }
+
+.comment-pdf {
+  padding: 10px 20px 12px;
+  position: relative;
+  z-index: 1; }
+  .comment-pdf TEXTAREA {
+    height: 60px; }
+  .comment-pdf .input-title {
+    color: #585858;
+    margin-bottom: 12px;
+    font: italic 12px OpenSans; }
+
+/*# sourceMappingURL=favorites.css.map */

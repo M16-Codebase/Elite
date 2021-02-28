@@ -1,0 +1,25 @@
+.paging {
+	@include shadow(0 1px 4px #{'rgba(0, 0, 0, 0.1)'});
+	margin-top: 40px;
+	.wblock > * {margin: 0;}
+	.pages {
+		text-align: center;
+		& > * {
+			text-align: center;
+			min-width: 15px;
+			padding: 15px;
+			margin: -15px;
+			&.m-current {
+				font-family: openSansBold;
+				cursor: default;
+				color: #000;
+			}
+		}
+		& > * + * {margin-left: 10px;}
+		.dots {
+			color: $color-gray-text;
+			line-height: 14px;
+			font-size: 20px;
+		}
+	}
+}
