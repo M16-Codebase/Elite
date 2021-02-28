@@ -58,7 +58,7 @@ DirectoryIndex	index.php
 
 RewriteEngine on
 
-RewriteRule ^service/sell-your-apartment/$ /service1/sell/index.php?&%{QUERY_STRING}
+RewriteRule ^service/sell-your-apartment/$ /service1/sell/onepage.php?&%{QUERY_STRING}
 
 
 # редиректим на правильный урл
