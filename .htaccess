@@ -58,7 +58,10 @@ DirectoryIndex	index.php
 
 RewriteEngine on
 
-RewriteRule ^service/sell-your-apartment/$ /service1/sell/onepage.php?&%{QUERY_STRING}
+RewriteCond %{HTTPS} =off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L]
+
+RewriteRule ^service/sell-your-apartment/$ /service1/sell/sell_your_apart_index.php?&%{QUERY_STRING}
 
 
 # редиректим на правильный урл
